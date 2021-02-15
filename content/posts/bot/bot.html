@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    #bot {
+      position: relative;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img id="bot" src="C:\wyrfraym\themes\wyrfraym\static\images\bot1.jpg">
+
+
+  <script>
+    bot.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        train.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 2000) clearInterval(timer);
+
+      }, 20);
+    }
+  </script>
+
+
+</body>
+
+</html>
