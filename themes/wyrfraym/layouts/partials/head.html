@@ -1,24 +1,10 @@
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
-crossorigin="anonymous">
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   
-   <script src="app.js"defer>
-     
-     
-   </script>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-
-
 
 body{
    background-image: url("images/mathbanner.png");
@@ -38,79 +24,87 @@ body {
   text-align: top left;
 }
 
-#navbar {
+
+.navbar {
   overflow: hidden;
-  background-color: #2f3330;
+  background-color: #333;
 }
 
-#navbar a {
+.navbar a {
   float: left;
-  display: block;
-  color: #f3f4f5;
+  font-size: 16px;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 
-#navbar a:hover {
-  background-color: #f3f4f5;
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
   color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-#navbar a.active {
-  background-color: #2f3330;
-  color: #f3f4f5;
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
-body {background-color: #f3f4f5;
-} 
-
-.content {
-  padding: 16px;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-
-.sticky + .content {
-  padding-top: 15px;
-}
-
-
-
-
 </style>
+</head>
+<body>
 
-<div id="navbar">
-  
-  <a class="active" href="/">Home</a>
-  <a href="\posts">Posts</a>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">Posts</a>
+  <div class="dropdown">
+    <button class="dropbtn">More
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+</div>
 
-
-
-</div> 
-
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
 
 
 </body>
 </html>
+
