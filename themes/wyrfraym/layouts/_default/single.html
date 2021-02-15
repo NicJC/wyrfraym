@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section id="main">
+  
+  <div>
+       
+           {{ .Content }}
+        
+  </div>
+</section>
+<aside id="meta">
+    <div>
+    <section>
+<p><b>
+
+Created on:</b></p>
+      <h6 id="date"> {{ .Date.Format "Mon, Jan 2, 2006" }} </h6>
+      
+    </section>
+    
+    
+
+    </div>
+</aside>
+{{ end }}

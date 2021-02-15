@@ -1,0 +1,114 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
+crossorigin="anonymous">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<style>
+
+
+
+body{
+   background-image: url("images/mathbanner.png");
+   background-repeat: repeat-x;
+}
+
+
+body {
+  margin: 0;
+  font-size: 17px;  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f3f4f5;
+  padding: 0px;
+  text-align: top left;
+
+
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #2f3330;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f3f4f5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #f3f4f5;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #2f3330;
+  color: #f3f4f5;
+}
+
+body {background-color: #f3f4f5;
+
+} 
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.sticky + .content {
+  padding-top: 15px;
+}
+
+
+
+
+</style>
+
+<div id="navbar">
+  
+  <a class="active" href="/">Home</a>
+  <a href="/posts/">Posts</a>
+  <a href="/Notebooks/">Downloads</a>
+
+
+</div> 
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</body>
+</html>
