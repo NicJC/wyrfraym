@@ -44,6 +44,10 @@ body {
   text-decoration: none;
 }
 
+#navbar a.active {
+  background-color: #2f3330;
+  color: #f3f4f5;
+
 .dropdown {
   float: left;
   overflow: hidden;
@@ -94,7 +98,9 @@ body {
 <body>
 
 <div class="navbar">
-  <a href="/">Home</a>
+  
+  <a class="active" href="/">Home</a>
+  
   <a href="/posts/">Posts</a>
   <div class="dropdown">
     <button class="dropbtn">More
