@@ -7,6 +7,17 @@ date: 2021-02-10T16:41:33+13:00
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
 
 
+ <script type = "text/javascript">
+         <!--
+            if(document.images) {
+               var image1 = new Image();     // Preload an image
+               image1.src = "C:\wyrfraym\themes\wyrfraym\static\images\formula.png";
+               var image2 = new Image();     // Preload second image
+               image2.src = "C:\wyrfraym\themes\wyrfraym\static\images\sum.png";
+            }
+         //-->
+      </script>
+
 <style>
 
 
@@ -85,7 +96,9 @@ img {
 
 </div>
 
-
+ <a href = "#" onMouseOver = "document.myImage.src = image2.src;"
+         onMouseOut = "document.myImage.src = image1.src;">
+         <img name = "myImage" src = "C:\wyrfraym\themes\wyrfraym\static\images\formula.png" />
 
 
 
