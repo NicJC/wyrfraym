@@ -1,4 +1,4 @@
-baseURL = "https://nicstats.netlify.app/"
+baseURL = "https://nicstats.netlify.app"
 languageCode = "en-us"
 title = "Nic Stats"
 
@@ -30,13 +30,17 @@ reading_time = true
 #[[menu.footer]]
  # name = "contact me"
   #url="/contact" 
+  
+  [[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  
+  
 
 [params]
     description = "My site description"
 
-[[menu.main]]
-    name = "Get in touch"
-    url = "/contact"
+
 
 
 
