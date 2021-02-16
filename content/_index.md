@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+---
+title: "indev"
+date: 2021-02-10T16:41:33+13:00
+---
 
-<html>
 
-<head>
-
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
 
 
 <style>
