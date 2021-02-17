@@ -98,4 +98,39 @@ h6 {
   object-fit: cover;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #585339;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #4de4cb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li a:hover:not(.active) {
+  background-color: #E8E6DB;
+  color: black;
+  font-weight: 1000;
+}
+
+.active {
+  background-color: #585339;
+  }
+
+
 </style>
