@@ -36,10 +36,14 @@ There is also a link to the blogdown book, which would be my first port of call,
 - 👉 [**Get Started**](https://bookdown.org/yihui/blogdown/get-started.html)
 - 📚 [View Alison Presmanes Hill's site](https://alison.rbind.io) or
 - 💬 [view Amber Thomas's site](https://amber.rbind.io)  
+- 👉 [**Hugo community**](https://discourse.gohugo.io)
+
+My site is available [here](https://nicstats.netlify.app/)!
 
 
-My site's available [here](https://nicstats.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cce116fc-b0bf-45ea-a628-ecc11c15d4f4/deploy-status)](https://app.netlify.com/sites/nicstats/deploys)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ac307b97-6e4b-46ca-af7e-d8cd613aac18/deploy-status)](https://app.netlify.com/sites/nicstats/deploys)
+
 
 # wyrfraym
+
