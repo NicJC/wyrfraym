@@ -110,7 +110,7 @@ ul {
 }
 
 li {
-  float: left;
+  float: right;
 }
 
 li a {
@@ -132,5 +132,8 @@ li a:hover:not(.active) {
   background-color: #585339;
   }
 
-
+.btn-primary {
+    color: #fff;
+    background-color: #E8E6DB;
+    border-color: #E8E6DB;
 </style>
