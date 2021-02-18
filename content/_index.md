@@ -4,6 +4,11 @@
 
 <style>
 
+body{
+background-color: #DCD9C9;
+
+}
+
 
 img {
   border-radius: 8px;
