@@ -3,11 +3,6 @@
 <head>
 
 <style>
-
-body{
-   background-color: #f3f4f5;
-   }
-   
 img {
   border-radius: 8px;
 }
@@ -33,6 +28,15 @@ img {
     margin-top: 75px;
   }
 }
+</style>
+
+
+<style>
+
+body{
+   background-color: #f3f4f5;
+   }
+   
 
 
 #txt{
