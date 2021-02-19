@@ -34,7 +34,7 @@ img {
 <style>
 
 body{
-   background-color: #f3f4f5;
+   background-color: #FCFAEF;
    }
    
 
