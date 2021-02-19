@@ -5,7 +5,7 @@
 <style>
 
 body{
-   background-color: #FCFAEF;
+   background-color: #f3f4f5;
    }
    
 img {
