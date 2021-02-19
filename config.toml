@@ -1,7 +1,7 @@
 baseURL = "https://nicstats.netlify.app/"
 languageCode = "en-us"
 title = "Nic Stats"
-npm install esbuild
+
 theme = "wyrfraym"
 
 enableRobotsTXT = true

@@ -1,0 +1,8 @@
+{
+	"compilerOptions": {
+		"baseUrl": "assets",
+		"paths": {
+			"*": ["node_modules/*"]
+		}
+	}
+}
