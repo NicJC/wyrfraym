@@ -5,8 +5,7 @@
 <style>
 
 body{
-background-color: #DCD9C9;
-
+background-color: #F5F5F1;
 }
 
 
