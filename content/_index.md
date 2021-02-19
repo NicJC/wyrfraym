@@ -83,10 +83,10 @@ body{
 <h3><b>My personal interests include:</b></h3>
 <p>
 
- -Maths and Statistics<br>
- -Analytics<br>
- -Data Modeling<br>
- -Analytic programming
+    Maths and Statistics<br>
+    Analytics<br>
+    Data Modeling<br>
+    Analytic programming
 
 <B><H3>About me</H3></B> 
 
