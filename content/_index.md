@@ -16,14 +16,14 @@ img {
 
 @keyframes slidein {
   from {
-    margin-left: 80%;
-    width: 300%;
+    margin-left: 70%;
+    width: 250%;
     margin-top: 10px;
     
    }
  to {
-    margin-left: 30%;
-    width: 300%;
+    margin-left: 40%;
+    width: 250%;
     margin: 140px;
     margin-top: 75px;
   }
