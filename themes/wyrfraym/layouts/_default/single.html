@@ -20,5 +20,12 @@ Created on:</b></p>
     
 
     </div>
+
+{{- $jsFile := .Title | anchorize -}}
+{{- $pathJS := (printf "%s%s%s" "js/posts/" $jsFile ".js" ) -}}
+
+{{- if (fileExists (printf "%s%s" "static/" $pathJS)) -}}
+  <script type="text/javascript" src="{{ $pathJS | absURL }}"></script>
+{{- end -}}
 </aside>
 {{ end }}
