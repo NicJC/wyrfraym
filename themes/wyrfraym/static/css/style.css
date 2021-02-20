@@ -11,7 +11,7 @@ h1.title {
   
 body {
   margin: 0 auto;
-  width: min(1000px, calc(70% + 100px));
+  width: min(1000px, calc(65% + 100px));
 }
 
 h1 {
