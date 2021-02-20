@@ -16,7 +16,7 @@ img {
 
 @keyframes slidein {
   from {
-    margin-left: 60%;
+    margin-left: 55%;
     width: 200%;
     margin-top: 10px;
     
@@ -109,7 +109,7 @@ p {
 
 </div>
 
-<h3><b>My personal interests include:</b></h3>
+<h5><b>My personal interests include:</b></h5>
 <p>
 
 <B><H3>About me</H3></B> 
