@@ -13,12 +13,12 @@ color: #649B92;
 font-style: Rajdhani;
 }
 
+
 .h4:hover{
    width:150%;
    background-color: #92649B;
 	 border-radius: 100px;
 }
-
 
 </style>
 
