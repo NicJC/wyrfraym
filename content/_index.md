@@ -95,7 +95,7 @@ body {
     <div class="card">
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapseOne">
-     <p style="color:grey"><b><p style="font-size:17px">My Interests include:</b></p>
+     <p style="color:#92649B"><b><p style="font-size:17px">My Interests include:</b></p>
         </a>
       </div>
       <div id="collapseOne" class="collapse show" data-parent="#accordion">
@@ -112,7 +112,7 @@ body {
     <div class="card">
       <div class="card-header">
         <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-      <p style="color:grey"><b><p style="font-size:17px">About me:</b></p>
+      <p style="color:#92649B"><b><p style="font-size:17px">About me:</b></p>
       </a>
       </div>
       <div id="collapseTwo" class="collapse" data-parent="#accordion">
