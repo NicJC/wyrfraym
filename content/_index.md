@@ -109,7 +109,7 @@ p {
 
 <div id="txt">
 
-<p><p style="font-size:19px"><b><i>Hi, my name is Nic</i></b></p>
+<p><p style="font-size:22px"><b><i>Hi, my name is Nic</i></b></p>
 
 </div>
 
