@@ -119,7 +119,7 @@ p {
     <div class="card">
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapseOne">
-     <p style="color:grey"><b>     My Interests include:</b></p>
+     <p style="color:grey"><b><p style="font-size:15px">My Interests include:</b></p>
         </a>
       </div>
       <div id="collapseOne" class="collapse show" data-parent="#accordion">
@@ -136,12 +136,22 @@ p {
     <div class="card">
       <div class="card-header">
         <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-        Collapsible Group Item #2
+      <p style="color:grey"><b><p style="font-size:15px">About me:</b></p>
       </a>
       </div>
       <div id="collapseTwo" class="collapse" data-parent="#accordion">
         <div class="card-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<p>
+I love numbers, and I'm truly amazed by how numbers control so many things in our daily lives. 
+I'm particularly fascinated by number distributions, and how certain sequences of numbers are able to predict future outcomes.
+<br>
+I like looking at the fundamental elements of popular trends like linear regression, machine learning, artificial intelligence and the like.
+There are basic building blocks to all of these mathematical concepts.
+<br>
+Probability has a humble beginning in dice rolls and coin tossing, and simple linear regression really is simple, but once the basics are in place, concepts are built upon, and that's when it starts getting more involved. If we had to start talking about linear regression and throw in coefficient of determination, it gets tricky, but working up to, and explaining what this means is pretty straight forward. 
+
+
+</p>
         </div>
       </div>
     </div>
