@@ -90,6 +90,10 @@ color: black;
 color: #9B9264;
 }
 
+.btn btn-about{
+color: #649B92;
+}
+
 
 </style>
 
