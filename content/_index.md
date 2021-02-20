@@ -133,7 +133,9 @@ color: #9B9264;
     <div class="card">
       <div class="card-header">
         <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        <button class="btn btn-about">
       <p style="color:#9B9264"><b><p style="font-size:17px">About me:</b></p>
+      </button>
       </a>
       </div>
       <div id="collapseTwo" class="collapse" data-parent="#accordion">
@@ -198,9 +200,9 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
 
 <script>
 $(document).ready(function(){
-  $('.btn-success').tooltip({title: "Hooray!", trigger: "click"}); 
-  $('.btn-warning').tooltip({title: "Hooray!", trigger: "hover"}); 
-  $('.btn-danger').tooltip({title: "Hooray!", trigger: "focus"}); 
+
+  $('.btn-warning').tooltip({title: "This really interests me", trigger: "hover"}); 
+  $('.btn-about').tooltip({title: "More about me", trigger: "hover"}); 
 });
 </script>
 
