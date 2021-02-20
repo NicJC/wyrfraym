@@ -138,7 +138,7 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
 
 
 #cDiv {
-  width: 180px;
+  width: 170px;
   height: 40px;
   background-color: #81de81;
   border: 1.5px solid black;
@@ -151,7 +151,7 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
 </style>
 
 
-<p><b><H3>Conect with me on:</H3></B></p>
+<p><b><H4>Conect with me on:</H4></B></p>
 
 
 <a href="https://github.com/NicJC" target="_blank">
@@ -166,8 +166,8 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
 
 <div id="cDiv">
 
-<h3><a href="https://codepen.io/nic-coxen" target="_blank">
-  <i class="fab fa-codepen">CODEPEN</i><p style="font-size:12px"><p style="color:black">   </p></h3></a></div>
+<h4><a href="https://codepen.io/nic-coxen" target="_blank">
+  <i class="fab fa-codepen">CODEPEN</i><p style="font-size:12px"><p style="color:black">   </p></h4></a></div>
 
 <center>
 
