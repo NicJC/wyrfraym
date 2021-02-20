@@ -76,7 +76,7 @@ color: #9B9264;
 }
 
 .card-link{
-color: #9B9264;
+color: #649B92;
 }
 
 ##.accordion{
