@@ -184,15 +184,15 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
   <div class="tab-content">
     <div id="home" class="container tab-pane active"><br>
       <h3>R</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>R is a statistical programming language capable of analyzing complex statistical concepts.</p>
     </div>
     <div id="menu1" class="container tab-pane fade"><br>
       <h3>Python</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Python is a very popular programming language and is very popular in areas of machine learning.</p>
     </div>
     <div id="Julia" class="container tab-pane fade"><br>
       <h3>Menu 2</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <p>Julia is a relatively new programming language, and has some really good mathematical capability.</p>
     </div>
   </div>
 </div>
