@@ -77,6 +77,16 @@ h2 {
   font-size: clamp(1.8rem, 2.5vw, 2.8rem);
 }
 
+h3 {
+  letter-spacing: 2px;
+  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+}
+
+h4 {
+  letter-spacing: 2px;
+  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+}
+
 p {
   line-height: 1.5;
   font-size: max(1.2rem, 1.2vw);
