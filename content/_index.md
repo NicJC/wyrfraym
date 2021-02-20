@@ -79,6 +79,14 @@ card-link{
 color: black;
 }
 
+accordion{
+color: black;
+}
+
+card-header{
+color: black;
+}
+
 
 </style>
 
