@@ -119,17 +119,17 @@ p {
     <div class="card">
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapseOne">
-          My Interests include:
+     <p style="color:grey"><b>     My Interests include:</b></p>
         </a>
       </div>
       <div id="collapseOne" class="collapse show" data-parent="#accordion">
         <div class="card-body">
-        
-        - Data
-        - Analyticss
-        - Bla
-        - Bla
-        
+        <p>
+        - Data<br>
+        - Analyticss<br>
+        - Bla<br>
+        - Bla<br>
+        </p>
         </div>
       </div>
     </div>
