@@ -83,7 +83,7 @@ color: #9B9264;
 color: #9B9264;
 }
 
-.card-header{
+##.card-header{
 color: #9B9264;
 }
 
