@@ -94,6 +94,10 @@ color: #9B9264;
 color: #649B92;
 }
 
+.btn-int{
+color: #649B92;
+}
+
 
 </style>
 
