@@ -109,7 +109,7 @@ p {
 
 <div id="txt">
 
-<p><h3><b><i>Hi, my name is Nic</i></b></h3></p>
+<p><p style="font-size:19px"><b><i>Hi, my name is Nic</i></b></p>
 
 </div>
 
@@ -119,16 +119,16 @@ p {
     <div class="card">
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapseOne">
-     <p style="color:grey"><b><p style="font-size:15px">My Interests include:</b></p>
+     <p style="color:grey"><b><p style="font-size:17px">My Interests include:</b></p>
         </a>
       </div>
       <div id="collapseOne" class="collapse show" data-parent="#accordion">
         <div class="card-body">
         <p>
-        - Data<br>
-        - Analyticss<br>
-        - Bla<br>
-        - Bla<br>
+        - Maths and Statistics<br>
+        - Analytics<br>
+        - Data Modeling<br>
+        - Analytic programming
         </p>
         </div>
       </div>
@@ -136,7 +136,7 @@ p {
     <div class="card">
       <div class="card-header">
         <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-      <p style="color:grey"><b><p style="font-size:15px">About me:</b></p>
+      <p style="color:grey"><b><p style="font-size:17px">About me:</b></p>
       </a>
       </div>
       <div id="collapseTwo" class="collapse" data-parent="#accordion">
