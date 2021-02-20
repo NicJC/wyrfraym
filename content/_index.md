@@ -71,6 +71,9 @@ body {
   width: min(1000px, calc(70% + 100px));
 }
 
+card{
+color: black;
+}
 
 
 </style>
