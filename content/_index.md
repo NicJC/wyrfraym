@@ -111,14 +111,14 @@ p {
 
 <h3><b>My personal interests include:</b></h3>
 <p>
-<h4>
+<h5>
     - Maths and Statistics
     - Analytics
     - Data Modeling
     - Analytic programming
-</h4>
+</h5>
 <B><H3>About me</H3></B> 
-
+<p>
 I love numbers, and I'm truly amazed by how numbers control so many things in our daily lives. 
 I'm particularly fascinated by number distributions, and how certain sequences of numbers are able to predict future outcomes.
 
@@ -126,7 +126,7 @@ I like looking at the fundamental elements of popular trends like linear regress
 There are basic building blocks to all of these mathematical concepts.
 
 Probability has a humble beginning in dice rolls and coin tossing, and simple linear regression really is simple, but once the basics are in place, concepts are built upon, and that's when it starts getting more involved. If we had to start talking about linear regression and throw in coefficient of determination, it gets tricky, but working up to, and explaining what this means is pretty straight forward. 
-
+</p>
 
 
 <style>
