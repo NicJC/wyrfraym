@@ -162,7 +162,7 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
 
 
 #cDiv {
-  width: 160px;
+  width: 180px;
   height: 40px;
   background-color: #81de81;
   border: 1.5px solid black;
