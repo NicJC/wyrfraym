@@ -158,6 +158,7 @@ There are basic building blocks to all of these mathematical concepts.
 Probability has a humble beginning in dice rolls and coin tossing, and simple linear regression is a set of averages of a x and y variables.  Once the basics are in place, concepts are built upon, and that's when it starts getting more involved. If we had to start talking about linear regression and throw in coefficient of determination, it gets tricky, but working up to, and explaining what this means is pretty straight forward, and then the whole picture starts coming into view.
 
 
+
 </p>
         </div>
       </div>
