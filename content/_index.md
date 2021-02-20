@@ -90,7 +90,7 @@ color: black;
 color: #9B9264;
 }
 
-.btn.btn-about{
+.btn-about{
 color: #649B92;
 }
 
@@ -117,7 +117,7 @@ color: #649B92;
     <div class="card">
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapseOne">
-     <button class="btn btn-warning">
+     <button class="btn btn-int">
      <p style="color:#9B9264"><b><p style="font-size:17px">My Interests include:</b></p>
      </button>
         </a>
@@ -205,7 +205,7 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
 <script>
 $(document).ready(function(){
 
-  $('.btn-warning').tooltip({title: "This really interests me", trigger: "hover"}); 
+  $('.btn-int').tooltip({title: "This really interests me", trigger: "hover"}); 
   $('.btn-about').tooltip({title: "More about me", trigger: "hover"}); 
 });
 </script>
