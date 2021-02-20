@@ -165,18 +165,18 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
     </div>
     
 
-<h2>Dynamic Tabs</h2>
+<h2>Analytic coding</h2>
   <br>
   <!-- Nav tabs -->
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link active" href="#home">R</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#menu1">Menu 1</a>
+      <a class="nav-link" href="#menu1">Python</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#menu2">Menu 2</a>
+      <a class="nav-link" href="#menu2">Julia</a>
     </li>
   </ul>
 
