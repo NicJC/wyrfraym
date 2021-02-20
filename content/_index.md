@@ -71,19 +71,19 @@ body {
   width: min(1000px, calc(70% + 100px));
 }
 
-card{
+.card{
 color: black;
 }
 
-card-link{
+.card-link{
 color: black;
 }
 
-accordion{
+.accordion{
 color: black;
 }
 
-card-header{
+.card-header{
 color: black;
 }
 
