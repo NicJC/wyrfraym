@@ -111,12 +111,7 @@ p {
 
 <h3><b>My personal interests include:</b></h3>
 <p>
-<h5>
-    - Maths and Statistics
-    - Analytics
-    - Data Modeling
-    - Analytic programming
-</h5>
+
 <B><H3>About me</H3></B> 
 <p>
 I love numbers, and I'm truly amazed by how numbers control so many things in our daily lives. 
