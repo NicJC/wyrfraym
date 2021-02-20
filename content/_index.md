@@ -198,11 +198,13 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
 </div>
 
 <script>
+
 $(document).ready(function(){
   $(".nav-tabs a").click(function(){
     $(this).tab('show');
   });
 });
+
 </script>
 
 
