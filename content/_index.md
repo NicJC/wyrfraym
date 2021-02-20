@@ -69,19 +69,19 @@ body{
 body {
   margin: 0 auto;
   width: min(1000px, calc(70% + 100px));
+  }
+  
+body {
+  font-family: Baloo 2, Roboto, Rajdhani;
 }
 
-##.card{
-color: #9B9264;
-}
+
 
 .card-link{
 color: #649B92;
 }
 
-##.accordion{
-color: #9B9264;
-}
+
 
 .card-header{
 color: #9B9264;
