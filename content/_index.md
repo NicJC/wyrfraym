@@ -62,6 +62,20 @@ body{
   }
 }
 
+body {
+  margin: 0 auto;
+  width: min(1000px, calc(70% + 100px));
+}
+
+h1 {
+  letter-spacing: 2px;
+  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+}
+
+p {
+  line-height: 1.5;
+  font-size: max(1.2rem, 1.2vw);
+}
 
 
 </style>
