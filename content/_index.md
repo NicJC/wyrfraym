@@ -116,21 +116,19 @@ p {
 <div class="container mt-3">
   <h2>Accordion Example</h2>
   <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
-
-<div id="accordion">
+  <div id="accordion">
     <div class="card">
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapseOne">
           Collapsible Group Item #1
         </a>
-         </div>
+      </div>
       <div id="collapseOne" class="collapse show" data-parent="#accordion">
         <div class="card-body">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </div>
       </div>
     </div>
-    
     <div class="card">
       <div class="card-header">
         <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
@@ -149,7 +147,15 @@ p {
           Collapsible Group Item #3
         </a>
       </div>
-
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
 <B><H3>About me</H3></B> 
 <p>
 I love numbers, and I'm truly amazed by how numbers control so many things in our daily lives. 
