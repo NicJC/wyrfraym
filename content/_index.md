@@ -5,7 +5,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 <style>
 img {
   border-radius: 8px;
@@ -71,30 +71,6 @@ body {
   width: min(1000px, calc(70% + 100px));
 }
 
-h1 {
-  letter-spacing: 2px;
-  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
-}
-
-h2 {
-  letter-spacing: 2px;
-  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
-}
-
-h3 {
-  letter-spacing: 2px;
-  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
-}
-
-h4 {
-  letter-spacing: 2px;
-  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
-}
-
-p {
-  line-height: 1.5;
-  font-size: max(1.2rem, 1.2vw);
-}
 
 
 </style>
