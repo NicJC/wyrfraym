@@ -72,6 +72,11 @@ h1 {
   font-size: clamp(1.8rem, 2.5vw, 2.8rem);
 }
 
+h2 {
+  letter-spacing: 2px;
+  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+}
+
 p {
   line-height: 1.5;
   font-size: max(1.2rem, 1.2vw);
@@ -96,12 +101,12 @@ p {
 
 <h3><b>My personal interests include:</b></h3>
 <p>
-
+<h2>
     - Maths and Statistics
     - Analytics
     - Data Modeling
     - Analytic programming
-
+</h2>
 <B><H3>About me</H3></B> 
 
 I love numbers, and I'm truly amazed by how numbers control so many things in our daily lives. 
