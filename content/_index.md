@@ -5,6 +5,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 
 <style>
 img {
@@ -112,10 +113,13 @@ color: #9B9264;
     <div class="card">
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapseOne">
+     <button class="btn btn-warning">
      <p style="color:#9B9264"><b><p style="font-size:17px">My Interests include:</b></p>
+     </button>
         </a>
       </div>
       <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        
         <div class="card-body">
         <p>
         - Maths and Statistics<br>
@@ -191,6 +195,14 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
 <i class="fab fa-creative-commons fa-2x"></i><i class="fab fa-creative-commons-by fa-2x"></i><i class="fab fa-creative-commons-sa fa-2x"></i>
 
 </center>
+
+<script>
+$(document).ready(function(){
+  $('.btn-success').tooltip({title: "Hooray!", trigger: "click"}); 
+  $('.btn-warning').tooltip({title: "Hooray!", trigger: "hover"}); 
+  $('.btn-danger').tooltip({title: "Hooray!", trigger: "focus"}); 
+});
+</script>
 
 </body>
 </head>
