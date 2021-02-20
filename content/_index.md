@@ -72,19 +72,19 @@ body {
 }
 
 .card{
-color: black;
+color: #9B9264;
 }
 
 .card-link{
-color: black;
+color: #9B9264;
 }
 
 .accordion{
-color: black;
+color: #9B9264;
 }
 
 .card-header{
-color: black;
+color: #9B9264;
 }
 
 
