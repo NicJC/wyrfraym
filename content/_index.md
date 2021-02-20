@@ -75,6 +75,10 @@ card{
 color: black;
 }
 
+card-link{
+color: black;
+}
+
 
 </style>
 
