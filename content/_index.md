@@ -79,7 +79,7 @@ color: #9B9264;
 color: #9B9264;
 }
 
-.accordion{
+##.accordion{
 color: #9B9264;
 }
 
