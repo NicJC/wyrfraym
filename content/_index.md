@@ -90,7 +90,7 @@ color: black;
 color: #9B9264;
 }
 
-.btn btn-about{
+.card{
 color: #649B92;
 }
 
