@@ -155,31 +155,7 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
         </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-          Collapsible Group Item #3
-        </a>
-      </div>
-      <div id="collapseThree" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
     
-<B><H3>About me</H3></B> 
-<p>
-I love numbers, and I'm truly amazed by how numbers control so many things in our daily lives. 
-I'm particularly fascinated by number distributions, and how certain sequences of numbers are able to predict future outcomes.
-
-I like looking at the fundamental elements of popular trends like linear regression, machine learning, artificial intelligence and the like.
-There are basic building blocks to all of these mathematical concepts.
-
-Probability has a humble beginning in dice rolls and coin tossing, and simple linear regression really is simple, but once the basics are in place, concepts are built upon, and that's when it starts getting more involved. If we had to start talking about linear regression and throw in coefficient of determination, it gets tricky, but working up to, and explaining what this means is pretty straight forward. 
-</p>
 
 
 <style>
