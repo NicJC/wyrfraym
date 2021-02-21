@@ -24,9 +24,9 @@ font-style: Rajdhani;
 
 </style>
 
-
+<hr>
 <p><b><H4>Analytic coding:</H4></B></p>
-
+<hr>
 
 
 
