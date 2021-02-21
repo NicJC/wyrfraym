@@ -98,6 +98,10 @@ color: #649B92;
 color: #649B92;
 }
 
+.nav-item{
+color: red;
+}
+
 
 </style>
 
@@ -165,7 +169,7 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
     </div>
     
 
-<h2>Analytic coding</h2>
+<h3>Analytic coding</h3>
   <br>
   <!-- Nav tabs -->
   <ul class="nav nav-tabs">
