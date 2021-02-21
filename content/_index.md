@@ -98,9 +98,7 @@ color: #649B92;
 color: #649B92;
 }
 
-.nav-item{
-color: red;
-}
+
 
 
 </style>
