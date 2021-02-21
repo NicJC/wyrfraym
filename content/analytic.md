@@ -91,27 +91,19 @@ ul li .active {
 
 <body>
 
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#FCFAF8;width:500px;height:10px;padding:20px;"><b>
+Analytical programming</div>
+</b>
+<script>
+function mOver(obj) {
+  obj.innerHTML = "Python, R and Julia"
+}
 
-<p><h4>Julia</h4></p>
-<p><h4>Python</h4></p>
-<p><h4>R</h4></p>
-
-<div class="container mt-3">
-  <h2>Analytic </h2>
-                                         
-  <div class="Analytic coding">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-      Dropdown button
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="/">Julia</a>
-      <a class="dropdown-item" href="/">Python</a>
-      <a class="dropdown-item" href="/">R</a>
-    </div>
-  </div>
-</div>
-
-
+function mOut(obj) {
+  obj.innerHTML = "There are 3 awesome programming languages that are good for Analytics"
+}
+</script>
 
 </body>
 </head>
