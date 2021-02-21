@@ -15,17 +15,11 @@ layout: analytics
 
 <style>
 
-.pic{
-border-radius: 8px;
-}
-
-
 body{
- background-image: url("images/mathbanner.png");
- background-repeat: repeat-x;
+   background-image: url("images/mathbanner.png");
+   background-repeat: repeat-x;
 }
 
-}
 
 body{
 background-color: #FCFAF8;
@@ -112,51 +106,10 @@ ul li .active {
 <p><h4>Python</h4></p>
 <p><h4>R</h4></p>
 
-<div id="pic">
 
-<img src="/images/mathbanner.jpg"  />
 
-</div>
-<div class="container mt-3">
-  <h2>Dynamic Tabs</h2>
-  <br>
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#home">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#menu1">Menu 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#menu2">Menu 2</a>
-    </li>
-  </ul>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div id="home" class="container tab-pane active"><br>
-      <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div id="menu1" class="container tab-pane fade"><br>
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div id="menu2" class="container tab-pane fade"><br>
-      <h3>Menu 2</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-    </div>
-  </div>
-</div>
 
-<script>
-$(document).ready(function(){
-  $(".nav-tabs a").click(function(){
-    $(this).tab('show');
-  });
-});
-</script>
 
 
 </body>
