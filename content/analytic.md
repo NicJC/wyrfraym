@@ -97,27 +97,24 @@ ul li .active {
 <p><h4>R</h4></p>
 
 <div class="container mt-3">
-  <h2>Dropdowns</h2>
-  <p>The .dropdown class is used to indicate a dropdown menu.</p>
-  <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
-  <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>                                          
-  <div class="dropdown">
+  <h2>Analytic </h2>
+                                         
+  <div class="Analytic coding">
     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
       Dropdown button
     </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Link 1</a>
-      <a class="dropdown-item" href="#">Link 2</a>
-      <a class="dropdown-item" href="#">Link 3</a>
+      <a class="dropdown-item" href="/">Julia</a>
+      <a class="dropdown-item" href="/">Python</a>
+      <a class="dropdown-item" href="/">R</a>
     </div>
   </div>
 </div>
 
 
 
-
-
 </body>
+</head>
 
 
 
