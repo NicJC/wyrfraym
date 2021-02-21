@@ -9,17 +9,8 @@ layout: analytics
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-
-
 
 <style>
-
-body{
-   background-image: url("images/mathbanner.png");
-   background-repeat: repeat-x;
-}
-
 
 body{
 background-color: #FCFAF8;
@@ -104,6 +95,24 @@ ul li .active {
 <p><h4>Julia</h4></p>
 <p><h4>Python</h4></p>
 <p><h4>R</h4></p>
+
+<div class="container mt-3">
+  <h2>Dropdowns</h2>
+  <p>The .dropdown class is used to indicate a dropdown menu.</p>
+  <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+  <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>                                          
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div>
+  </div>
+</div>
+
 
 
 
