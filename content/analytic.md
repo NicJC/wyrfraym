@@ -24,11 +24,17 @@ h3{
 color: #9B9264;
 }
 
-
-
-
 .h3:hover{
    background-color: #92649B;
+}
+
+
+h4{
+color: #649B92;
+}
+
+.h4:hover{
+   background-color: black;
 }
 
 
@@ -70,13 +76,8 @@ ul li .active {
 <p><b><H3>Analytic coding:</H3></B></p>
 <hr>
 
-<body>
 
-<p><h4>Julia</h4></p>
-<p><h4>Python</h4></p>
-<p><h4>R</h4></p>
 
-<b>
 <ul><h2>
   <li><a href="/">Home</a></li>
   <li><a href="/posts/">Posts</a></li>
@@ -84,47 +85,16 @@ ul li .active {
   <li><a href="#about">About</a></li>
 </ul></b></h2>
 
-<h3>Analytic coding</h3>
-  <br>
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#home">R</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#menu1">Python</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#menu2">Julia</a>
-    </li>
-  </ul>
+</head>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div id="home" class="container tab-pane active"><br>
-      <h3>R</h3>
-      <p>R is a statistical programming language capable of analyzing complex statistical concepts.</p>
-    </div>
-    <div id="menu1" class="container tab-pane fade"><br>
-      <h3>Python</h3>
-      <p>Python is a very popular programming language and is very popular in areas of machine learning.</p>
-    </div>
-    <div id="menu2" class="container tab-pane fade"><br>
-      <h3>Julia</h3>
-      <p>Julia is a relatively new programming language, and has some really good mathematical capability.</p>
-    </div>
-  </div>
-</div>
+<body>
 
-<script>
+<body>
 
-$(document).ready(function(){
-  $(".nav-tabs a").click(function(){
-    $(this).tab('show');
-  });
-});
+<p><h4>Julia</h4></p>
+<p><h4>Python</h4></p>
+<p><h4>R</h4></p>
 
-</script>
 
 
 <style>
