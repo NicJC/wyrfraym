@@ -191,7 +191,7 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
       <p>Python is a very popular programming language and is very popular in areas of machine learning.</p>
     </div>
     <div id="menu2" class="container tab-pane fade"><br>
-      <h3>Menu 2</h3>
+      <h3>Julia</h3>
       <p>Julia is a relatively new programming language, and has some really good mathematical capability.</p>
     </div>
   </div>
