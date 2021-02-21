@@ -14,22 +14,5 @@
     <section>
 <p><b>
 
-Created on:</b></p>
-      <h6 id="date"> {{ .Date.Format "Mon, Jan 2, 2006" }} </h6>
-      
-    </section>
-    
-    
-
-    </div>
-
-{{- $jsFile := .Title | anchorize -}}
-{{- $pathJS := (printf "%s%s%s" "js/posts/" $jsFile ".js" ) -}}
-
-{{- if (fileExists (printf "%s%s" "static/" $pathJS)) -}}
-  <script type="text/javascript" src="{{ $pathJS | absURL }}"></script>
-{{- end -}}
 </aside>
 {{ end }}
-</body>
-</html>
