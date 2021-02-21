@@ -98,11 +98,8 @@ color: #649B92;
 color: #649B92;
 }
 
-.nav-tabs{
-list-style-type: none; 
-  overflow: hidden; 
-  width:200px;
-  float: right;
+.nav-tabs {
+float: center;
 }
 
 </style>
