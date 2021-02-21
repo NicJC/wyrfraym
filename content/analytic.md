@@ -28,6 +28,15 @@ font-style: Rajdhani;
 <p><b><H4>Analytic coding:</H4></B></p>
 <hr>
 
+<b>
+<ul><h2>
+  <li><a href="/">Home</a></li>
+  <li><a href="/posts/">Posts</a></li>
+  <li><a href="/analytic/">Analytics</a></li>
+  <li><a href="#about">About</a></li>
+</ul></b></h2>
+
+
 <!-- Nav tabs -->
   <ul class="nav nav-tabs">
     <li class="nav-item">
