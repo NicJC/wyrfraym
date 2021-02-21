@@ -7,19 +7,21 @@ layout: analytics
 
 <style>
 
-h4{
+h3{
 color: #649B92;
 font-style: Rajdhani;
 }
 
-
-.h4:hover{
-   width:150%;
-   background-color: #92649B;
-	 border-radius: 100px;
+h3{
+color: #9B9264;
 }
 
 
+
+
+.h3:hover{
+   background-color: #92649B;
+}
 
 
 ul { 
@@ -27,8 +29,8 @@ ul {
   overflow: hidden; 
   width:200px;
   float: right;
-  
 }
+
 
 ul li {
   width: 120px;
@@ -57,8 +59,14 @@ ul li .active {
 </style>
 
 <hr>
-<p><b><H4>Analytic coding:</H4></B></p>
+<p><b><H3>Analytic coding:</H3></B></p>
 <hr>
+
+<body>
+
+<p><h4>Julia</h4></p>
+<p><h4>Python</h4></p>
+<p><h4>R</h4></p>
 
 <b>
 <ul><h2>
