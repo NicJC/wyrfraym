@@ -302,6 +302,50 @@ function mOut(obj) {
 </script>
 </h2>
 </head>
+<body>
+<h3>
+Analytic coding
+</h3>
+<br> <!-- Nav tabs -->
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<a class="nav-link active" href="#home">R</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#menu1">Python</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#menu2">Julia</a>
+</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<pre><code>&lt;div id=&quot;home&quot; class=&quot;container tab-pane active&quot;&gt;&lt;br&gt;
+  &lt;h3&gt;R&lt;/h3&gt;
+  &lt;p&gt;R is a statistical programming language capable of analyzing complex statistical concepts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&quot;menu1&quot; class=&quot;container tab-pane fade&quot;&gt;&lt;br&gt;
+  &lt;h3&gt;Python&lt;/h3&gt;
+  &lt;p&gt;Python is a very popular programming language and is very popular in areas of machine learning.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&quot;menu2&quot; class=&quot;container tab-pane fade&quot;&gt;&lt;br&gt;
+  &lt;h3&gt;Julia&lt;/h3&gt;
+  &lt;p&gt;Julia is a relatively new programming language, and has some really good mathematical capability.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<script>
+
+$(document).ready(function(){
+  $(".nav-tabs a").click(function(){
+    $(this).tab('show');
+  });
+});
+
+</script>
+</body>
+</head>
+</html>
 
 
 

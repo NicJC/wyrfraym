@@ -105,8 +105,51 @@ function mOut(obj) {
 
 </head>
 
+<body>
 
+<h3>Analytic coding</h3>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#home">R</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#menu1">Python</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#menu2">Julia</a>
+    </li>
+  </ul>
 
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <h3>R</h3>
+      <p>R is a statistical programming language capable of analyzing complex statistical concepts.</p>
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Python</h3>
+      <p>Python is a very popular programming language and is very popular in areas of machine learning.</p>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Julia</h3>
+      <p>Julia is a relatively new programming language, and has some really good mathematical capability.</p>
+    </div>
+  </div>
+</div>
 
+<script>
 
+$(document).ready(function(){
+  $(".nav-tabs a").click(function(){
+    $(this).tab('show');
+  });
+});
+
+</script>
+
+</body>
+</head>
+</html>
 
