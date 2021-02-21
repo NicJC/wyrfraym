@@ -8,6 +8,7 @@
   
 
 <style>
+
 img {
   border-radius: 8px;
 }
@@ -26,6 +27,7 @@ img {
     margin-top: 10px;
     
    }
+   
  to {
     margin-left: 40%;
     width: 200%;
@@ -42,8 +44,6 @@ body{
    background-color: #FCFAF8;
    }
    
-
-
 #txt{
   
   margin: 70px;
@@ -98,8 +98,12 @@ color: #649B92;
 color: #649B92;
 }
 
-
-
+.nav-tabs{
+list-style-type: none; 
+  overflow: hidden; 
+  width:200px;
+  float: right;
+}
 
 </style>
 
@@ -210,10 +214,6 @@ $(document).ready(function(){
 </script>
 
 
-
-
-
-
 <style>
 
 
@@ -225,8 +225,6 @@ $(document).ready(function(){
   border-radius: 8px;
   color: black;
 }
-
-
 
 </style>
 
