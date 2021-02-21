@@ -101,13 +101,9 @@ ul li .active {
 <body>
 
 
-
 <p><h4>Julia</h4></p>
 <p><h4>Python</h4></p>
 <p><h4>R</h4></p>
-
-
-
 
 
 
