@@ -90,7 +90,7 @@ ul li .active {
 </head>
 
 <body>
-
+<h3>
 <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
 style="background-color:#FCFAF8;width:500px;height:10px;padding:20px;"><b>
 Analytical programming</div>
@@ -103,7 +103,7 @@ function mOver(obj) {
 function mOut(obj) {
   obj.innerHTML = "There are 3 awesome programming languages that are good for Analytics"
 }
-</script>
+</script></h3>
 
 
 
