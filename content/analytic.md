@@ -19,6 +19,39 @@ font-style: Rajdhani;
 	 border-radius: 100px;
 }
 
+
+ul { 
+  list-style-type: none; 
+  overflow: hidden; 
+  width:200px;
+  float: right;
+  
+}
+
+ul li {
+  width: 120px;
+}
+    
+ul li a {
+  display: block;
+  color: #4de4cb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+
+ul li .active {
+  background-color: #FCFAF8;
+  color: black;
+  font-weight: 1000;
+  border-radius: 8px;
+}
+
+
+
 </style>
 
 <hr>
