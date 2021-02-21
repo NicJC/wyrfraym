@@ -256,6 +256,8 @@ $(document).ready(function(){
   $('.btn-int').tooltip({title: "This really interests me", trigger: "hover"}); 
   $('.btn-about').tooltip({title: "More about me", trigger: "hover"}); 
 });
+
+
 </script>
 
 </body>
