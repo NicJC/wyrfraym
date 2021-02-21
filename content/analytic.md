@@ -15,6 +15,23 @@ layout: analytics
 
 <style>
 
+.pic{
+border-radius: 8px;
+}
+
+
+body{
+ background-image: url("images/mathbanner.png");
+ background-repeat: repeat-x;
+}
+
+}
+
+body{
+background-color: #FCFAF8;
+
+}
+
 h3{
 color: #649B92;
 font-style: Rajdhani;
@@ -95,7 +112,11 @@ ul li .active {
 <p><h4>Python</h4></p>
 <p><h4>R</h4></p>
 
+<div id="pic">
 
+<img src="/images/mathbanner.jpg"  />
+
+</div>
 
 
 
