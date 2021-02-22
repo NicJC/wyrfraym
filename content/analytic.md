@@ -40,12 +40,7 @@ color: #649B92;
 }
 
 
-ul { 
-  list-style-type: none; 
-  overflow: hidden; 
-  width:200px;
-  float: right;
-}
+
 
 
 ul li {
