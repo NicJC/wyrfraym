@@ -40,9 +40,6 @@ color: #649B92;
 }
 
 
-
-
-
 ul li {
   width: 120px;
 }
@@ -55,7 +52,6 @@ ul li a {
   text-decoration: none;
   font-size: 18px;
 }
-
 
 
 ul li .active {
@@ -84,7 +80,7 @@ ul li .active {
 
 
 
-<h2 onmouseover="mOver(this)" onmouseout="mOut(this)" 
+<h3 onmouseover="mOver(this)" onmouseout="mOut(this)" 
 style="background-color:#FCFAF8;width:500px;height:10px;padding:20px;"><b>
 Analytical programming
 </b>
@@ -96,7 +92,7 @@ function mOver(obj) {
 function mOut(obj) {
   obj.innerHTML = "There are 3 awesome programming languages that are good for Analytics"
 }
-</script></h2>
+</script></h3>
 
 </head>
 
