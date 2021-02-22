@@ -9,6 +9,11 @@
 
 <style>
 
+body{
+   background-image: url("images/mathbanner1.png");
+   background-repeat: no-repeat;
+}
+
 img {
   border-radius: 8px;
 }
