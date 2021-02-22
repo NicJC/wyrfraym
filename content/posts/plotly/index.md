@@ -8,4 +8,3 @@ tags:["plotly","R","visualisation"]
 
 
 
-{{/*< plotly json="/plotly/plotly-hugo/scatter3d.json" height="400px" >*/}}
