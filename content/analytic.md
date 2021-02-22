@@ -3,7 +3,7 @@ title: ""
 date: 2021-02-21T10:59:27+13:00
 layout: analytics
 ---
-<html>
+
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,7 +14,11 @@ layout: analytics
 #pic{
    background-repeat: repeat-x;
 }
+</style>
 
+<body>
+
+<style>
 
 body{
 background-color: #FCFAF8;
@@ -69,7 +73,7 @@ ul li .active {
 </style>
 
 <h3 onmouseover="mOver(this)" onmouseout="mOut(this)" 
-style="background-color:#FCFAF8;width:500px;height:10px;padding:20px;"><b>
+style="background-color:#FCFAF8;width:750px;height:10px;padding:20px;"><b>
 Analytical programming
 </b>
 <script>
@@ -84,7 +88,7 @@ function mOut(obj) {
 
 </head>
 
-<body>
+
 <br>
 <br>
 <style>
