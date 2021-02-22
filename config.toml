@@ -38,5 +38,5 @@ reading_time = true
     name = "Get in touch"
     url = "/contact"
 
-
+preserveTaxonomyNames = true
 
