@@ -23,7 +23,7 @@ font-style: Rajdhani;
 }
 
 h3{
-color: #9B9264;
+color: #649B92;
 }
 
 .h3:hover{
@@ -62,18 +62,7 @@ ul li .active {
 }
 
 
-
 </style>
-
-<hr>
-<p><b><H3>Analytic coding:</H3></B></p>
-<hr>
-
-
-
-
-
-
 
 <h3 onmouseover="mOver(this)" onmouseout="mOut(this)" 
 style="background-color:#FCFAF8;width:500px;height:10px;padding:20px;"><b>
