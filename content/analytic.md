@@ -12,8 +12,7 @@ layout: analytics
 
 <style>
 
-body{
-   background-image: url("images/mathbanner.png");
+#pic{
    background-repeat: repeat-x;
 }
 
@@ -165,7 +164,7 @@ function mOut(obj) {
 
 <div class="A">
 <div class="Acardbody">
-<h6 class="Acardtitle">Visualisation</h6></div>
+<h6 class="Acardtitle">R programming</h6></div>
 <a href="https://nicstats.netlify.app/tags/visualisation/" target="_blank" rel="noopener">
 <img src="/images/rproject.png"/></a>
 
@@ -183,14 +182,18 @@ function mOut(obj) {
   
 <div class="C">
 <div class="Ccardbody">
-<h6 class="Ccardtitle">Jupyter Notebook</h6></div>
+<h6 class="Ccardtitle">Julia</h6></div>
 <a href="https://nicstats.netlify.app/tags/jupyter/">
 <img src="/images/julia.png"/></a>
 
 </div>
 
 </div>
+<div id="pic">
 
+<img src="/images/mathbanner.png"  />
+
+</div>
 </body>
 </head>
 
