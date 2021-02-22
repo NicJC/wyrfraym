@@ -4,12 +4,7 @@ date: 2021-02-21T10:59:27+13:00
 layout: analytics
 ---
 
-<header>
-<style>
-#pic{
-   background-repeat: repeat-x;
-}
-</style>
+
 </header>
 
 <head>
@@ -19,6 +14,10 @@ layout: analytics
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <style>
+
+#pic{
+   background-repeat: repeat-x;
+}
 
 body{
 background-color: #FCFAF8;
