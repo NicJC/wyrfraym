@@ -13,6 +13,11 @@ layout: analytics
 <style>
 
 body{
+   background-image: url("images/mathbanner.png");
+   background-repeat: repeat-x;
+}
+
+body{
 background-color: #FCFAF8;
 
 }
