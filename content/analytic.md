@@ -167,7 +167,7 @@ function mOut(obj) {
 <div class="Acardbody">
 <h6 class="Acardtitle">Visualisation</h6></div>
 <a href="https://nicstats.netlify.app/tags/visualisation/" target="_blank" rel="noopener">
-<img src="https://img.icons8.com/plasticine/100/4a90e2/combo-chart.png"/></a>
+<img src="/images/rproject.png"/></a>
 
 </div>
 
@@ -185,7 +185,7 @@ function mOut(obj) {
 <div class="Ccardbody">
 <h6 class="Ccardtitle">Jupyter Notebook</h6></div>
 <a href="https://nicstats.netlify.app/tags/jupyter/">
-<img src="/images/jupyter.png"/></a>
+<img src="/images/julia.png"/></a>
 
 </div>
 
