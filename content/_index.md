@@ -271,11 +271,7 @@ $(document).ready(function(){
 
 </script>
 
-<ul id="all-tags">
-  {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-    <li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
-  {{ end }}
-</ul>
+
 
 </body>
 </head>
