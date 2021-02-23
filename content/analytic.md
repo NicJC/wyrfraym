@@ -14,6 +14,7 @@ layout: analytics
 
 #pic{
    background-repeat: repeat-x;
+   width: 800px;
 }
 
 </style>
