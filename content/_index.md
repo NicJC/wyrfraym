@@ -31,10 +31,7 @@ img {
     width: 200%;
     margin-top: 10px;
    }
-   
-.tag-cloud{
- border: 1.5px solid black;
-}  
+ 
    
    
  to {
@@ -177,7 +174,7 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
     </div>
     
 
-<h3>Content</h3>
+<h4>Visualization</h4>
   <br>
   <!-- Nav tabs -->
   <ul class="nav nav-tabs">
