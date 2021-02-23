@@ -30,8 +30,12 @@ img {
     margin-left: 55%;
     width: 200%;
     margin-top: 10px;
-    
    }
+   
+.tag-cloud{
+ border: 1.5px solid black;
+}  
+   
    
  to {
     margin-left: 40%;
