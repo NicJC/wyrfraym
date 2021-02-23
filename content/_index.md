@@ -218,6 +218,11 @@ $(document).ready(function(){
 
 <style>
 
+#tags{
+width: 175px;
+}
+
+
 
 #cDiv {
   width: 170px;
@@ -254,6 +259,30 @@ $(document).ready(function(){
 <i class="fab fa-creative-commons fa-2x"></i><i class="fab fa-creative-commons-by fa-2x"></i><i class="fab fa-creative-commons-sa fa-2x"></i>
 
 </center>
+
+<div class="tags">
+
+{{ if ne (len $.Site.Taxonomies.tags) 0 }}
+      {{ $largestFontSize := 1.4 }}
+      {{ $smallestFontSize := 1.0 }}
+      {{ $fontSpread := sub $largestFontSize $smallestFontSize }}
+      {{ $max := add (len (index $.Site.Taxonomies.tags.ByCount 0).Pages) 1 }}
+      {{ $min := len (index $.Site.Taxonomies.tags.ByCount.Reverse 0).Pages }}
+      {{ $spread := sub $max $min }}
+      {{ $fontStep := div $fontSpread $spread }}
+        {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
+          {{ $tagCount := len $taxonomy.Pages }}
+          {{ $currentFontSize := (add $smallestFontSize (mul (sub $tagCount $min) $fontStep) ) }}
+          {{ $weigth := div (sub (math.Log $tagCount) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
+          {{ $currentFontSize := (add $smallestFontSize (mul (sub $largestFontSize $smallestFontSize) $weigth)) }}
+            <a href="{{ "/tags/" | relURL }}{{ $name | urlize }}" 
+            class="tagcloud-item" style="font-size: {{ $currentFontSize }}rem;">
+              {{ $name }}<sup>{{ $tagCount }}</sup>
+            </a>
+        {{ end }}
+    {{ end }}
+
+</div>
 
 <script>
 $(document).ready(function(){
