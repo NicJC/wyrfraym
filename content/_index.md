@@ -191,15 +191,15 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
   <!-- Tab panes -->
   <div class="tab-content">
     <div id="home" class="container tab-pane active"><br>
-      <h3>R</h3>
+      <h3>Julia plotting</h3>
       <p>PGadfly is a plotting library for Julia </p>
     </div>
     <div id="menu1" class="container tab-pane fade"><br>
-      <h3>Python</h3>
+      <h3>R plotting</h3>
       <p>ggplot is an R graphics library.</p>
     </div>
     <div id="menu2" class="container tab-pane fade"><br>
-      <h3>Julia</h3>
+      <h3>Python plotting</h3>
       <p>Seaborn is one of Python's plotting libraries.</p>
     </div>
   </div>
