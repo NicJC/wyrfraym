@@ -254,11 +254,7 @@ width: 175px;
 <h4><a href="https://codepen.io/nic-coxen" target="_blank">
   <i class="fab fa-codepen">CODEPEN</i><p style="font-size:12px"><p style="color:black">   </p></h4></a></div>
 
-<center>
 
-<i class="fab fa-creative-commons fa-2x"></i><i class="fab fa-creative-commons-by fa-2x"></i><i class="fab fa-creative-commons-sa fa-2x"></i>
-
-</center>
 
 
 <script>
@@ -271,6 +267,7 @@ $(document).ready(function(){
 
 </script>
 
+<p><b><H3>Tags:</H3></B></p>
 
 
 </body>
