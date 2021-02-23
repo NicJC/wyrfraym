@@ -256,8 +256,6 @@ width: 175px;
   <i class="fab fa-codepen">CODEPEN</i><p style="font-size:12px"><p style="color:black">   </p></h4></a></div>
 
 
-
-
 <script>
 $(document).ready(function(){
 
