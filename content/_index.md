@@ -173,18 +173,18 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
     </div>
     
 
-<h3>Analytic coding</h3>
+<h3>Content</h3>
   <br>
   <!-- Nav tabs -->
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" href="#home">R</a>
+      <a class="nav-link active" href="#home">Gadfly</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#menu1">Python</a>
+      <a class="nav-link" href="#menu1">ggplot</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#menu2">Julia</a>
+      <a class="nav-link" href="#menu2">Seaborn</a>
     </li>
   </ul>
 
@@ -192,15 +192,15 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
   <div class="tab-content">
     <div id="home" class="container tab-pane active"><br>
       <h3>R</h3>
-      <p>R is a statistical programming language capable of analyzing complex statistical concepts.</p>
+      <p>PGadfly is a plotting library for Julia </p>
     </div>
     <div id="menu1" class="container tab-pane fade"><br>
       <h3>Python</h3>
-      <p>Python is a very popular programming language and is very popular in areas of machine learning.</p>
+      <p>ggplot is an R graphics library.</p>
     </div>
     <div id="menu2" class="container tab-pane fade"><br>
       <h3>Julia</h3>
-      <p>Julia is a relatively new programming language, and has some really good mathematical capability.</p>
+      <p>Seaborn is one of Python's plotting libraries.</p>
     </div>
   </div>
 </div>
