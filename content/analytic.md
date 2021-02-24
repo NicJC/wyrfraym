@@ -6,16 +6,8 @@ layout: analytics
 
 <head>
 <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="3D Thumbnail Hover Effects" />
-        <meta name="keywords" content="3d, 3dtransform, hover, effect, thumbnail, overlay, curved, folded" />
-        <meta name="author" content="Codrops" />
-        <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/style_common.css" />
-        <link rel="stylesheet" type="text/css" href="css/style1.css" />
         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
 		<script type="text/javascript" src="js/modernizr.custom.69142.js"></script> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -215,34 +207,7 @@ function mOut(obj) {
 </div>
 
 <!--flexbox end -->
-			
-<div id="grid" class="main">
-<div class="view">
-<div class="view-back">
-<span data-icon="A">566</span>
-<span data-icon="B">124</span>
-
-</div>
-<img src="images/1.jpg" />
-</div>
-
-		<script type="text/javascript">	
-			
-			Modernizr.load({
-				test: Modernizr.csstransforms3d && Modernizr.csstransitions,
-				yep : ['http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','js/jquery.hoverfold.js'],
-				nope: 'css/fallback.css',
-				callback : function( url, result, key ) {
-						
-					if( url === 'js/jquery.hoverfold.js' ) {
-				$( '#grid' ).hoverfold();
-					}
-
-				}
-			});
-				
-		</script>
-
+<i class="fa fa-cog fa-spin"></i>			
 
 </body>
 </head>
