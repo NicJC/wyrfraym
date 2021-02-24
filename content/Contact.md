@@ -122,7 +122,7 @@ ul li .active {
 }
 
 .flip-card-back {
-  background-color: #9B9264;
+  background-color: azure;
   color: white;
   transform: rotateY(180deg);
     font-size: 150%;
