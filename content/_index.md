@@ -219,9 +219,7 @@ $(document).ready(function(){
 
 <style>
 
-#tags{
-width: 175px;
-}
+
 
 
 
