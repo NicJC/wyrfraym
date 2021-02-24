@@ -118,6 +118,8 @@ ul li .active {
 
 </style>
 
+<body>
+
 <p><b><H4>Conect with me on:</H4></B></p>
 
 <a href="https://github.com/NicJC" target="_blank">
@@ -137,12 +139,12 @@ ul li .active {
 
 <i class="fa fa-cog fa-spin"></i>
 
-
 <div id="pic">
 
 <img src="/images/mathbanner.png"  />
 
 </div>
+
 
 <h1>Card Flip with Text</h1>
 <h3>Hover over the image below:</h3>
