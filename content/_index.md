@@ -218,9 +218,10 @@ $(document).ready(function(){
 
 
 <p><b><H3>Tags:</H3></B></p>
-
+<wbr>
 
 <script>
+
 $(document).ready(function(){
 
   $('.btn-int').tooltip({title: "This really interests me", trigger: "hover"}); 
