@@ -221,7 +221,7 @@ function mOut(obj) {
 <div class="view-back">
 <span data-icon="A">566</span>
 <span data-icon="B">124</span>
-<a href="http://www.flickr.com/photos/ag2r/5439506585/in/photostream">&rarr;</a>
+
 </div>
 <img src="images/1.jpg" />
 </div>
