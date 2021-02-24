@@ -217,7 +217,7 @@ $(document).ready(function(){
 </script>
 
 
-<br>
+<p><b><H3>Tags:</H3></B></p>
 
 
 <script>
@@ -230,7 +230,7 @@ $(document).ready(function(){
 
 </script>
 
-<p><b><H3>Tags:</H3></B></p>
+
 
 
 </body>
