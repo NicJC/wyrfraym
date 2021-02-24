@@ -17,6 +17,16 @@ layout: analytics
    width: 800px;
 }
 
+</style>
+
+<div id="pic">
+
+<img src="/images/mathbanner.png"  />
+
+</div>
+
+<style>
+
 body{
 background-color: #FCFAF8;
 
@@ -152,12 +162,12 @@ ul li .active {
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+     <img src="/images/avatar.jpg" style="width:300px;height:300px;">
     </div>
     <div class="flip-card-back">
-      <h1>John Doe</h1> 
-      <p>Architect & Engineer</p> 
-      <p>We love that guy</p>
+      <h1>Nic Coxen</h1> 
+      <p>Business Intelligence Analyst</p> 
+      <p>Love this guy!</p>
     </div>
   </div>
 </div>
