@@ -15,7 +15,7 @@ layout: analytics
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/style_common.css" />
         <link rel="stylesheet" type="text/css" href="css/style1.css" />
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
+        
         <link rel="stylesheet" type="text/css" href="/css/style.css">
 		<script type="text/javascript" src="js/modernizr.custom.69142.js"></script> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
