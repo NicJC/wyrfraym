@@ -225,32 +225,7 @@ function mOut(obj) {
 </div>
 <img src="images/1.jpg" />
 </div>
-<div class="view">
-					<div class="view-back">
-						<span data-icon="A">210</span>
-						<span data-icon="B">102</span>
-						<a href="http://www.flickr.com/photos/ag2r/5629018757/in/photostream">&rarr;</a>
-					</div>
-					<img src="images/2.jpg" />
-				</div>
-				<div class="view">
-					<div class="view-back">
-						<span data-icon="A">690</span>
-						<span data-icon="B">361</span>
-						<a href="http://www.flickr.com/photos/ag2r/6271521984/in/photostream">&rarr;</a>
-					</div>
-					<img src="images/3.jpg" />
-				</div>
-				<div class="view">
-					<div class="view-back">
-						<span data-icon="A">987</span>
-						<span data-icon="B">130</span>
-						<a href="http://www.flickr.com/photos/ag2r/6131126901/in/photostream">&rarr;</a>
-					</div>
-					<img src="images/4.jpg" />
-				</div>
-			</div>
-        </div>
+
 		<script type="text/javascript">	
 			
 			Modernizr.load({
