@@ -17,16 +17,6 @@ layout: analytics
    width: 800px;
 }
 
-</style>
-
-<div id="pic">
-
-<img src="/images/mathbanner.png"  />
-
-</div>
-
-<style>
-
 body{
 background-color: #FCFAF8;
 
@@ -87,10 +77,7 @@ ul li .active {
 
 </style>
 
-
 <p><b><H4>Conect with me on:</H4></B></p>
-
-
 
 <a href="https://github.com/NicJC" target="_blank">
   <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=azure alt=github style="margin-bottom: 8px;" />
@@ -108,5 +95,11 @@ ul li .active {
   <i class="fab fa-codepen">CODEPEN</i><p style="font-size:12px"><p style="color:black">   </p></h4></a></div>
 
 <i class="fa fa-cog fa-spin"></i>
+
 <!--CSS and JS Card -->
 
+<div id="pic">
+
+<img src="/images/mathbanner.png"  />
+
+</div>
