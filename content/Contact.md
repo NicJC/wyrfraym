@@ -181,7 +181,7 @@ span {
 
 .front {
   background-color: #024395;
-  background-image: url('https://img-fotki.yandex.ru/get/194550/29644339.5/0_d6c5f_c9f15850_orig');
+  
 }
 
 .f_title {
@@ -280,7 +280,7 @@ span {
 .s_arrow {
   width: 52px;
   height: 52px;
-  background-image: url('https://img-fotki.yandex.ru/get/194549/29644339.5/0_d6c60_1d7815f0_orig');
+  
   background-color: transparent;
   transition: all 0.35s linear;
 }
@@ -316,15 +316,15 @@ span {
   <div class='flip_box'>
 
     <div class='front'>
-      <p class='f_title'>Property insurance</p>
+      <p class='f_title'>Nic Coxen</p>
       <p class='f_subline'>Pack</p>
-      <h1 class='f_headline'>Absolute safety</h1>
+      <h1 class='f_headline'>Get in touch</h1>
     </div>
 
     <div class='back'>
-      <h1 class='b_headline'>Absolute safety</h1>
-      <p class='b_text'>Comprehensive insurance of apartments<br />including structural elements, decoration,<br /> equipment, property and responsibility<br />to neighbors in the expanded package<br />insurance risks</p>
-      <button class='b_button'><span>Buy now</span></button>
+      <h1 class='b_headline'>Get in touch</h1>
+      <p class='b_text'>Hi,<br />welcome to my site,<br /> feel free to either follow me or<br />check out my links<br />or codepen</p>
+      <button class='b_button'><span>Yo!</span></button>
     </div>
 
   </div>
