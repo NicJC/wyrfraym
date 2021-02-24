@@ -118,12 +118,14 @@ ul li .active {
 .flip-card-front {
   background-color: #bbb;
   color: black;
+  border: 1px solid black;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: #9B9264;
   color: white;
   transform: rotateY(180deg);
+    font-size: 150%;
 }
 
 </style>
@@ -149,16 +151,7 @@ ul li .active {
 
 <i class="fa fa-cog fa-spin"></i>
 
-<div id="pic">
-
-<img src="/images/mathbanner.png"  />
-
-</div>
-
-
-<h1>Card Flip with Text</h1>
-<h3>Hover over the image below:</h3>
-
+<center>
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -171,4 +164,4 @@ ul li .active {
     </div>
   </div>
 </div>
-
+</center>
