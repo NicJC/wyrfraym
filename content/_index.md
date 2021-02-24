@@ -217,17 +217,6 @@ $(document).ready(function(){
 </script>
 
 
-<style>
-
-#tags{
-width: 175px;
-}
-
-
-
-
-
-</style>
 
 
 
