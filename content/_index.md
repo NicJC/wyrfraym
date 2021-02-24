@@ -174,50 +174,7 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
     </div>
     
 
-<h4>Visualization</h4>
-  <br>
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#home">Gadfly</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#menu1">ggplot</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#menu2">Seaborn</a>
-    </li>
-  </ul>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div id="home" class="container tab-pane active"><br>
-      <h3>Julia plotting</h3>
-      <p>PGadfly is a plotting library for Julia </p>
-    </div>
-    <div id="menu1" class="container tab-pane fade"><br>
-      <h3>R plotting</h3>
-      <p>ggplot is an R graphics library.</p>
-    </div>
-    <div id="menu2" class="container tab-pane fade"><br>
-      <h3>Python plotting</h3>
-      <p>Seaborn is one of Python's plotting libraries.</p>
-    </div>
-  </div>
-</div>
-
-<script>
-
-$(document).ready(function(){
-  $(".nav-tabs a").click(function(){
-    $(this).tab('show');
-  });
-});
-</script>
-
-<br>
-
-<hr>
 
 <script>
 $(document).ready(function(){
