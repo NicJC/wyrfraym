@@ -5,6 +5,18 @@ layout: analytics
 ---
 
 <head>
+<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="3D Thumbnail Hover Effects" />
+        <meta name="keywords" content="3d, 3dtransform, hover, effect, thumbnail, overlay, curved, folded" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style_common.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.69142.js"></script> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -93,9 +105,8 @@ function mOut(obj) {
 }
 </script></h3>
 
-<body>
 </head>
-
+<body>
 
 <br>
 <br>
@@ -201,6 +212,9 @@ function mOut(obj) {
 </div>
 
 </div>
+
+
+
 
 </body>
 </head>
