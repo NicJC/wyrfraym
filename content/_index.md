@@ -217,9 +217,6 @@ $(document).ready(function(){
 </script>
 
 <HR>
-<HR>
-
-
 
 <script>
 $(document).ready(function(){
