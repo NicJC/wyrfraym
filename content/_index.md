@@ -188,7 +188,6 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
       <a class="nav-link" href="#menu2">Seaborn</a>
     </li>
   </ul>
-
   <!-- Tab panes -->
   <div class="tab-content">
     <div id="home" class="container tab-pane active"><br>
@@ -217,7 +216,7 @@ $(document).ready(function(){
 
 <br>
 
-<hr>
+<!-- Tag cloud -->
 
 <script>
 $(document).ready(function(){
