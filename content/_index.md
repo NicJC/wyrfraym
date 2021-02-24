@@ -229,8 +229,6 @@ $(document).ready(function(){
 
 <p><b><H3>Tags:</H3></B></p>
 
-
-
 </body>
 </head>
 </html>
