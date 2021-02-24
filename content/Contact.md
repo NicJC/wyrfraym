@@ -159,7 +159,7 @@ ul li .active {
     <div class="flip-card-back">
       <h1>Nic Coxen</h1> 
       <p>Business Intelligence Analyst</p> 
-      <p>Love this guy!</p>
+      <p></p>
     </div>
   </div>
 </div>
