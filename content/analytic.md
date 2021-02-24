@@ -216,33 +216,12 @@ function mOut(obj) {
 
 <!--flexbox end -->
 
-<div class="container">
-			<!-- Codrops top bar -->
-            <div class="codrops-top">
-                <a href="http://tympanus.net/Tutorials/SmoothTransitionsResponsiveLayout/">
-                    <strong>&laquo; Previous Demo: </strong>Responsive Layout with Smooth Transitions
-                </a>
-                <span class="right">
-					<a href="http://www.flickr.com/photos/ag2r/">Images by Ángelo González</a>
-                    <a href="http://tympanus.net/codrops/2012/06/18/3d-thumbnail-hover-effects/">
-                        <strong>Back to the Codrops Article</strong>
-                    </a>
-                </span>
-                <div class="clr"></div>
-            </div><!--/ Codrops top bar -->
+
             
             <header>
 			
-				<h1><span>3D Thumbnail</span> Hover Effects</h1>
-				<h2>Adding some perspective with CSS3 and jQuery &mdash; <strong>best viewed in WebKit browsers</strong></h2>
-				
-				<nav class="codrops-demos">
-					<a class="current-demo" href="index.html">Demo 1</a>
-					<a href="index2.html">Demo 2</a>
-					<a href="index3.html">Demo 3</a>
-					<a href="index4.html">Demo 4</a>
-					<a href="index5.html">Demo 5</a>
-				</nav>
+		
+			
 				
 				<div class="support-note"><!-- let's check browser support with modernizr -->
 					<!--span class="no-cssanimations">CSS animations are not supported in your browser</span-->
