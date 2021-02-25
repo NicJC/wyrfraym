@@ -135,6 +135,10 @@ ul li .active {
     font-size: 150%;
 }
 
+img {
+  border-radius: 8px;
+}
+
 </style>
 
 <body>
