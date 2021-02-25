@@ -218,7 +218,7 @@ function mOut(obj) {
 
 
 
-<iframe height="800" width="100%" frameborder="no" src="http://rpubs.com/NicJC/dygraph"> </iframe>
+<iframe height="800" width="100%" frameborder="no" src="https://rpubs.com/NicJC/dygraph"> </iframe>
 
 
 </body>
