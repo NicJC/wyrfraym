@@ -61,7 +61,6 @@ color: #649B92;
    background-color: black;
 }
 
-
 ul li {
   width: 120px;
 }
@@ -74,7 +73,6 @@ ul li a {
   text-decoration: none;
   font-size: 18px;
 }
-
 
 ul li .active {
   background-color: #FCFAF8;
@@ -129,7 +127,7 @@ ul li .active {
 }
 
 .flip-card-back {
-  background-color: azure;
+  background-color: silver;
   color: white;
   transform: rotateY(180deg);
     font-size: 150%;
@@ -172,3 +170,6 @@ ul li .active {
   </div>
 </div>
 </center>
+</body>
+</head>
+</html>
