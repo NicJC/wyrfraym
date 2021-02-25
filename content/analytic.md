@@ -214,8 +214,12 @@ function mOut(obj) {
 </div>
 
 <!--flexbox end -->
-<i class="fa fa-cog fa-spin"></i>			
+<i class="fa fa-cog fa-spin"></i>	
+
+<iframe height="800" width="100%" frameborder="no" src="http://rpubs.com/NicJC/dygraph"> </iframe>
+
 
 </body>
 </head>
+</html>
 
