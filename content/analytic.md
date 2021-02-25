@@ -218,7 +218,7 @@ function mOut(obj) {
 
 
 
-<iframe height="800" width="100%" frameborder="no" src="https://rpubs.com/NicJC/730675"> </iframe>
+<iframe height="800" width="100%" frameborder="no" src="https://e0a9305aa6564fb4b5cd6a94dda6fb3a.app.rstudio.cloud/file_show?path=%2Fcloud%2Fproject%2Fcovid.html"> </iframe>
 
 
 </body>
