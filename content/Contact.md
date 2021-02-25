@@ -123,7 +123,6 @@ ul li .active {
 .flip-card-front {
   background-color: #bbb;
   color: black;
-  border: 1px solid black;
 }
 
 .flip-card-back {
