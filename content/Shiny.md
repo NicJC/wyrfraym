@@ -188,7 +188,7 @@ function mOut(obj) {
 
 <i class="fa fa-cog fa-spin"></i>	
 
-<i class="fa fa-tags"></i>
+
 
 
 
