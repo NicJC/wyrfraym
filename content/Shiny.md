@@ -192,7 +192,7 @@ function mOut(obj) {
 
 
 
-<iframe height="800" width="100%" frameborder="no" src="https://youtu.be/CM2jZwJp4-w?list=RDCM2jZwJp4-w"> </iframe>
+<iframe height="800" width="100%" frameborder="no"  src="https://www.youtube.com/embed/CM2jZwJp4-w?list=RDCM2jZwJp4-w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
