@@ -188,11 +188,13 @@ function mOut(obj) {
 
 <i class="fa fa-cog fa-spin"></i>	
 
+<i class="fa fa-tags"></i>
+
 
 
 <iframe height="800" width="100%" frameborder="no" src="https://rpubs.com/NicJC/730675"> </iframe>
 
-<span class="fa fa-tags"></span>
+
 
 
 </body>
