@@ -229,7 +229,9 @@ $(document).ready(function(){
 });
 </script>
 
-<p></i><b><H3>Tags:</H3><i class="fa fa-tags"></B></p>
+<i class="fa fa-tags">
+
+<p></i><b><H3>Tags:</H3></B></p>
 
 </body>
 </head>
