@@ -1,6 +1,10 @@
 
 /* FMy personal css style sheet for Dash  d:-)  */
 
+.draglayer cursor-crosshair{
+	color:red;
+}
+
 .p{
 color:red;
 }
