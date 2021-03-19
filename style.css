@@ -1,8 +1,11 @@
 
 /* FMy personal css style sheet for Dash  d:-)  */
 
-.draglayer cursor-crosshair{
-	color:red;
+
+element.style {
+    fill: clear;
+    stroke-width: 0;
+    pointer-events: all;
 }
 
 .p{
