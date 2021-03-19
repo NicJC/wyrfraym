@@ -1,6 +1,10 @@
 
 /* FMy personal css style sheet for Dash  d:-)  */
 
+#p{
+color:red;
+}
+
 .container {
   position: relative;
   width: 100%;
