@@ -192,7 +192,7 @@ function mOut(obj) {
 <br>
 
 
-<iframe src="https://arrests2019usa.herokuapp.com/" width="100%" height="300" style="border:1px solid black;">
+<iframe src="https://arrests2019usa.herokuapp.com/" width="100%" height="600" style="border:1px solid black;">
 </iframe>
 
 </body>
