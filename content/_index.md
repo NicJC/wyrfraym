@@ -111,9 +111,39 @@ color: #649B92;
 float: center;
 }
 
+.search-box{
+  position:relative;
+  height:60px;
+  width:0px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
+}
+
+.search-box.active{
+  width: 350px;
+}
+
+.search-box.active input{
+  opacity:1;
+}
+
+.search-box input{
+  height:100%;
+  width:100%;
+  border:none;
+  background:#fff;
+  font-size:18px;
+  border-radius: 50px;
+  padding: 0 60px 0 20px;
+  outline:none;
+  opacity:0;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
+}
+
 </style>
 
 <body>
+
+
 
 <div id="pic">
 
