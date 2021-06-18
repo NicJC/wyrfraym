@@ -143,7 +143,16 @@ float: center;
 
 <body>
 
-
+<div class="search-box">
+    <input type="text" placeholder="Type to search..."/>
+    <div class="search-btn">
+      <i class="fas fa-search"></i>
+    </div>
+    
+    <div class="cancel-btn">
+      <i class="fas fa-times"></i>
+    </div>
+  </div>
 
 <div id="pic">
 
