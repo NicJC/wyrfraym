@@ -85,7 +85,12 @@ body {
   font-family: Baloo 2, Roboto, Rajdhani;
 }
 
-
+html,body{
+  display:grid;
+  height:100%;
+  place-items: center;
+  background: #490910;
+}
 
 .card-link{
 color: #649B92;
