@@ -85,12 +85,7 @@ body {
   font-family: Baloo 2, Roboto, Rajdhani;
 }
 
-html,body{
-  display:grid;
-  height:100%;
-  place-items: center;
-  background: #490910;
-}
+
 
 .card-link{
 color: #649B92;
@@ -179,16 +174,7 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
       </div>
     </div>
     
-    <div class="search-box">
-    <input type="text" placeholder="Type to search..."/>
-    <div class="search-btn">
-      <i class="fas fa-search"></i>
-    </div>
     
-    <div class="cancel-btn">
-      <i class="fas fa-times"></i>
-    </div>
-  </div>
     
 
 <h4>Visualization</h4>
