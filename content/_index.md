@@ -176,9 +176,6 @@ Probability has a humble beginning in dice rolls and coin tossing, and simple li
         </div>
       </div>
     </div>
-    
-    
-    
 
 <h4>Visualization</h4>
 
