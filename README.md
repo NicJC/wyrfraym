@@ -20,8 +20,7 @@
 <li>Analytic programming</li>
 </ul>
 		
-# wyrfraym
-
+<br>
 
 My site has been built using the R package [`blogdown`](https://bookdown.org/yihui/blogdown/), [Netlify](https://www.netlify.com/) and I built my own theme:.[wyrfraym](https://github.com/NicJC/MathStats)
 
