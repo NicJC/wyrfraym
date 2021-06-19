@@ -13,10 +13,8 @@ crossorigin="anonymous">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-    
-
+ 
   </script>
-  
    
 <style>
 
@@ -67,9 +65,62 @@ ul li .active {
   border-radius: 8px;
 }
 
+.container{
+  width:1px;
+  float: right;
+}
 
+.sun, .moon{
+    font-size: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
 
+.moon{
+    position:relative;
+    inset: 10;
+}
 
+.moon-logo{
+    opacity: 0;
+    transform: translateY(20%) rotateZ(50deg);
+}
+
+.sun-logo{
+    opacity: 1;
+    transform: translateY(0) rotateZ(0deg);
+}
+
+.animate-sun{
+    opacity: 0;
+    transform: translateY(20%) rotateZ(100deg);
+    color: aliceblue;
+}
+
+.animate-moon{
+    opacity: 1;
+    transform: translateY(0%) rotateZ(0deg);
+    color: aliceblue;
+}
+
+.moon-logo{
+    opacity: 0;
+    transform: translateY(20%) rotateZ(50deg);
+    transition: all 1s ease-out;
+}
+.sun-logo{
+    opacity: 1;
+    transform: translateY(0) rotateZ(0deg);
+    transition: all 1s ease-out;
+}
+
+body{
+    transition: background-color 1s;
+}
+
+.dark{
+    background-color: black;
+}
 
 </style>
 
@@ -86,11 +137,27 @@ ul li .active {
 </ul></b></h2>
 
 <body>
-
+<div class="container">
+   <div class="sun sun-logo">
+      <i class="fas fa-sun"></i>
+   </div>
+   <div class="moon moon-logo">
+      <i class="fas fa-moon"></i>
+   </div>
+</div>
 
 </head>
 
 </body>
+
+<script>
+    document.querySelector(".container").addEventListener("click", () => {
+    document.querySelector(".sun-logo").classList.toggle("animate-sun");
+    document.querySelector(".moon-logo").classList.toggle("animate-moon");
+    document.querySelector("body").classList.toggle("dark");
+})
+  
+</script>
 
 </html>
 
