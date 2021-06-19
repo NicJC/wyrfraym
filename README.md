@@ -27,16 +27,6 @@ My site has been built using the R package [`blogdown`](https://bookdown.org/yih
 
 <p>
 
-To get started with your own Hugo blog, I have provided some helpful links below.
-Both Alison and Amber's blogs below are inspiring and provide some guidance.
-There is also a link to the blogdown book, which would be my first port of call, and then there's the Hugo Community.
-
-</p> 
-
-- 👉 [**Get Started**](https://bookdown.org/yihui/blogdown/get-started.html)
-- 📚 [View Alison Presmanes Hill's site](https://alison.rbind.io) or
-- 💬 [view Amber Thomas's site](https://amber.rbind.io)  
-- 👉 [**Hugo community**](https://discourse.gohugo.io)
 
 My site is available [here](https://nicstats.netlify.app/)!
 
