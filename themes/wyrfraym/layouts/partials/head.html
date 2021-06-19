@@ -14,17 +14,7 @@ crossorigin="anonymous">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
     
-    const searchBtn = document.querySelector(".search-btn");
-const cancelBtn = document.querySelector(".cancel-btn");
-const searchBox = document.querySelector(".search-box");
 
-searchBtn.onclick = () => {
-  searchBox.classList.add("active");
-}
-
-cancelBtn.onclick = () => {
-  searchBox.classList.remove("active");
-}
   </script>
   
    
@@ -79,77 +69,6 @@ ul li .active {
 
 
 
-.search-box{
-  margin-left: 60%;
-  width: 200%;
-  margin-top: 10px;
-  height:60px;
-  width:0px;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
-}
-
-.search-box.active{
-  width: 150px;
-}
-
-.search-box.active input{
-  opacity:1;
-}
-
-.search-box input{
-  height:100%;
-  width:100%;
-  border:none;
-  background:#fff;
-  font-size:18px;
-  border-radius: 50px;
-  padding: 0 60px 0 20px;
-  outline:none;
-  opacity:0;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
-}
-
-.search-box .search-btn{
-  height:50px;
-  width:50px;
-  background: #fff;
-  color:#664AFF;
-  position: absolute;
-  top:50%;
-  right:-75px;
-  transform: translateY(-50%);
-  line-height:50px;
-  text-align:center;
-  border-radius:50%;
-  font-size:20px;
-  cursor:pointer;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
-  z-index:2;
-}
-
-.search-box.active .search-btn{
-  height:50px;
-  width:50px;
-  background: #664AFF;
-  color:#fff;
-}
-
-.search-box .cancel-btn{
-  position: absolute;
-  color: #664AFF;
-  top:50%;
-  right: -75px;
-  transform: translateY(-50%);
-  color:#664AF;
-  font-size:25px;
-  cursor:pointer;
-  height:50px;
-  width:50px;
-  line-height:50px;
-  text-align:center;
-  border-radius:50%
-  opacity:0;
-}
 
 
 </style>
@@ -167,16 +86,7 @@ ul li .active {
 </ul></b></h2>
 
 <body>
-<div class="search-box">
-    <input type="text" placeholder="Type to search..."/>
-    <div class="search-btn">
-      <i class="fas fa-search"></i>
-    </div>
-    
-    <div class="cancel-btn">
-      <i class="fas fa-times"></i>
-    </div>
-  </div>
+
 
 </head>
 
