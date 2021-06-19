@@ -6,7 +6,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+ 
   
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -111,48 +111,12 @@ color: #649B92;
 float: center;
 }
 
-.search-box{
-  position:relative;
-  height:60px;
-  width:0px;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
-}
-
-.search-box.active{
-  width: 350px;
-}
-
-.search-box.active input{
-  opacity:1;
-}
-
-.search-box input{
-  height:100%;
-  width:100%;
-  border:none;
-  background:#fff;
-  font-size:18px;
-  border-radius: 50px;
-  padding: 0 60px 0 20px;
-  outline:none;
-  opacity:0;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
-}
 
 </style>
 
 <body>
 
-<div class="search-box">
-    <input type="text" placeholder="Type to search..."/>
-    <div class="search-btn">
-      <i class="fas fa-search"></i>
-    </div>
-    
-    <div class="cancel-btn">
-      <i class="fas fa-times"></i>
-    </div>
-  </div>
+
 
 <div id="pic">
 
