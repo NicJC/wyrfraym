@@ -95,7 +95,30 @@ ul li .active {
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
 }
 
+.search-box .search-btn{
+  height:50px;
+  width:50px;
+  background: #fff;
+  color:#664AFF;
+  position: absolute;
+  top:50%;
+  right:-75px;
+  transform: translateY(-50%);
+  line-height:50px;
+  text-align:center;
+  border-radius:50%;
+  font-size:20px;
+  cursor:pointer;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
+  z-index:2;
+}
 
+.search-box.active .search-btn{
+  height:50px;
+  width:50px;
+  background: #664AFF;
+  color:#fff;
+}
 
 
 </style>
