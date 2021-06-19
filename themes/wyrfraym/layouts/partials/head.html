@@ -63,6 +63,35 @@ ul li .active {
   border-radius: 8px;
 }
 
+.search-box{
+  position:relative;
+  height:60px;
+  width:0px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
+}
+
+.search-box.active{
+  width: 350px;
+}
+
+.search-box.active input{
+  opacity:1;
+}
+
+.search-box input{
+  height:100%;
+  width:100%;
+  border:none;
+  background:#fff;
+  font-size:18px;
+  border-radius: 50px;
+  padding: 0 60px 0 20px;
+  outline:none;
+  opacity:0;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
+}
+
+
 
 </style>
 
@@ -79,7 +108,16 @@ ul li .active {
 </ul></b></h2>
 
 <body>
-
+<div class="search-box">
+    <input type="text" placeholder="Type to search..."/>
+    <div class="search-btn">
+      <i class="fas fa-search"></i>
+    </div>
+    
+    <div class="cancel-btn">
+      <i class="fas fa-times"></i>
+    </div>
+  </div>
 
 </head>
 
