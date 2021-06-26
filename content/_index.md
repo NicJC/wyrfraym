@@ -112,6 +112,7 @@ float: center;
 }
 
 
+
 </style>
 
 <body>
@@ -174,7 +175,7 @@ There are basic building blocks to all of these mathematical concepts.
         </div>
       </div>
     </div>
-
+<br>
 <h4>Visualization</h4>
 
   <br>
