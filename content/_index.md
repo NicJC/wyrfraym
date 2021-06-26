@@ -194,7 +194,7 @@ There are basic building blocks to all of these mathematical concepts.
   <div class="tab-content">
     <div id="home" class="container tab-pane active"><br>
       <h3>Julia plotting</h3>
-      <p>PGadfly is a plotting library for Julia </p>
+      <p>Gadfly is a plotting library for Julia </p>
     </div>
     <div id="menu1" class="container tab-pane fade"><br>
       <h3>R plotting</h3>
