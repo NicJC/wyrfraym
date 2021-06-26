@@ -111,6 +111,24 @@ color: #33322e;
 float: center;
 }
 
+div {
+  width: 200px;
+  height: 50px;
+  background-color: #FCFAF8;
+
+}
+
+@keyframes dt {
+  0%   {background-color:#FCFAF8; left:0px; top:0px;}
+  30%  {background-color:#FCFAF8; left:950px; top:0px;}
+  100% {background-color:#FCFAF8; left:0px; top:0px;}
+}
+
+a:link {
+  color: #4de4cb;
+
+}
+
 
 
 </style>
@@ -179,6 +197,8 @@ There are basic building blocks to all of these mathematical concepts.
 <h4>Visualization</h4>
 
   <br>
+  
+  
   <!-- Nav tabs -->
   <ul class="nav nav-tabs">
     <li class="nav-item">
@@ -207,6 +227,17 @@ There are basic building blocks to all of these mathematical concepts.
     </div>
   </div>
 </div>
+
+<div>
+  
+  <h3>
+
+   <a href="https://github.com/NicJC/Datasets">Check out my datasets!</a>
+
+  </h3>
+
+</div>
+
 
 <script>
 
