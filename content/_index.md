@@ -111,7 +111,7 @@ color: #33322e;
 float: center;
 }
 
-div {
+.dt {
   width: 200px;
   height: 50px;
   background-color: #FCFAF8;
@@ -228,16 +228,13 @@ There are basic building blocks to all of these mathematical concepts.
   </div>
 </div>
 
-<div>
-  
-  <h3>
-
-   <a href="https://github.com/NicJC/Datasets">Check out my datasets!</a>
-
-  </h3>
-
-</div>
-
+ <!-- datasets -->
+ 
+  <div class="data">
+    <div id="dt" ><br>
+      <a href="https://github.com/NicJC/Datasets">Check out my datasets!</a>
+    </div>
+    </div>
 
 <script>
 
