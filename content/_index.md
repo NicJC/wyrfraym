@@ -96,7 +96,7 @@ color: black;
 }
 
 .card-header{
-color: #9B9264;
+color: #33322e;
 }
 
 .btn-about{
