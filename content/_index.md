@@ -100,11 +100,11 @@ color: #33322e;
 }
 
 .btn-about{
-color: #649B92;
+color: #33322e;
 }
 
 .btn-int{
-color: #649B92;
+color: #33322e;
 }
 
 .nav-tabs {
