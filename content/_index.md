@@ -169,8 +169,6 @@ I'm particularly fascinated by number distributions, and how certain sequences o
 <br>
 I like looking at the fundamental elements of popular trends like linear regression, machine learning, artificial intelligence and the like.
 There are basic building blocks to all of these mathematical concepts.
-<br>
-Probability has a humble beginning in dice rolls and coin tossing, and simple linear regression is a set of averages of a x and y variables.  Once the basics are in place, concepts are built upon, and that's when it starts getting more involved. If we had to start talking about linear regression and throw in coefficient of determination, it gets tricky, but working up to, and explaining what this means is pretty straight forward, and then the whole picture starts coming into view.
 
 </p>
         </div>
