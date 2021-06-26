@@ -137,7 +137,7 @@ float: center;
       <div class="card-header">
         <a class="card-link" data-toggle="collapse" href="#collapseOne">
      <button class="btn btn-int">
-     <p style="color:#9B9264"><b><p style="font-size:17px">My Interests include:</b></p>
+     <p style="color:#1b1121"><b><p style="font-size:17px">My Interests include:</b></p>
      </button>
         </a>
       </div>
@@ -157,7 +157,7 @@ float: center;
       <div class="card-header">
         <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
         <button class="btn btn-about">
-      <p style="color:#9B9264"><b><p style="font-size:17px">About me:</b></p>
+      <p style="color:#1b1121"><b><p style="font-size:17px">About me:</b></p>
       </button>
       </a>
       </div>
