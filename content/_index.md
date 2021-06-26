@@ -111,14 +111,14 @@ color: #33322e;
 float: center;
 }
 
-.dt {
+.data {
   width: 200px;
   height: 50px;
   background-color: #FCFAF8;
 
 }
 
-@keyframes dt {
+@keyframes data {
   0%   {background-color:#FCFAF8; left:0px; top:0px;}
   30%  {background-color:#FCFAF8; left:950px; top:0px;}
   100% {background-color:#FCFAF8; left:0px; top:0px;}
