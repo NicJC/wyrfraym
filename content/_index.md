@@ -216,11 +216,7 @@ $(document).ready(function(){
 });
 </script>
 
-<p>
 
-<a href="https://github.com/NicJC/Datasets">Check out my datasets!</a>
-
-</p>
 <br>
 
 <i class="fa fa-cog fa-spin"></i>
