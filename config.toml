@@ -40,3 +40,8 @@ reading_time = true
 
 preserveTaxonomyNames = true
 
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
