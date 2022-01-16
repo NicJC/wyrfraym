@@ -11,3 +11,5 @@ public
  .DS_Store
  Thumbs.db
  .hugo_build.lock
+ 
+ .DS_Store, Thumbs.db, .hugo_build.lock

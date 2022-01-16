@@ -45,3 +45,5 @@ preserveTaxonomyNames = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+custom_css = ["css/custom.css"]
