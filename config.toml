@@ -18,7 +18,11 @@ enableRobotsTXT = true
     [[related.indices]]
         name = "date"
         weight = 10
+        
+        
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 
+custom_css = ["css/custom.css"]
 
 reading_time = true
 
@@ -46,4 +50,3 @@ preserveTaxonomyNames = true
     [markup.goldmark.renderer]
       unsafe = true
 
-custom_css = ["css/custom.css"]

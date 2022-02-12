@@ -1,99 +1,202 @@
-<!DOCTYPE html>
-<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
   
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
 integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
 crossorigin="anonymous">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
- 
-  </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    
 <style>
-
-body {
-  margin: 0;
-  font-size: 17px;  
-  font-family: Baloo 2, Roboto, Rajdhani;
-}
-
-body{
-background-color: #FCFAF8;
-
-}
-
-body {
-  margin:10;
-}
-
-ul { 
-  list-style-type: none; 
-  overflow: hidden; 
-  width:200px;
-  float: right;
-}
-
-ul li {
-  width: 180px;
-}
-    
-ul li a {
-  display: block;
-  color: #4de4cb;
+.container {
+  max-width: 60%;
+  margin: auto;
+  font-weight: 900;
+  text-transform: text.toLocaleUpperCase();
   text-align: center;
-  padding: 14px 16px;
+  padding: 0 0 2000px;
+}
+
+.take-input {
+  margin: 50px 0 0;
+}
+
+.take-input input {
+  width: 400px;
+  height: 35px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ececec;
+  margin: 0 15px 0 0;
+  font-size: 15px;
+}
+
+a, a:link, a:visited {
   text-decoration: none;
-  font-size: 18px;
+  padding: 9px 15px;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  color: gray;
 }
 
-ul li .active {
-  background-color: #FCFAF8;
-  color: black;
-  font-weight: 1000;
-  border-radius: 8px;
+body {
+ background-color: #B7e3f3;
+  
 }
 
 
+.animate {
+  font-size: 50px;
+  margin: 100px 0 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.animate span {
+  display: inline-block;
+}
+
+a.repeat {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: none;
+  text-decoration: none;
+  color: orange;
+  padding: 5px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-weight: normal;
+  margin: 0 0 0 50px;
+  border-radius: 3px;
+  position: relative;
+  bottom: 15px;
+}
+
+a.repeat:hover {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.animate span:nth-of-type(2) {
+  animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+  animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+  animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+  animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+  animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+  animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+  animation-delay: .35s;
+}
+.animate span:nth-of-type(9) {
+  animation-delay: .4s;
+}
+.animate span:nth-of-type(10) {
+  animation-delay: .45s;
+}
+.animate span:nth-of-type(11) {
+  animation-delay: .5s;
+}
+.animate span:nth-of-type(12) {
+  animation-delay: .55s;
+}
+.animate span:nth-of-type(13) {
+  animation-delay: .6s;
+}
+.animate span:nth-of-type(14) {
+  animation-delay: .65s;
+}
+.animate span:nth-of-type(15) {
+  animation-delay: .7s;
+}
+.animate span:nth-of-type(16) {
+  animation-delay: .75s;
+}
+.animate span:nth-of-type(17) {
+  animation-delay: .8s;
+}
+.animate span:nth-of-type(18) {
+  animation-delay: .85s;
+}
+.animate span:nth-of-type(19) {
+  animation-delay: .9s;
+}
+.animate span:nth-of-type(20) {
+  animation-delay: .95s;
+}
+
+.word span {
+  color: steelblue;
+  opacity: 0;
+  transform: translate(0, -100px) rotate(360deg) scale(0);
+  animation: revolveDrop .3s forwards;
+}
+
+
+@keyframes revolveDrop {
+  30% {
+    transform: translate(0, -50px) rotate(180deg) scale(1);
+  }
+
+  60% {
+    transform: translate(0, 20px) scale(.8) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
 
 
 
 </style>
 
 
-
-<b>
-<ul><h2>
-  <li><a href="/">Home</a></li>
-  <li><a href="/posts/">Posts</a></li>
-  <li><a href="/analytic/">Analytics</a></li>
-  <li><a href="/Contact/">Contact</a></li>
-  <li><a href="/Shiny/">Shiny apps</a></li>
- 
-  
-</ul></b></h2>
-
-
-<body>
-
-</head>
+<div class="container">
+  <!--<div class="take-input">
+     <input type="text" placeholder="Write any text" />
+    <a href="javascript:void(0);">Enter Text</a>
+  </div>-->
+     <div class="animate word">
+       
+      <span>M</span><span>a</span><span>t</span><span>h</span><span> &nbsp; 
+      </span><span>i</span><span>s</span><span> &nbsp;
+      </span><span>C</span><span>o</span><span>o</span><span>l</span><span>!</span><span>!</span><span>!</span>
+      
+</div>
 
 
-
-</body>
 
 <script>
 
-  
-</script>
+
+$(function(){
+  $('.repeat').click(function(){
+      var classes =  $(this).parent().attr('class');
+        $(this).parent().attr('class', 'animate');
+        var indicator = $(this);
+        setTimeout(function(){ 
+          $(indicator).parent().addClass(classes);
+        }, 20);
+    });
+});
+
+</script> 
 
 
-</html>
+
+
 
 
