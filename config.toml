@@ -20,7 +20,7 @@ enableRobotsTXT = true
         weight = 10
         
         
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 
 custom_css = ["css/custom.css"]
 
@@ -43,6 +43,8 @@ reading_time = true
     url = "/contact"
 
 preserveTaxonomyNames = true
+
+
 
 
 [markup]
