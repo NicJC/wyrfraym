@@ -21,7 +21,7 @@ img {
 
 #pic{
   margin: 140px;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-name: slidein;
   margin-top: 75px;
 }

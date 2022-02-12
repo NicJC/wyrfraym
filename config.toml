@@ -20,7 +20,7 @@ enableRobotsTXT = true
         weight = 10
         
         
-ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 
 custom_css = ["css/custom.css"]
 
@@ -51,4 +51,5 @@ preserveTaxonomyNames = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
 
