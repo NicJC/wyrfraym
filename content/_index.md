@@ -7,13 +7,6 @@ date: 2020-12-19T15:44:19Z
 
 <style>
 
-body{
-   background-image: url("images/mathbanner1.png");
-   background-repeat: no-repeat;
-   background-color: #B7e3f3;
-}
-
-
 
 img {
   border-radius: 8px;
@@ -45,13 +38,7 @@ body{
    background: rgb(192, 192, 192);
    }
    
-#txt{
-  
-  margin: 70px;
-  animation-duration: 3s;
-  animation-name: slide;
-  margin-top: -95px;
-}
+
 
 @keyframes slide {
   from {
@@ -74,7 +61,7 @@ body {
   }
   
 body {
-  font-family: Baloo 2, Roboto, Rajdhani;
+  font-family: Outfit;
 }
 
 
@@ -83,9 +70,7 @@ body {
 color: #649B92;
 }
 
-.accordion{
-color: black;
-}
+
 
 .card-header{
 color: #33322e;
@@ -149,11 +134,7 @@ a:link {
 
 </div>
 
-<div id="txt">
 
-<p><p style="font-size:22px"><b><i>Hi, my name is Nic</i></b></p>
-
-</div>
 <h3><b><u>My personal interests include:</u></b></h3>
 
 <div id="interests">
