@@ -159,7 +159,7 @@ ul li .active {
 <div class="Acardbody">
 <h6 class="Acardtitle">R programming</h6></div>
 <a href="https://nicstats.netlify.app/tags/r/">
-<img src="images/r-project.svg" alt="" width="10%"/></a>
+<img src="images/r-project.svg" alt="" width="20%"/></a>
 
 </div>
 
@@ -168,7 +168,7 @@ ul li .active {
 <div class="Bcardbody">
 <h6 class="Bcardtitle">Python</h6></div>
 <a href="https://nicstats.netlify.app/tags/python/">
-<img src="images/python.svg" alt="" width="10%"/></a>
+<img src="images/python.svg" alt="" width="20%"/></a>
 
 </div>
   
@@ -177,7 +177,7 @@ ul li .active {
 <div class="Ccardbody">
 <h6 class="Ccardtitle">Julia</h6></div>
 <a href="https://nicstats.netlify.app/tags/julia/">
-<img src="images/Papirus-Team-Papirus-Apps-Julia.svg" alt="" width="10%"/></a>
+<img src="images/Papirus-Team-Papirus-Apps-Julia.svg" alt="" width="20%"/></a>
 
 </div>
 
