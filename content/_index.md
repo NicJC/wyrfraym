@@ -4,8 +4,12 @@ date: 2020-12-19T15:44:19Z
 
 ---
 
+<style type="text/css">
 
-<style>
+  
+body {
+  font-family: Outfit;
+}
 
 
 img {
@@ -14,7 +18,7 @@ img {
 
 #pic{
   margin: 100px;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-name: slidein;
   margin-top: 75px;
 }
@@ -29,54 +33,34 @@ img {
  to {
     margin-left: 40%;
     width: 100%;
-    margin: 50px;
-    margin-top: 95px;
+    margin: 0px;
+    margin-top: 75px;
   }
 }
 
+<!--Text Slide-->
 
-   
-
-
-
-body {
-  margin: 0 auto;
-  width: min(1000px, calc(70% + 100px));
-  }
+.txt{
   
-body {
-  font-family: Outfit;
+  margin: 100px;
+  animation-duration: 3s;
+  animation-name: slide;
+  margin-top: 75px;
 }
 
-
-
-.card-link{
-color: #649B92;
-}
-
-
-
-.card-header{
-color: #33322e;
-}
-
-.btn-about{
-color: #33322e;
-}
-
-.btn-int{
-color: #33322e;
-}
-
-.nav-tabs {
-float: center;
-}
-
-.dt {
-  width: 200px;
-  height: 50px;
-  background-color: #FCFAF8;
-
+@keyframes slide {
+  from {
+    margin-left: 55%;
+    width: 300%;
+    margin-top: 10px;
+    
+   }
+ to {
+    margin-left: 40%;
+    width: 100%;
+    margin: 0px;
+    margin-top: 75px;
+  }
 }
 
 
@@ -105,11 +89,13 @@ a:link {
   
 }
 
+.dt:hover{
+color:red;
+}
+
 </style>
 
 <body>
-
-
 
 <div id="pic">
 
@@ -117,8 +103,14 @@ a:link {
 
 </div>
 
+<div id="txt">
 
-<h3><b><u>My personal interests include:</u></b></h3>
+<p><h3><i>Hi, my name is Nic</i></h3></p>
+
+</div>
+
+
+<h3><u>My personal interests include:</u></h3>
 
 <div id="interests">
         - Maths and Statistics<br>
@@ -126,6 +118,8 @@ a:link {
         - Data Modeling<br>
         - Analytic programming
 </div>
+
+
 <div id="about">
 <center>
 <B><H3><u>About me</u></H3></B>       
@@ -136,13 +130,11 @@ I'm particularly fascinated by number distributions, and how certain sequences o
 I enjoy looking at the fundamental elements of popular trends like linear regression, machine learning, artificial intelligence and the like.
 There are basic building blocks to all of these mathematical concepts.
 
-
 </div>
 
-  <br>
-  
-  
 
+<br>
+  
 
  <!-- datasets -->
  
@@ -151,9 +143,6 @@ There are basic building blocks to all of these mathematical concepts.
       <a href="https://github.com/NicJC/Datasets">Check out my datasets!</a>
     </div>
     </div>
-
-
-
 
 <br>
 

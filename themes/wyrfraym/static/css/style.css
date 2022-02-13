@@ -1,1 +1,412 @@
 
+
+<style>
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: center;
+}
+
+.narrow-background {
+    display: table;
+    padding: 0.1em;
+}
+
+.list div.AA:hover {
+	      background-color: #709be0;
+        border-radius: 100px;
+        }
+
+.list div.BB:hover {
+	background-color: #e070d5;
+	border-radius: 100px;
+}
+
+.list div.CC:hover {
+	background-color: #4eed54;
+	border-radius: 100px;
+}
+
+.list div.DD:hover {
+	background-color: #e0b755;
+	border-radius: 100px;
+}
+
+.list div.EE:hover {
+	background-color: #b3eb26;
+	border-radius: 100px;
+}
+
+
+.list div.FF:hover {
+	background-color: #7fd2e3;
+	border-radius: 100px;
+}
+
+
+.list div.GG:hover {
+	background-color: #48cf92;
+	border-radius: 100px;
+}
+
+
+.list {
+  display: row;
+  height: justify;
+  flex-wrap: wrap;
+  align-content: justify;
+  align-items: flex-start;
+  }
+
+
+.list > div{
+  background-color: #f3f4f5;
+  align-content: center;
+  width: 800px;
+  line-height: justify;
+  margin: 2px;
+  text-align: center;
+  line-height: 18px;
+  font-size: justify;
+  border-radius: 8px;
+  border: 1.5px solid black
+}
+
+
+img {
+  border-radius: 8px;
+}
+
+#pic{
+  margin: 140px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  margin-top: 75px;
+}
+
+.boxgroup {
+  display: flex;
+  height: justify;
+  flex-wrap: wrap;
+  align-content: justify;
+  background-color: #f5f4f3;
+  }
+
+.boxgroup > div{
+  background-color: beige;
+  align-content: center;
+  width: 180px;
+  line-height: justify;
+  margin: 10px;
+  text-align: center;
+  line-height: 180px;
+  font-size: justify;
+  border-radius: 8px;
+  border: 1.5px solid black
+}
+
+.boxgroup div.A {
+  background-color: #8c4ba3;
+  border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+.boxgroup div.B {
+  background-color: #4287f5;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+
+.boxgroup div.C {
+  background-color: #25cc25;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+.boxgroup div.D {
+  background-color: #fcba03;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+
+.boxgroup div.E {
+  background-color: #fa2f79;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+
+.boxgroup div.F {
+  background-color: #d1cb92;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+
+.boxgroup div.G {
+  background-color: #48d995;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+
+.boxgroup div.H {
+  background-color: #c177e0;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+.boxgroup div.I {
+  background-color: #f0dc78;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+
+.boxgroup div.J {
+  background-color: #4c5185;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+
+.boxgroup div.K {
+  background-color: #daed6d;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+.boxgroup div.L {
+  background-color: #10e634;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+
+.boxgroup div.M {
+  background-color: #8fc6e3;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+.boxgroup div.N {
+  background-color: #c7242f;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+
+
+.boxgroup div.O {
+  background-color: #42d7f5;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+
+.boxgroup div.P {
+  background-color: #582f69;
+   border: 1.5px solid black;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 130px;
+  border-radius: 8px;
+  color: black;
+}
+
+  .boxgroup div.A:hover {
+      opacity: 0.3;
+      background-color: grey;
+    }
+    
+  .boxgroup div.B:hover {
+      opacity: 0.3;
+      background-color: grey;
+    }
+    
+  .boxgroup div.C:hover {
+      opacity: 0.3;
+      background-color: grey;
+    }  
+
+  .boxgroup div.D:hover {
+      opacity: 0.3;
+      background-color: grey;
+    } 
+    
+  .boxgroup div.E:hover {
+      opacity: 0.3;
+      background-color: grey;
+    } 
+    
+  .boxgroup div.F:hover {
+      opacity: 0.3;
+      background-color: grey;
+    } 
+    
+    
+  .boxgroup div.G:hover {
+      opacity: 0.3;
+      background-color: grey;
+    } 
+    
+   .boxgroup div.H:hover {
+      opacity: 0.3;
+      background-color: grey;
+    } 
+    
+  .boxgroup div.I:hover {
+      opacity: 0.3;
+      background-color: grey;
+    } 
+    
+  .boxgroup div.J:hover {
+      opacity: 0.3;
+      background-color: grey;
+    } 
+    
+  .boxgroup div.K:hover {
+      opacity: 0.3;
+      background-color: grey;
+    } 
+    
+   .boxgroup div.L:hover {
+      opacity: 0.3;
+      background-color: grey;
+    } 
+    
+    
+  .boxgroup div.M:hover {
+      opacity: 0.3;
+      background-color: grey;
+    }   
+
+  .boxgroup div.N:hover {
+      opacity: 0.3;
+      background-color: grey;
+    }   
+    
+    
+  .boxgroup div.O:hover {
+      opacity: 0.3;
+      background-color: grey;
+    }  
+    
+    
+  .boxgroup div.P:hover {
+      opacity: 0.3;
+      background-color: grey;
+    }  
+#menu{
+
+  display: flex;
+  height: justify;
+  flex-wrap: wrap;
+  align-content: justify;
+
+  position: relative;
+  right: 350px;
+  float: left;
+  
+ 
+  
+}    
+
+</style>
