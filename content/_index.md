@@ -12,6 +12,36 @@ body {
 }
 
 
+.dropdown-item{
+font-family: Outfit;
+color:black;
+border-color:azure;
+
+}
+
+.dropdown-menu{
+background-color: #d3eaf2;
+border-color:azure;
+}
+
+
+.btn-primary:hover{
+font-family: Outfit;
+color:black;
+background-color: #B7e3f3;
+border-color:azure;
+}
+
+.btn-primary{
+  color:#134b5f;
+  width:auto;
+  float:left;
+  background-color: #d3eaf2;
+  border-color:azure;
+
+}
+
+
 img {
   border-radius: 8px;
 }
@@ -146,6 +176,25 @@ html {
 
 </div>
 
+<div class="menu">
+ 
+  <p></p>                                        
+
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Menu
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Home</a></li>
+      <li><a class="dropdown-item" href="/posts/">Posts</a></li>
+      <li><a class="dropdown-item" href="#connect">Connect</a></li>
+      <li><a class="dropdown-item-text" href="#">Text Link</a></li>
+      <li><span class="dropdown-item-text">Just Text</span></li>
+    </ul>
+  </div>
+</div>
+
+
 <div id="wrapper">
   <div class="heading animatable">Hi, My name is Nic!</div>
 </div>
@@ -192,6 +241,15 @@ There are basic building blocks to all of these mathematical concepts.
 
 <p><H3>Tags:</H3></p>
 
+
+<script>
+
+$(document).ready(function(){
+  $(".nav-tabs a").click(function(){
+    $(this).tab('show');
+  });
+});
+</script> 
 
 
 </body>
