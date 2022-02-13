@@ -105,7 +105,7 @@ color:red;
 
 <div id="txt">
 
-<p><h3><i>Hi, my name is Nic</i></h3></p>
+<p><h3>Hi, my name is Nic</h3></p>
 
 </div>
 
@@ -122,11 +122,11 @@ color:red;
 
 <div id="about">
 <center>
-<B><H3><u>About me</u></H3></B>       
+<H3><u>About me</u></H3>       
 </center>
 I love numbers, and I'm truly amazed by how numbers control so many things in our daily lives. 
 I'm particularly fascinated by number distributions, and how certain sequences of numbers are able to predict future outcomes.
-
+<p>
 I enjoy looking at the fundamental elements of popular trends like linear regression, machine learning, artificial intelligence and the like.
 There are basic building blocks to all of these mathematical concepts.
 
@@ -150,11 +150,9 @@ There are basic building blocks to all of these mathematical concepts.
 
 <!-- Tag cloud -->
 
+<p>><H3>Tags:</H3></p>
 
 
-
-
-<p></i><b><H3>Tags:</H3></B></p>
 
 </body>
 </head>
