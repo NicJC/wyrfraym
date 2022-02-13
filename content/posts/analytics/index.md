@@ -105,7 +105,7 @@ ul li .active {
 .boxgroup div.A {
   background-color: #8c4ba3;
   border: 1.5px solid black;
-  width: 300px;
+  width: flex;
   margin: 10px;
   text-align: center;
   line-height: 130px;
@@ -115,20 +115,20 @@ ul li .active {
 
 .boxgroup div.B {
   background-color: #4287f5;
-   border: 1.5px solid black;
-  width: 300px;
+  border: 1.5px solid black;
+  width: flex;
   margin: 10px;
   text-align: center;
   line-height: 130px;
   border-radius: 8px;
-  color: black;
+  color: black;;
 }
 
 
 .boxgroup div.C {
   background-color: #25cc25;
-   border: 1.5px solid black;
-  width: 300px;
+  border: 1.5px solid black;
+  width: flex;
   margin: 10px;
   text-align: center;
   line-height: 130px;
@@ -159,7 +159,7 @@ ul li .active {
 <div class="Acardbody">
 <h6 class="Acardtitle">R programming</h6></div>
 <a href="https://nicstats.netlify.app/tags/r/">
-<img src="images/r-project.svg" alt="" width="3%"/></a>
+<img src="images/r-project.svg" alt="" width="10%"/></a>
 
 </div>
 
@@ -168,7 +168,7 @@ ul li .active {
 <div class="Bcardbody">
 <h6 class="Bcardtitle">Python</h6></div>
 <a href="https://nicstats.netlify.app/tags/python/">
-<img src="images/python.svg" alt="" width="3%"/></a>
+<img src="images/python.svg" alt="" width="10%"/></a>
 
 </div>
   
@@ -177,7 +177,7 @@ ul li .active {
 <div class="Ccardbody">
 <h6 class="Ccardtitle">Julia</h6></div>
 <a href="https://nicstats.netlify.app/tags/julia/">
-<img src="images/Papirus-Team-Papirus-Apps-Julia.svg" alt="" width="3%"/></a>
+<img src="images/Papirus-Team-Papirus-Apps-Julia.svg" alt="" width="10%"/></a>
 
 </div>
 
