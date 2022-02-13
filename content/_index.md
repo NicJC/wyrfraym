@@ -36,7 +36,9 @@ img {
 }
 
 
-a:link {
+a, a:link, a:visited {
+  text-decoration: none;
+  padding: 9px 15px;
   color: #134b5f;
 
 }
@@ -47,6 +49,7 @@ a:link {
   font-color:black;
   line-height: 17px;
   font-size: justify;
+  font-family: Outfit;
   }
 
 #about{
@@ -57,10 +60,32 @@ a:link {
   font-size: justify;
   word-break: break;
   flex-flow: column wrap;
+ font-family: Outfit; 
+}
+
+#connect{
+  width:justify;
+  font-color:black;
+  line-height: 17px;
+  font-size: justify;
+  font-family: Outfit;
   
 }
 
+#data{
+  width:justify;
+  font-color:black;
+  line-height: 17px;
+  font-size: justify;
+  font-family: Outfit;
+  
+}
 
+a:hover{
+color: #8142a4;
+padding:5px;
+
+}
 
 * {
   box-sizing: border-box;
@@ -178,6 +203,7 @@ There are basic building blocks to all of these mathematical concepts.
  <!-- datasets -->
  
   <div class="data">
+<h4><u>  Free Data</u></h4>
     <div id="dt" ><br>
       <a href="https://github.com/NicJC/Datasets">Check out my datasets!</a>
     </div>
@@ -185,8 +211,16 @@ There are basic building blocks to all of these mathematical concepts.
 
 <br>
 
+<div class="connect">
 
+<u><H3>Conect with me on</H3></u>
 
+<a href="https://github.com/NicJC/" target="_blank" rel="  noopener"><i  class="fab fa-github"></i></a>
+
+<a href="https://www.linkedin.com/in/nicholas-coxen/" target="_blank" rel="  noopener"><i  class="fab fa-linkedin-in"></i></a>
+    
+<center>
+</div>
 <!-- Tag cloud -->
 <div class="tagcloud">
 <u><p><H3>Tags</H3></p></u>
