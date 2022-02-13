@@ -34,26 +34,10 @@ img {
   }
 }
 
-body{
-   background: rgb(192, 192, 192);
-   }
+
    
 
 
-@keyframes slide {
-  from {
-    margin-left: -50%;
-    width: 300%;
-    margin-top: -60px;
-    
-   }
- to {
-    margin-left: 150%;
-    width: 300%;
-    margin: 70px;
-    margin-top: -95px;
-  }
-}
 
 body {
   margin: 0 auto;
@@ -95,29 +79,28 @@ float: center;
 
 }
 
-@keyframes dt {
-  0%   {background-color:#FCFAF8; left:0px; top:0px;}
-  30%  {background-color:#FCFAF8; left:950px; top:0px;}
-  100% {background-color:#FCFAF8; left:0px; top:0px;}
-}
+
 
 a:link {
-  color: #4de4cb;
+  color: #134b5f;
 
 }
 
 #interests{
-    text-align: left;
-  line-height: 20px;
+  width:justify;
+  text-align: left;
+  font-color:black;
+  line-height: 17px;
   font-size: justify;
   }
 
 #about{
+  width:justify;
   text-align: left;
   font-color:black;
+  line-height: 17px;
   font-size: justify;
-  
-  word-break: break-all;
+  word-break: break;
   flex-flow: column wrap;
   
 }
@@ -144,13 +127,14 @@ a:link {
         - Analytic programming
 </div>
 <div id="about">
-<B><H3><u>About me</u></H3></B>       
 <center>
+<B><H3><u>About me</u></H3></B>       
+</center>
 I love numbers, and I'm truly amazed by how numbers control so many things in our daily lives. 
 I'm particularly fascinated by number distributions, and how certain sequences of numbers are able to predict future outcomes.
 
 I enjoy looking at the fundamental elements of popular trends like linear regression, machine learning, artificial intelligence and the like.
-There are basic building blocks to all of these mathematical concepts.</center>
+There are basic building blocks to all of these mathematical concepts.
 
 
 </div>
@@ -168,14 +152,7 @@ There are basic building blocks to all of these mathematical concepts.</center>
     </div>
     </div>
 
-<script>
 
-$(document).ready(function(){
-  $(".nav-tabs a").click(function(){
-    $(this).tab('show');
-  });
-});
-</script>
 
 
 <br>
@@ -184,13 +161,7 @@ $(document).ready(function(){
 
 <!-- Tag cloud -->
 
-<script>
-$(document).ready(function(){
 
-  $('.btn-int').tooltip({title: "This really interests me", trigger: "hover"}); 
-  $('.btn-about').tooltip({title: "More about me", trigger: "hover"}); 
-});
-</script>
 
 
 
