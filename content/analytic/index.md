@@ -17,7 +17,8 @@ layout: analytics
 
 img {
   border-radius: 8px;
-  padding:15px;
+  padding:140px;
+  transform: scale(2, 2); 
 }
 
 
@@ -27,6 +28,3 @@ font-family: Outfit;
 }
 
 </style>
-
-
-
