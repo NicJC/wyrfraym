@@ -48,6 +48,7 @@ color: black;
 
 
 
+
 ul li {
   width: 120px;
 }
@@ -151,7 +152,20 @@ ul li .active {
       background-color: grey;
     } 
     
+    
+.p1{
+color: black;
+font-family: Outfit;
+float:left;
+}    
+    
 </style>
+
+<body>
+<p1>What do I mean when I say Analytic programming?</p1>
+<p>
+- I'm referring to the Bid Data, and a programming language that is able to handle a large amount of data, and be able to perform complex calculations on that data.
+</p>
 
 <div class="boxgroup">
 
@@ -184,4 +198,4 @@ ul li .active {
 </div>
 
 <!--flexbox end -->
-	
+</body>	
