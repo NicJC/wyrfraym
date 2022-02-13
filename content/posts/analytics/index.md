@@ -164,7 +164,7 @@ float:left;
 <body>
 <p1>What do I mean when I say Analytic programming?</p1>
 <p>
-- I'm referring to the Bid Data, and a programming language that is able to handle a large amount of data, and be able to perform complex calculations on that data.
+- I'm referring to the Big Data, and a programming language that is able to handle a large amount of data, and be able to perform complex calculations on that data.
 </p>
 
 <div class="boxgroup">
