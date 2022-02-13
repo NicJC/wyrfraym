@@ -186,7 +186,7 @@ html {
     </button>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="#">Home</a></li>
-      <li><a class="dropdown-item" href="/posts/">Posts</a></li>
+      <li><a class="dropdown-item" href="https://nicstats.netlify.app/posts/">Posts</a></li>
       <li><a class="dropdown-item" href="#connect">Connect</a></li>
       <li><a class="dropdown-item-text" href="#">Text Link</a></li>
       <li><span class="dropdown-item-text">Just Text</span></li>
