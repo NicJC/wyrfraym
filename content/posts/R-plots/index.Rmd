@@ -1,0 +1,46 @@
+---
+title: "R-plots"
+author: ''
+date: '2022-02-09'
+tags:
+- R
+---
+
+
+```{r setup,inclue=F,results = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(comment = NULL )
+```
+
+```{r,inclue=F,results = FALSE}
+library(tidyverse)
+require(ggplot2)
+library(ggfortify)
+library(kableExtra)
+library(xts)
+library(gridExtra)
+library(ggResidpanel)
+library(grid)
+data("mpg")
+dt<-subset(mpg, drv !="f")
+ggplot(mpg, aes(displ, hwy)) +
+  geom_point(aes(color = class)) +
+  geom_smooth(se = FALSE) +
+  labs(title = "Fuel efficiency generally decreases with engine size")
+
+```
+
+
+```{r}
+library(gplots)
+heatmap.2(t(iris[, 1:4]), trace="none", scale="row", key=TRUE, mar=c(2, 8), cexRow=1, ColSideColors=c("grey", "black", "yellow")[iris$Species])
+```
+
+
+
+
+
+
+
