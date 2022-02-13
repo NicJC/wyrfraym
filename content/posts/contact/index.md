@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: "Contact"
 author: ''
 date: '2022-02-13'
 
@@ -53,6 +53,15 @@ tags: ["contact"]
 
 img {
   border-radius: 8px;
+}
+
+#connect{
+  width:justify;
+  font-color:black;
+  line-height: 17px;
+  font-size: justify;
+  font-family: Outfit;
+  
 }
 
 </style>
