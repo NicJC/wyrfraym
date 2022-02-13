@@ -7,39 +7,6 @@ date: 2020-12-19T15:44:19Z
 <style type="text/css">
 
   
-body {
-  font-family: Outfit;
-}
-
-
-.dropdown-item{
-font-family: Outfit;
-color:black;
-border-color:azure;
-
-}
-
-.dropdown-menu{
-background-color: #d3eaf2;
-border-color:azure;
-}
-
-
-.btn-primary:hover{
-font-family: Outfit;
-color:black;
-background-color: #B7e3f3;
-border-color:azure;
-}
-
-.btn-primary{
-  color:#134b5f;
-  width:auto;
-  float:left;
-  background-color: #d3eaf2;
-  border-color:azure;
-
-}
 
 
 img {
@@ -69,8 +36,6 @@ img {
 }
 
 
-
-
 a:link {
   color: #134b5f;
 
@@ -94,8 +59,6 @@ a:link {
   flex-flow: column wrap;
   
 }
-
-
 
 
 
@@ -166,6 +129,12 @@ html {
   to { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
 }
 
+
+.tagcloud{
+font-family: Outfit;
+color:black;
+}
+
 </style>
 
 <body>
@@ -175,25 +144,6 @@ html {
 <img src="/images/avatar.jpg"  />
 
 </div>
-
-<div class="menu">
- 
-  <p></p>                                        
-
-  <div class="dropdown">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-      Menu
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="https://nicstats.netlify.app/#">Home</a></li>
-      <li><a class="dropdown-item" href="https://nicstats.netlify.app/posts/">Posts</a></li>
-      <li><a class="dropdown-item" href="#connect">Connect</a></li>
-      <li><a class="dropdown-item-text" href="#">Text Link</a></li>
-      <li><span class="dropdown-item-text">Just Text</span></li>
-    </ul>
-  </div>
-</div>
-
 
 <div id="wrapper">
   <div class="heading animatable">Hi, My name is Nic!</div>
@@ -238,8 +188,8 @@ There are basic building blocks to all of these mathematical concepts.
 
 
 <!-- Tag cloud -->
-
-<p><H3>Tags:</H3></p>
+<div class="tagcloud">
+<u><p><H3>Tags</H3></p></u>
 
 
 <script>
@@ -251,7 +201,7 @@ $(document).ready(function(){
 });
 </script> 
 
-
+</div>
 </body>
 </head>
 </html>

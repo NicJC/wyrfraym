@@ -15,6 +15,45 @@ crossorigin="anonymous">
 
 
 <style>
+
+body {
+  font-family: Outfit;
+}
+
+
+.dropdown-item{
+font-family: Outfit;
+color:black;
+border-color:azure;
+
+}
+
+.dropdown-menu{
+background-color: #d3eaf2;
+border-color:azure;
+}
+
+
+.btn-primary:hover{
+font-family: Outfit;
+color:black;
+background-color: #B7e3f3;
+border-color:azure;
+}
+
+.btn-primary{
+  color:#134b5f;
+  width:auto;
+  float:left;
+  background-color: #d3eaf2;
+  border-color:azure;
+
+}
+
+
+
+
+
 .container {
   max-width: 60%;
   margin: auto;
@@ -41,9 +80,8 @@ crossorigin="anonymous">
 a, a:link, a:visited {
   text-decoration: none;
   padding: 9px 15px;
-  border: 1px solid #ececec;
-  border-radius: 5px;
-  color: gray;
+
+  color: #540e77;
 }
 
 body {
@@ -183,6 +221,24 @@ $(function(){
 });
 
 </script>
+
+<div class="menu">
+ 
+  <p></p>                                        
+
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Menu
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="https://nicstats.netlify.app/#">Home</a></li>
+      <li><a class="dropdown-item" href="https://nicstats.netlify.app/posts/">Posts</a></li>
+      <li><a class="dropdown-item" href="#connect">Connect</a></li>
+      <li><a class="dropdown-item-text" href="#">About</a></li>
+      
+    </ul>
+  </div>
+</div>
 
 
 <div class="container">
