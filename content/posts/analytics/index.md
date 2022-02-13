@@ -4,29 +4,14 @@ date: 2021-02-21T10:59:27+13:00
 tags: ["Analytic programming"]
 ---
 
-<head>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
-		<script type="text/javascript" src="js/modernizr.custom.69142.js"></script> 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
 
 <style>
 
 #pic{
    background-repeat: repeat-x;
    width: 800px;
+   padding:15px;
 }
 
 </style>
@@ -40,31 +25,27 @@ tags: ["Analytic programming"]
 <style>
 
 body{
-background-color: #FCFAF8;
+background-color: #B7e3f3;
 
 }
 
 h3{
-color: #649B92;
-font-style: Rajdhani;
+color: black;
+font-family: Outfit;
 }
 
 h3{
-color: #649B92;
+color: black;
 }
 
-.h3:hover{
-   background-color: #92649B;
-}
+
 
 
 h4{
-color: #649B92;
+color: black;
 }
 
-.h4:hover{
-   background-color: black;
-}
+
 
 
 ul li {
@@ -73,16 +54,16 @@ ul li {
     
 ul li a {
   display: block;
-  color: #4de4cb;
+  color: #134b5f;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 
 ul li .active {
-  background-color: #FCFAF8;
+  background-color: #B7e3f3;
   color: black;
   font-weight: 1000;
   border-radius: 8px;
@@ -91,19 +72,7 @@ ul li .active {
 
 </style>
 
-<h3 onmouseover="mOver(this)" onmouseout="mOut(this)" 
-style="background-color:#FCFAF8;width:750px;height:10px;padding:20px;"><b>
-Analytical programming
-</b>
-<script>
-function mOver(obj) {
-  obj.innerHTML = "Python, R and Julia"
-}
 
-function mOut(obj) {
-  obj.innerHTML = "There are 3 awesome programming languages that are good for Analytics"
-}
-</script></h3>
 
 </head>
 <body>
@@ -117,7 +86,7 @@ function mOut(obj) {
   height: justify;
   flex-wrap: wrap;
   align-content: justify;
-  background-color: #FCFAF8;
+  background-color: #B7e3f3;
   }
 
 .boxgroup > div{
@@ -180,7 +149,8 @@ function mOut(obj) {
   .boxgroup div.C:hover {
       opacity: 0.3;
       background-color: grey;
-    }  
+    } 
+    
 </style>
 
 <div class="boxgroup">
@@ -188,8 +158,8 @@ function mOut(obj) {
 <div class="A">
 <div class="Acardbody">
 <h6 class="Acardtitle">R programming</h6></div>
-<a href="https://testwyr.netlify.app/tags/visualisation/" target="_blank" rel="noopener">
-<img src="/images/rproject.png"/></a>
+<a href="https://nicstats.netlify.app/tags/r/">
+<img src="images/r-project.svg" alt="" width="3%"/></a>
 
 </div>
 
@@ -197,8 +167,8 @@ function mOut(obj) {
 <div class="B">
 <div class="Bcardbody">
 <h6 class="Bcardtitle">Python</h6></div>
-<a href="https://testwyr.netlify.app/tags/python/">
-<img src="https://img.icons8.com/dusk/64/000000/python.png"/></a>
+<a href="https://nicstats.netlify.app/tags/python/">
+<img src="images/python.svg" alt="" width="3%"/></a>
 
 </div>
   
@@ -206,19 +176,12 @@ function mOut(obj) {
 <div class="C">
 <div class="Ccardbody">
 <h6 class="Ccardtitle">Julia</h6></div>
-<a href="https://testwyr.netlify.app/tags/jupyter/">
-<img src="/images/julia.png"/></a>
+<a href="https://nicstats.netlify.app/tags/julia/">
+<img src="images/Papirus-Team-Papirus-Apps-Julia.svg" alt="" width="3%"/></a>
 
 </div>
 
 </div>
 
 <!--flexbox end -->
-<i class="fa fa-cog fa-spin"></i>	
-
-
-
-
-</body>
-</head>
-</html>
+	
