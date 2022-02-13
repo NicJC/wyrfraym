@@ -98,7 +98,7 @@ html {
 .caption {
   font-size: 1em;
   padding: 5px;
-  font-family: Courier;
+  font-family: Outfit;
 }
 
 .animatable {
@@ -114,7 +114,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #20262b;
+  background: #B7e3f3;
   padding: inherit;
   animation: .75s cubic-bezier(1,-0.01,.12,.8) 1.75s 1 hideBlack forwards;
 }
