@@ -83,9 +83,9 @@ ul li .active {
 
 .boxgroup {
   display: flex;
-  height: justify;
+  height: flex;
   flex-wrap: wrap;
-  align-content: justify;
+  align-content: relative;
   background-color: #B7e3f3;
   }
 
