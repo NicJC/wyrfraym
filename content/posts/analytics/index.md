@@ -90,9 +90,9 @@ ul li .active {
   }
 
 .boxgroup > div{
-  background-color: beige;
+  background-color: #d3eaf2;
   align-content: center;
-  width: 180px;
+  width: flex;
   line-height: justify;
   margin: 10px;
   text-align: center;
