@@ -4,15 +4,6 @@ date: 2021-02-21T10:59:27+13:00
 layout: analytics
 ---
 
-
-
-
-<div id="pic">
-
-<img src="images/mathbanner1.png" alt="" width="100%"/>
-
-</div>
-
 <style>
 
 img {
@@ -28,3 +19,9 @@ font-family: Outfit;
 }
 
 </style>
+
+<div id="pic">
+
+<img src="images/mathbanner1.png" alt="" width="100%"/>
+
+</div>
