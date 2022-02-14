@@ -59,7 +59,9 @@ at gluing programs together as the shell. Something that is dirt simple to
 learn, yet keeps the most serious hackers happy. We want it interactive
 and we want it compiled.<br>
 
-(<p1>Did we mention it should be as fast as C?</p1>)"</p>
+(<p1>Did we mention it should be as fast as C?</p1>)"</p> 
+
+The above quote comes from<u>[this article](https://julialang.org/blog/2012/02/why-we-created-julia/)</u>
 
 </div>
 
@@ -67,8 +69,41 @@ and we want it compiled.<br>
 
 Julia is a rich programming language that has a lot to offer, besides the speed and mathematical proficiency, Julia also does pretty well as far a graphing and plotting is concerned.
 
-One of my favorite packages is Gadfly. Of course there are other plotting libraries that come with Julia, but Gadfly is special.
 
 Take a look ...
 
-</p2>
+Julia also has the capability of using R data sets - the famous R iris data set.
+
+```julia
+# load a dataset
+using RDatasets
+iris = dataset("datasets", "iris");
+
+# load the StatsPlots recipes (for DataFrames) available via:
+# Pkg.add("StatsPlots")
+using StatsPlots
+
+# Scatter plot with some custom settings
+@df iris scatter(
+    :SepalLength,
+    :SepalWidth,
+    group = :Species,
+    title = "My awesome plot",
+    xlabel = "Length",
+    ylabel = "Width",
+    m = (0.5, [:cross :hex :star7], 12),
+    bg = RGB(0.2, 0.2, 0.2)
+)
+```
+
+
+
+
+    
+![svg](output_0_0.svg)
+    
+
+
+```julia
+
+```
