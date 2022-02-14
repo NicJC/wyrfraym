@@ -7,23 +7,26 @@ tags:
   - math
   - statistics
 ---
-
+<body>
 <style>
 
 
 body{
+  width:100%;
   line-height: 17px;
   font-size: justify;
   font-family: Outfit;
+  position:absolute;
 
 }
 
 .comment{
-
+  position:flex;
   margin:20px;
   padding: 30px;
   width:justify;
   font-color:black;
+  
 }
 
 p1{
@@ -72,7 +75,7 @@ Julia is a rich programming language that has a lot to offer, besides the speed 
 
 Take a look ...
 
-Julia also has the capability of using R data sets - the famous R iris data set.
+Julia also has the capability of using R data sets - the famous R iris data set...
 
 ```julia
 # load a dataset
@@ -107,3 +110,5 @@ using StatsPlots
 ```julia
 
 ```
+</p2>
+</body>
