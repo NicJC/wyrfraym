@@ -3329,71 +3329,11 @@ Gadfly.colorkey_swatch_click = function(event) {
 };
 
 
-return Gadfly;
-
-}));
-
-
-//@ sourceURL=gadfly.js
-
-(function (glob, factory) {
-    // AMD support
-      if (typeof require === "function" && typeof define === "function" && define.amd) {
-        require(["Snap.svg", "Gadfly"], function (Snap, Gadfly) {
-            factory(Snap, Gadfly);
-        });
-      } else {
-          factory(glob.Snap, glob.Gadfly);
-      }
-})(window, function (Snap, Gadfly) {
-    var fig = Snap("#img-2a4101b5");
-fig.select("#img-2a4101b5-5")
-   .drag(function() {}, function() {}, function() {});
-fig.select("#img-2a4101b5-7")
-   .data("color_class", "color_shot")
-.click(Gadfly.colorkey_swatch_click)
-;
-fig.select("#img-2a4101b5-8")
-   .data("color_class", "color_shot_and_Tasered")
-.click(Gadfly.colorkey_swatch_click)
-;
-fig.select("#img-2a4101b5-10")
-   .data("color_class", "color_shot")
-.click(Gadfly.colorkey_swatch_click)
-;
-fig.select("#img-2a4101b5-11")
-   .data("color_class", "color_shot_and_Tasered")
-.click(Gadfly.colorkey_swatch_click)
-;
-fig.select("#img-2a4101b5-15")
-   .init_gadfly();
-fig.select("#img-2a4101b5-18")
-   .plotroot().data("unfocused_ygrid_color", "#575757")
-;
-fig.select("#img-2a4101b5-18")
-   .plotroot().data("focused_ygrid_color", "#A0A0A0")
-;
-fig.select("#img-2a4101b5-22")
-   .plotroot().data("unfocused_xgrid_color", "#575757")
-;
-fig.select("#img-2a4101b5-22")
-   .plotroot().data("focused_xgrid_color", "#A0A0A0")
-;
-fig.select("#img-2a4101b5-733")
-   .mouseenter(Gadfly.helpscreen_visible)
-.mouseleave(Gadfly.helpscreen_hidden)
-;
-    });
 ]]> </script>
+
+
 </svg>
 
-
-
-
-
-```julia
-last(df,10)
-```
 
 
 
