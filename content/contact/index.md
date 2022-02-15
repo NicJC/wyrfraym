@@ -71,15 +71,14 @@ img {
 <p><b><H4>Conect with me on:</H4></B></p>
 
 <a href="https://github.com/NicJC" target="_blank">
-  <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=azure alt=github style="margin-bottom: 8px;" />
+  <img src="images/git.svg" alt="" width="3%"/>
   
 </a>
 
 <a href="https://www.linkedin.com/in/nicholas-coxen/" target="_blank">
-  <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=azure alt=linkedin style="margin-bottom: 8px;" />
+ <img src="images/linkedin.svg" alt="" width="3%"/>
   
 </a>
-
 
 
 
