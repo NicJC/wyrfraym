@@ -22,7 +22,6 @@ img {
 </style>
 
 
-
 <div id="graph">
 
 <img src="images/graph.png" alt="" width="60%" height="60%"/>
