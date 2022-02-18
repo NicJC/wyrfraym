@@ -9,6 +9,11 @@ tags:
 ---
 <body>
 <style>
+body {
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 15vh;
+  overflow-y: scroll;
+}
 
 
 body{

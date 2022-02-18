@@ -6,6 +6,13 @@ date: 2020-12-19T15:44:19Z
 
 <style type="text/css">
 
+
+body {
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 15vh;
+  overflow-y: scroll;
+}
+
   
 
 

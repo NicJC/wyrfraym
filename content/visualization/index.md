@@ -18,6 +18,12 @@ img {
   border-radius: 8px;
 }
 
+body {
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 15vh;
+  overflow-y: scroll;
+}
+
 
 </style>
 
@@ -27,5 +33,13 @@ img {
 <img src="images/graph.png" alt="" width="60%" height="60%"/>
 
 </div>
+
+
+<p>
+
+
+
+
+
 </body>
 </html>
