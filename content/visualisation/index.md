@@ -1,5 +1,5 @@
 ---
-title: "Visualization"
+title: "Visualisation"
 author: ''
 date: '2022-02-16'
 tags:
