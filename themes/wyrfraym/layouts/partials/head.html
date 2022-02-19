@@ -14,6 +14,34 @@ crossorigin="anonymous">
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
+<div class="container">
+  <!--<div class="take-input">
+     <input type="text" placeholder="Write any text" />
+    <a href="javascript:void(0);">Enter Text</a>
+  </div>-->
+     <div class="animate word">
+       
+      <span>M</span><span>a</span><span>t</span><span>h</span><span> &nbsp; 
+      </span><span>i</span><span>s</span><span> &nbsp;
+      </span><span>C</span><span>o</span><span>o</span><span>l</span><span>!</span><span>!</span><span>!</span>
+      
+</div>
+<script>
+
+$(function(){
+  $('.repeat').click(function(){
+      var classes =  $(this).parent().attr('class');
+        $(this).parent().attr('class', 'animate');
+        var indicator = $(this);
+        setTimeout(function(){ 
+          $(indicator).parent().addClass(classes);
+        }, 20);
+    });
+});
+
+</script>
+</head>
+
 <style>
 
 body {
@@ -200,26 +228,19 @@ a.repeat:hover {
   }
 }
 
-
+.menu{
+  position:relative;
+}
 
 </style>
 
 
-<script>
+<body>
+  
 
 
-$(function(){
-  $('.repeat').click(function(){
-      var classes =  $(this).parent().attr('class');
-        $(this).parent().attr('class', 'animate');
-        var indicator = $(this);
-        setTimeout(function(){ 
-          $(indicator).parent().addClass(classes);
-        }, 20);
-    });
-});
 
-</script>
+
 
 <div class="menu">
  
@@ -242,16 +263,4 @@ $(function(){
   </div>
 </div>
 
-
-<div class="container">
-  <!--<div class="take-input">
-     <input type="text" placeholder="Write any text" />
-    <a href="javascript:void(0);">Enter Text</a>
-  </div>-->
-     <div class="animate word">
-       
-      <span>M</span><span>a</span><span>t</span><span>h</span><span> &nbsp; 
-      </span><span>i</span><span>s</span><span> &nbsp;
-      </span><span>C</span><span>o</span><span>o</span><span>l</span><span>!</span><span>!</span><span>!</span>
-      
-</div>
+</body>
