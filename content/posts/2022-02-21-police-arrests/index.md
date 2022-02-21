@@ -24,29 +24,35 @@ body{
 border-radius: 8px;
 
 }
+
+
 </style>
 
-```{r setup, include=FALSE}
+```
 knitr::opts_chunk$set(echo = FALSE , warning = FALSE , message = FALSE)
 library(tidyverse)
 library(ggfortify)
 library(kableExtra)
+library(leaflet)
+```
+<u><h3>Read data into a dataframe</h3></u>
 
 ```
-
-
-```{r}
 arrests <- read.table("https://raw.githubusercontent.com/NicJC/Datasets/main/Arrests.csv", 
                   header = TRUE,
                  sep = ",")
 ```
 
-```{r}
-kable(arrests) %>%
+
+```
+df<-head(arrests,200)
+
+kable(df) %>%
   kable_styling(full_width = F)
 ```
+![df](df.png)
 
-```{r}
+```
 ggplot(arrests, aes(Age, fill = Race)) + 
 geom_bar() +
 labs(
@@ -57,5 +63,22 @@ labs(
 ```
 
 <img src="images/barchart.png" alt="arrests by age" width="100%"/>
+
+```
+df<-head(arrests,100)
+
+map = leaflet(df)%>%
+  addTiles() %>%
+  addCircles(lng = ~Longitude, lat = ~Latitude, popup = ~as.character(Category), label = ~as.character(Category))%>%
+  
+  addMarkers(lng = ~Longitude, lat = ~Latitude, popup = ~as.character(Category), label = ~as.character(Category))
+
+map
+
+```
+
+<img src="images/map.png" alt="map of arrests" width="100%"/>
+
+<u><h3>Map of 100 arrests in the Wahington area</h3></u>
 
 </body>
