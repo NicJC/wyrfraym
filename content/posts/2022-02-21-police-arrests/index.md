@@ -81,4 +81,12 @@ map
 
 <u><h3>Map of 100 arrests in the Wahington area</h3></u>
 
+```
+df<-head(arrests,100)
+
+boxplot(df$Age,horizontal = T, xlab = "Age", main="Boxplot of Age which arrests are spread over")
+```
+
+<img src="images/boxplot.png" alt="boxplot" width="100%"/>
+
 </body>
