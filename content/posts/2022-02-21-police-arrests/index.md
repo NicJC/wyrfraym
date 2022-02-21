@@ -39,8 +39,11 @@ library(kableExtra)
 arrests <- read.table("https://raw.githubusercontent.com/NicJC/Datasets/main/Arrests.csv", 
                   header = TRUE,
                  sep = ",")
+```
 
-head(arrests)
+```{r}
+kable(arrests) %>%
+  kable_styling(full_width = F)
 ```
 
 ```{r}
