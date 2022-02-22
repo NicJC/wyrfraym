@@ -95,7 +95,7 @@ boxplot(df$Age,horizontal = T, xlab = "Age", main="Boxplot of 100 arrests showin
 
 ```
 df<- arrests[ which(arrests$Year == "2019" & arrests$Ethnicity != "UNKNOWN"),] 
-head(df,200)
+
 data <- df[4:7]
 
 ggpairs(data, title="correlogram with arrests for Washington DC in 2019")
