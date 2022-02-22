@@ -34,6 +34,7 @@ library(tidyverse)
 library(ggfortify)
 library(kableExtra)
 library(leaflet)
+library(GGally)
 ```
 <u><h3>Read data into a dataframe</h3></u>
 
@@ -88,5 +89,19 @@ boxplot(df$Age,horizontal = T, xlab = "Age", main="Boxplot of 100 arrests showin
 ```
 
 <img src="images/boxplot.png" alt="boxplot" width="100%"/>
+
+
+<u><h3>Re-arrange and sort some data</h3></u>
+
+```
+df<- arrests[ which(arrests$Year == "2019" & arrests$Ethnicity != "UNKNOWN"),] 
+head(df,200)
+data <- df[4:7]
+
+ggpairs(data, title="correlogram with arrests for Washington DC in 2019")
+
+```
+
+<img src="images/correlogram.png" alt="" width="100%"/>
 
 </body>
