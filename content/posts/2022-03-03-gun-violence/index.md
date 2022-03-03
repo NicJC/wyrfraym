@@ -37,18 +37,31 @@ head(gun)
 ```
 ### First 'select' the fields that you want to display
 
+We use the pipe operator (%>%) to assign a different procedure to the data.
+
+### we have the data, then we assign to the data via %>% and the select operation, where we select our fields.
+
 ```
 gun %>%
   select("Incident.Date" , "State" , "City.Or.County" , "Killed" , "Injured")
 ```
+
+![](images/select.png)
+
 ### Then we filter the selection to not include "New York"
+
+### We add a pipe %>% and we filter the data to not include (!= / not equal to)
 
 ```
 gun %>%
   select("Incident.Date" , "State" , "City.Or.County" , "Killed" , "Injured") %>%
   filter(State != "New York")
 ```
+![](images/filter.png)
+
 ### Then we arrange the data by State descending
+
+### We pipe in the arrangement of the data, where we arrange by date , and descending State 
 
 ```
 gun %>%
@@ -56,7 +69,11 @@ gun %>%
   filter(State != "New York") %>%
   arrange(desc(State),"Incident.Date")
 ```
+![](images/arrange.png)
 
+## Finally, we pipe in a group_by function which groups the data and allocates a count.
+
+## <b><u>Note</u></b> that for each operation, there needs to be a pipe operation prior to the operation which has the %>% perform the operation on the ever changing data.
 
 ```
 R<-gun %>%
@@ -66,7 +83,7 @@ R<-gun %>%
   group_by(City.Or.County)
 
 ```
-
+![](images/group_by.png)
 ```
 View(R)
 ```
@@ -75,4 +92,4 @@ View(R)
 
 ### The group_by adds a count to the the data table, which produces a count of fatalities.
 
-![](images/head.png){width=100%}
+![](images/head.png)
