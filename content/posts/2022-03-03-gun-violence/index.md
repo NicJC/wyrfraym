@@ -4,14 +4,26 @@ title: "Gun Violence"
 date: '2022-03-03'
 
 tags:
-  - R dplyr data-manipulation
-
-## There are several ways of manipulating data in R, The Dplyr package from the tidyverse m
+  - R 
+  - dplyr 
+  - data-manipulation
 ---
 
-There are several ways of manipulating data in R, The Dplyr package from the tidyverse makes this quite easy.
+<html>
+<body>
+<style>
 
-```{r setup, include=FALSE}
+body{
+  font-family: Outfit;
+  font-size:17px;
+  background: #B7e3f3;
+}
+
+</style>
+
+## There are several ways of manipulating data in R, The Dplyr package from the tidyverse makes this quite easy.
+
+```
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(patchwork)
@@ -19,26 +31,26 @@ library(broom)
 library(kableExtra)
 ```
 
-```{r}
+```
 gun<-read_csv("https://raw.githubusercontent.com/NicJC/Gun-Violence/main/gun.csv")
 head(gun)
 ```
 ### First 'select' the fields that you want to display
 
-```{r}
+```
 gun %>%
   select("Incident.Date" , "State" , "City.Or.County" , "Killed" , "Injured")
 ```
 ### Then we filter the selection to not include "New York"
 
-```{r}
+```
 gun %>%
   select("Incident.Date" , "State" , "City.Or.County" , "Killed" , "Injured") %>%
   filter(State != "New York")
 ```
 ### Then we arrange the data by State descending
 
-```{r}
+```
 gun %>%
   select("Incident.Date" , "State" , "City.Or.County" , "Killed" , "Injured") %>%
   filter(State != "New York") %>%
@@ -46,7 +58,7 @@ gun %>%
 ```
 
 
-```{r}
+```
 R<-gun %>%
   select("Incident.Date" , "State" , "City.Or.County" , "Killed" , "Injured") %>%
   filter(State != "New York") %>%
@@ -55,7 +67,7 @@ R<-gun %>%
 
 ```
 
-```{r}
+```
 View(R)
 ```
 
