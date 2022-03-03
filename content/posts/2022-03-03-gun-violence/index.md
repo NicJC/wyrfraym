@@ -35,6 +35,8 @@ library(kableExtra)
 gun<-read_csv("https://raw.githubusercontent.com/NicJC/Gun-Violence/main/gun.csv")
 head(gun)
 ```
+![](images/dt.png)
+
 ### First 'select' the fields that you want to display
 
 We use the pipe operator (%>%) to assign a different procedure to the data.
