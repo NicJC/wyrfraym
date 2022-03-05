@@ -15,7 +15,14 @@ body{
   background: #B7e3f3;
 }
 
+p1{
+color: red;
+font-size:17px;
+}
+
 </style>
+
+### Load R libraries:
 
 ```
 knitr::opts_chunk$set(echo = TRUE,warning = F , comment = F)
@@ -25,11 +32,17 @@ library(broom)
 library(gridExtra)
 library(cowplot)
 ```
+<hr>
+
+<p1>Get data</p1>
 
 ```
 energy<-read_csv("https://raw.githubusercontent.com/NicJC/Energy_transition/master/EnergyTransition.csv")
 ```
 
+<hr>
+
+### dplyr to manipulate data and to pipe to ggplot:
 
 ```
 energy %>%
@@ -44,14 +57,29 @@ energy %>%
   panel.background = element_rect(fill = "beige")
 )
 ```
-![](/../../R/energy_files/geom_bar.png)
+## BarPlot
+
+<img src="images/geom_bar.png" alt="" width="100%"/>
+
+
+
+<hr>
+
 
 ```
 energy %>%
   select( Year , Category , Country , ProvidedValue , Month) %>%
   filter(Category ==  c("Fossil_Gas", "Geothermal" , "Nuclear" , "Wind_offshore","Hydro_Marine"))
 ```
-![](/../../R/energy_files/t1.png)
+<hr>
+
+### The data frame from the above operation
+
+
+
+![](images/t1.png)
+
+<hr>
 
 ```
 energy %>%
@@ -59,9 +87,16 @@ energy %>%
   filter(Category ==  c("Fossil_Gas", "Geothermal" , "Nuclear" , "Wind_offshore","Hydro_Marine"))%>%
 ggplot() + geom_point(
   aes(
-    x = Year , y = Category , color = factor(Year),size = Category ))+ labs(title = "Energy transition",caption = "Energy transition by Category and Year") + theme(panel.background = element_rect(fill = "lightgray")) 
+    x = Year , y = Category , color = factor(Year),size = Category ))+ 
+    labs(title = "Energy transition",caption = "Energy transition by Category and Year") + 
+    theme(panel.background = element_rect(fill = "lightgray")) 
 ```
-![](/../../R/energy_files/geom_point.png)
+<hr>
+
+
+<img src="images/geom_point.png" alt="" width="120%"/>
+
+<hr>
 
 ```
 energy %>%
@@ -69,7 +104,8 @@ energy %>%
   filter(Category !=  c("Fossil_Gas", "Geothermal" , "Nuclear" , "Wind_offshore","Hydro_Marine")) %>% 
   group_by(Category)%>% 
   summarise(Count = n()) %>%
-  ggplot() + geom_jitter(aes(y = Category , x = Count , color  = factor(Count))) + labs(title = "Energy transition", subtitle = " Count of Energy transition by Category")+ theme(
+  ggplot() + geom_jitter(aes(y = Category , x = Count , color  = factor(Count))) + 
+  labs(title = "Energy transition", subtitle = " Count of Energy transition by Category")+ theme(
   legend.text = element_text(size = 12),
   legend.title = element_text(size = 15, face = "bold"),
   panel.grid.major = element_line(color = "black", size = 0.5),
@@ -77,5 +113,16 @@ energy %>%
     plot.title = element_text(margin = margin())
 )
 ```
+<hr>
 
-![](/../../R/energy_files/geom_jitter.png)
+
+<img src="images/t2.png" alt="" width="80%"/>
+<hr>
+
+### The data frame from the below JitterPlot.
+
+<hr>
+
+<img src="images/geom_jitter.png" alt="" width="120%"/>
+
+<hr>
