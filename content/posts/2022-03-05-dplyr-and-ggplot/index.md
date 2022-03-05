@@ -15,10 +15,7 @@ body{
   background: #B7e3f3;
 }
 
-p1{
-color: red;
-font-size:17px;
-}
+
 
 </style>
 
@@ -34,7 +31,7 @@ library(cowplot)
 ```
 <hr>
 
-<p1>Get data</p1>
+### Get data
 
 ```
 energy<-read_csv("https://raw.githubusercontent.com/NicJC/Energy_transition/master/EnergyTransition.csv")
@@ -116,7 +113,7 @@ energy %>%
 <hr>
 
 
-<img src="images/t2.png" alt="" width="80%"/>
+<img src="images/t2.png" alt="" width="40%"/>
 <hr>
 
 ### The data frame from the below JitterPlot.
