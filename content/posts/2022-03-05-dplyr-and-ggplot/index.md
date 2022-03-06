@@ -2,7 +2,11 @@
 title: 'dplyr + ggplot'
 author: "Nic Coxen"
 date: '2022-03-05'
-output: html_document
+tags:
+  - R 
+  - dplyr 
+  - data-manipulation
+  - ggplot
 ---
 <html>
 <body>
