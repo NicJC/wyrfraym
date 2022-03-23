@@ -5,7 +5,7 @@ tags: ["R", "ggplot","visualisation","tidyverse"]
 ---
 
 
-```{r}
+```
 knitr::opts_chunk$set(message = FALSE,warning = F, echo = T,comment = F)
 library(tidyverse)
 
@@ -13,7 +13,7 @@ fires <- read_csv("https://raw.githubusercontent.com/NicJC/Fires/main/fires.csv"
 ```
 
 
-```{r}
+```
 fires %>%
   filter(fire_year == 1984 & fire_origin == "private land" & true_cause == c("unsafe fire","abandoned fire")) %>%
   group_by(fire_year,true_cause,activity_class) %>%
@@ -26,11 +26,11 @@ fires %>%
 
 ```
 
-```{r}
+```
 fires %>% glimpse()
 ```
 
-```{r}
+```
 fires %>%
   filter(fire_year > 1984) %>%
   group_by(fire_year,true_cause,activity_class) %>%
