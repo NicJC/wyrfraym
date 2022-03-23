@@ -70,3 +70,18 @@ fires %>% select(fire_year,true_cause,activity_class,uc_hectares) %>%
 <hr>
 
 <img src="images/barplot.png" alt="" width="100%"/>
+
+<hr>
+
+```
+fires %>% select(fire_year,true_cause,activity_class,uc_hectares) %>%
+  filter(fire_year == c('1960','1970','1980','1990','2000'),
+  true_cause == c("Camp Fire","abandoned fire","burning substance","unsafe fire") ) %>%
+  group_by(fire_year,activity_class,true_cause,uc_hectares) %>%
+  summarise(count = n(),Hectares = sum(uc_hectares)) %>%
+  pivot_wider(names_from = true_cause, values_from = count)
+```
+
+<hr>
+
+<img src="images/kable.png" alt="" width="100%"/>
