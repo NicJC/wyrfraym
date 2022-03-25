@@ -39,4 +39,3 @@ If you need some data for your projects, check out my [data](https://github.com/
 
 # wyrfraym
 
-<script src="https://gist.github.com/NicJC/3af30ad6a9585214b57906ba6707b76e.js"></script>
