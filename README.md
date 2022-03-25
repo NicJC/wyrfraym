@@ -30,6 +30,7 @@ My site has been built using the R package [`blogdown`](https://bookdown.org/yih
 My site is available [here](https://nicstats.netlify.app/)!
 	
 If you need some data for your projects, check out my [data](https://github.com/NicJC/Datasets)
+	
 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1a4b7462-a0f9-4185-a8f1-d7d6e6a8acaf/deploy-status)](https://app.netlify.com/sites/nicstats/deploys)
