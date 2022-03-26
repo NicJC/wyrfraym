@@ -16,11 +16,11 @@ body{
 
 </style>
 <br>
-```
 
+<b><h2>First, we load some data:</h2></b>
+ 
+<script src="https://gist.github.com/NicJC/9c29603d4d49aa30095bd641178fd274.js"></script>
 
-fires <- read_csv("https://raw.githubusercontent.com/NicJC/Fires/main/fires.csv",show_col_types = FALSE)
-```
 <hr>
 <script src="https://gist.github.com/NicJC/3bddaafc7201988aae64c91afb6d3d4b.js"></script>
 <hr>
