@@ -21,3 +21,9 @@ tags: [comics,asterix]
 </p>
 
 <hr>
+
+<p>4.
+<iframe src="https://archive.org/embed/01AsterixTheGaul_201804" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+</p>
+
+<hr>
