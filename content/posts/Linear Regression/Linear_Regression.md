@@ -39,29 +39,27 @@ body{
 
 <script src="https://gist.github.com/NicJC/451b53dda579afc78a875d5f299a27c8.js"></script>
 
-<p> Let's take a look at the data</p>
-
-<script src="https://gist.github.com/NicJC/12893317af7a1d901c9db07079cc12e3.js"></script>
-
-
+<p> Rename fields</p>
 
 
 <script src="https://gist.github.com/NicJC/d7360fb0e73742e95382fbc167f255b9.js"></script>
 
 
-<img src="/posts/Linear Regression/Linear_Regression_files/df.png" alt="" width="100%" height="100%"/>
+<p> Let's take a look at the data</p>
+
+
+
+<img src="/posts/Linear Regression/Linear_Regression_files/df.png" alt="" width="100%" height="80%"/>
 
 <hr>
 
 
-### Renaming Varriables
-
-<script src="https://gist.github.com/NicJC/bfea74f6f8edc3428a3f380816fc7681.js"></script>
 
 ### Splitting the data into a training set and a test set which we'll use later on.
 
 <script src="https://gist.github.com/NicJC/12ed8588d7ce1a75b900998247e40d02.js"></script>
 
+### we assign a linear model(lm1) to a model of "Priority" with respect to all the other variables in the data-frame (df).
 
 <script src="https://gist.github.com/NicJC/5302e589db0affc9443f132835cfc8b1.js"></script>
 
