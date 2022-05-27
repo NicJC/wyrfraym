@@ -12,6 +12,14 @@ tags:
 
 <html>
 
+<p> We have some data from a fire department, and we want to try predict "priority" based on the given variables. There are several ways to do this.
+
+</p>
+<hr>
+
+<p> First, we load some libraries for prediction and also plotting</p>
+
+
 <script src="https://gist.github.com/NicJC/45e840a1fe3d6079718a2cb3828a93d2.js"></script>
 <body>
 <style>
@@ -27,10 +35,15 @@ body{
 
 <br>
 
-
-
+<p> Read in some data for the fire department</p>
 
 <script src="https://gist.github.com/NicJC/451b53dda579afc78a875d5f299a27c8.js"></script>
+
+<p> Let's take a look at the data</p>
+
+<script src="https://gist.github.com/NicJC/12893317af7a1d901c9db07079cc12e3.js"></script>
+
+
 
 
 <script src="https://gist.github.com/NicJC/d7360fb0e73742e95382fbc167f255b9.js"></script>

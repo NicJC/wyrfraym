@@ -7,6 +7,10 @@ output: html_document
 
 
 
+<p>
+<p>We have some data from a fire department, and we want to try predict priority based on the given variables. There are several ways to do this.</p>
+</p>
+<hr>
 <pre class="r"><code>data &lt;- read_csv(&quot;https://raw.githubusercontent.com/NicJC/SFFD/main/San%20Francisco%20Fire%20Dept.csv&quot;,show_col_types = FALSE)
 head(data)</code></pre>
 <pre><code>## # A tibble: 6 x 13
@@ -53,293 +57,157 @@ df </code></pre>
 ## 10 Outside Fire                  B04              3 ENGINE    Tenderloin     
 ## # ... with 78,469 more rows</code></pre>
 <pre class="r"><code>skimr::skim(df)</code></pre>
-<table style="width: auto;" class="table table-condensed">
-<caption>
-<span id="tab:unnamed-chunk-4">Table 1: </span>Data summary
-</caption>
+<table>
+<caption><span id="tab:unnamed-chunk-4">Table 1: </span>Data summary</caption>
 <tbody>
-<tr>
-<td style="text-align:left;">
-Name
-</td>
-<td style="text-align:left;">
-df
-</td>
+<tr class="odd">
+<td align="left">Name</td>
+<td align="left">df</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Number of rows
-</td>
-<td style="text-align:left;">
-78479
-</td>
+<tr class="even">
+<td align="left">Number of rows</td>
+<td align="left">78479</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Number of columns
-</td>
-<td style="text-align:left;">
-5
-</td>
+<tr class="odd">
+<td align="left">Number of columns</td>
+<td align="left">5</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-_______________________
-</td>
-<td style="text-align:left;">
-</td>
+<tr class="even">
+<td align="left">_______________________</td>
+<td align="left"></td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Column type frequency:
-</td>
-<td style="text-align:left;">
-</td>
+<tr class="odd">
+<td align="left">Column type frequency:</td>
+<td align="left"></td>
 </tr>
-<tr>
-<td style="text-align:left;">
-character
-</td>
-<td style="text-align:left;">
-4
-</td>
+<tr class="even">
+<td align="left">character</td>
+<td align="left">4</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-numeric
-</td>
-<td style="text-align:left;">
-1
-</td>
+<tr class="odd">
+<td align="left">numeric</td>
+<td align="left">1</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-________________________
-</td>
-<td style="text-align:left;">
-</td>
+<tr class="even">
+<td align="left">________________________</td>
+<td align="left"></td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Group variables
-</td>
-<td style="text-align:left;">
-None
-</td>
+<tr class="odd">
+<td align="left">Group variables</td>
+<td align="left">None</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Variable type: character</strong></p>
 <table>
+<colgroup>
+<col width="19%" />
+<col width="13%" />
+<col width="19%" />
+<col width="5%" />
+<col width="5%" />
+<col width="8%" />
+<col width="12%" />
+<col width="15%" />
+</colgroup>
 <thead>
-<tr>
-<th style="text-align:left;">
-skim_variable
-</th>
-<th style="text-align:right;">
-n_missing
-</th>
-<th style="text-align:right;">
-complete_rate
-</th>
-<th style="text-align:right;">
-min
-</th>
-<th style="text-align:right;">
-max
-</th>
-<th style="text-align:right;">
-empty
-</th>
-<th style="text-align:right;">
-n_unique
-</th>
-<th style="text-align:right;">
-whitespace
-</th>
+<tr class="header">
+<th align="left">skim_variable</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="right">min</th>
+<th align="right">max</th>
+<th align="right">empty</th>
+<th align="right">n_unique</th>
+<th align="right">whitespace</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-Call Type
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-44
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-28
-</td>
-<td style="text-align:right;">
-0
-</td>
+<tr class="odd">
+<td align="left">Call Type</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">5</td>
+<td align="right">44</td>
+<td align="right">0</td>
+<td align="right">28</td>
+<td align="right">0</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Battalion
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-11
-</td>
-<td style="text-align:right;">
-0
-</td>
+<tr class="even">
+<td align="left">Battalion</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td align="right">11</td>
+<td align="right">0</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Unit Type
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-14
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:right;">
-0
-</td>
+<tr class="odd">
+<td align="left">Unit Type</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">5</td>
+<td align="right">14</td>
+<td align="right">0</td>
+<td align="right">10</td>
+<td align="right">0</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Neighborhood
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-30
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-42
-</td>
-<td style="text-align:right;">
-0
-</td>
+<tr class="even">
+<td align="left">Neighborhood</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">30</td>
+<td align="right">0</td>
+<td align="right">42</td>
+<td align="right">0</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Variable type: numeric</strong></p>
 <table>
+<colgroup>
+<col width="12%" />
+<col width="9%" />
+<col width="12%" />
+<col width="4%" />
+<col width="4%" />
+<col width="2%" />
+<col width="3%" />
+<col width="3%" />
+<col width="3%" />
+<col width="4%" />
+<col width="37%" />
+</colgroup>
 <thead>
-<tr>
-<th style="text-align:left;">
-skim_variable
-</th>
-<th style="text-align:right;">
-n_missing
-</th>
-<th style="text-align:right;">
-complete_rate
-</th>
-<th style="text-align:right;">
-mean
-</th>
-<th style="text-align:right;">
-sd
-</th>
-<th style="text-align:right;">
-p0
-</th>
-<th style="text-align:right;">
-p25
-</th>
-<th style="text-align:right;">
-p50
-</th>
-<th style="text-align:right;">
-p75
-</th>
-<th style="text-align:right;">
-p100
-</th>
-<th style="text-align:left;">
-hist
-</th>
+<tr class="header">
+<th align="left">skim_variable</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">p0</th>
+<th align="right">p25</th>
+<th align="right">p50</th>
+<th align="right">p75</th>
+<th align="right">p100</th>
+<th align="left">hist</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-Priority
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-2.71
-</td>
-<td style="text-align:right;">
-0.45
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:left;">
-&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;
-</td>
+<tr class="odd">
+<td align="left">Priority</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2.71</td>
+<td align="right">0.45</td>
+<td align="right">2</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="left">▃▁▁▁▇</td>
 </tr>
 </tbody>
 </table>
@@ -805,10 +673,10 @@ printcp(lm4)</code></pre>
 ## n= 78479 
 ## 
 ##         CP nsplit rel error  xerror      xstd
-## 1 0.195889      0   1.00000 1.00001 0.0033849
-## 2 0.031276      1   0.80411 0.80416 0.0034010
-## 3 0.023787      2   0.77283 0.77294 0.0034437
-## 4 0.012875      3   0.74905 0.74916 0.0029549</code></pre>
+## 1 0.195889      0   1.00000 1.00002 0.0033849
+## 2 0.031276      1   0.80411 0.80418 0.0034011
+## 3 0.023787      2   0.77283 0.77293 0.0034438
+## 4 0.012875      3   0.74905 0.74917 0.0029550</code></pre>
 <pre class="r"><code>plot(lm4,
      compress = TRUE,
      margin = 0.01)
@@ -821,18 +689,18 @@ mse3</code></pre>
 <pre><code>## [1] 0.1528933</code></pre>
 <pre class="r"><code>model1.nn &lt;- nnet(Priority ~ ., data = df, linout=TRUE, size=10,decay = 0.001)</code></pre>
 <pre><code>## # weights:  891
-## initial  value 802463.611144 
-## iter  10 value 15374.131341
-## iter  20 value 13751.637980
-## iter  30 value 12618.861432
-## iter  40 value 12479.068087
-## iter  50 value 12348.588612
-## iter  60 value 12223.296598
-## iter  70 value 12128.794736
-## iter  80 value 12094.464099
-## iter  90 value 12004.923511
-## iter 100 value 11897.122679
-## final  value 11897.122679 
+## initial  value 1359549.098332 
+## iter  10 value 16135.436047
+## iter  20 value 15969.685250
+## iter  30 value 15918.003772
+## iter  40 value 14852.590981
+## iter  50 value 14492.509419
+## iter  60 value 14156.505122
+## iter  70 value 13887.086368
+## iter  80 value 13723.977102
+## iter  90 value 13651.402937
+## iter 100 value 13577.480258
+## final  value 13577.480258 
 ## stopped after 100 iterations</code></pre>
 <pre class="r"><code>model1.nn</code></pre>
 <pre><code>## a 87-10-1 network with 891 weights
@@ -842,4 +710,4 @@ mse3</code></pre>
 <pre class="r"><code>nn.pred.1 &lt;- predict(model1.nn,df)
 mse.nn.1 &lt;- mean((nn.pred.1 - df$Priority)^2)
 mse.nn.1</code></pre>
-<pre><code>## [1] 0.1515239</code></pre>
+<pre><code>## [1] 0.1728763</code></pre>

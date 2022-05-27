@@ -5,6 +5,12 @@ date: '2022-04-17'
 output: html_document
 ---
 
+<p> We have some data from a fire department, and we want to try predict priority based on the given variables. There are several ways to do this.
+
+</p>
+<hr>
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
@@ -16,8 +22,6 @@ library(yardstick)
 library(rpart)
 library(randomForest)
 library(parsnip)
-library(data.table)
-library(kableExtra)
 library(nnet)
 library(GGally)
 ```
