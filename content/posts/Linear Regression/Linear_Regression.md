@@ -146,15 +146,22 @@ body{
 
 
 
-<img src="/posts/Linear Regression/Linear_Regression_files/converged.png" alt="" width="60%" height="60%"/>
+
 
 
 <hr>
 
+### We can now predict with our neural network, and check the mean squared error.
+
 
 <script src="https://gist.github.com/NicJC/ce7c0af16f3dce8bcfac4d16516c90d8.js"></script>
 
-[1] 0.2041005
+[1] 0.1396755
+
+### This is a little better, the best so far. Let's also try a random forest.
+
+
+
 
 
 The fit criteria can be referred to as the loss function. Training a neural network is done by adjusting the weights and biases of a neural network to minimize the loss function (finding the best fit) when using the training data.
