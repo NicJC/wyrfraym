@@ -63,7 +63,7 @@ body{
 
 <script src="https://gist.github.com/NicJC/5302e589db0affc9443f132835cfc8b1.js"></script>
 
-### We run a summary statistic on this and observe that there are some significant predictors, (***), and many that aren't really useful. The adjusted r squared, or the coefficient of determination is very low too. This tells us that the predictors don't explain the data very well.
+### We run a summary statistic on this and observe that there are some significant predictors, (***), and many that aren't really useful. The adjusted r squared, or the coefficient of determination is very low too. This tells us that the predictors don't explain the variation in the data very well.
 
 <img src="/posts/Linear Regression/Linear_Regression_files/lm1summary.png" alt="" width="100%" height="100%"/>
 
@@ -76,12 +76,19 @@ body{
 [1] 0.1484985
 
 
+### We can now take our lm1 model and use a backwards variable selection to find the optimal model that will remove predictors from the model to get to the lowest Akaike information criterion (AIC). R's backward variable selection uses AIC to determine and find the model that explains the most variation in the data model, and it will penalize models that use an excessive number of parameters. Generally we chose the model with the lowest AIC.
+
 <script src="https://gist.github.com/NicJC/65b267f76fda14475694532afaa247e4.js"></script>
 
 
 <img src="/posts/Linear Regression/Linear_Regression_files/AIC.png" alt="" width="80%" height="100%"/>
 
 <hr>
+
+#### Priority ~ 'Call Type','Battalion',Priority,'Unit Type',Neighborhood would be a better model.
+### Let's check the summary statistics on this new model.
+
+
 
 <script src="https://gist.github.com/NicJC/6ebf50d6aa55bbfb9fa5ec1825654965.js"></script>
 
@@ -105,8 +112,13 @@ body{
 
 [1] 0.1484985
 
+### Whichever way you look at this data, we just can't seem to find a good enough model using linear regression.
+### Let's try a decision tree.
+
 
 <script src="https://gist.github.com/NicJC/f55d9ddd83ed8850940039864af56ffc.js"></script>
+
+### We fit a regression tree (lm4) , and then run a cross validation on lm4 with R's "printcp" command, we add a complexity parameter to the regression tree which reduces the error quite a lot. Hopefully this produces a good fit.
 
 
 <img src="/posts/Linear Regression/Linear_Regression_files/regression tree.png" alt="" width="60%" height="60%"/>
@@ -115,20 +127,22 @@ body{
 
 <script src="https://gist.github.com/NicJC/2ff00987faf13443244cf5d0d5230c57.js"></script>
 
-
+### We print a plot of the Regression tree to see what it's doing, and on which nodes the tree splits.
 
 <img src="/posts/Linear Regression/Linear_Regression_files/tree.png" alt="" width="100%"/>
 
 <hr>
 
+### Now we can predict and check the mean squared error.
+
 <script src="https://gist.github.com/NicJC/df8ee930c9b9c80712996807be6f6a50.js"></script>
 
 [1] 0.1528933
 
+### Even worse! let's try a neural network.
 
-We set the seed here for reproducibility, so that we can get the same results by setting the same seed if we wanted to.
 
-<script src="https://gist.github.com/NicJC/51ee9dc1921c9d4b31672ba3e3177ef7.js"></script>
+<script src="https://gist.github.com/NicJC/3aea688af3a5240a465c658213c532ed.js"></script>
 
 
 
