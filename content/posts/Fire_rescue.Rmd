@@ -1,0 +1,115 @@
+---
+title: "REgression"
+author: "Nic Coxen"
+date: '2022-04-17'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(gridExtra)
+library(cowplot)
+library(broom)
+library(rsample)
+library(yardstick)
+library(rpart)
+library(randomForest)
+library(parsnip)
+library(data.table)
+library(kableExtra)
+library(nnet)
+library(GGally)
+```
+
+```{r}
+data <- read_csv("https://raw.githubusercontent.com/NicJC/SFFD/main/San%20Francisco%20Fire%20Dept.csv",show_col_types = FALSE)
+head(data)
+```
+
+```{r}
+df<-data %>%
+  select('Call Type','Battalion',Priority,'Unit Type',Neighborhood)
+df 
+```
+
+```{r}
+df%>% rename(Unit_Type = 'Unit Type', Call_Type = 'Call Type')
+```
+
+```{r}
+skimr::skim(df)
+```
+
+```{r}
+lm1<-lm(Priority ~. , data = df)
+summary(lm1)
+```
+
+```{r}
+pred <- predict(lm1, df)
+
+mse1 <- mean((pred - df$Priority)^2)
+mse1
+```
+
+
+
+```{r}
+lm2<-step(lm1)
+```
+
+```{r}
+summary(lm2)
+```
+
+
+```{r}
+lm3<-lm(Priority ~ Battalion + `Unit Type`, data = df)
+summary(lm3)
+```
+
+```{r}
+pred2 <- predict(lm3, df)
+
+mse2 <- mean((pred2 - df$Priority)^2)
+mse2
+```
+
+
+
+```{r}
+lm4<-rpart(Priority ~ ., data=df, cp = 0.012875)
+printcp(lm4)
+```
+
+```{r,fig.width=10, fig.height=9}
+plot(lm4,
+     compress = TRUE,
+     margin = 0.01)
+text(lm4)
+```
+
+```{r}
+pred3 <- predict(lm4, df)
+
+mse3 <- mean((pred3 - df$Priority)^2)
+mse3
+```
+
+
+```{r}
+model1.nn <- nnet(Priority ~ ., data = df, linout=TRUE, size=10,decay = 0.001)
+```
+
+```{r}
+model1.nn
+```
+
+
+```{r}
+nn.pred.1 <- predict(model1.nn,df)
+mse.nn.1 <- mean((nn.pred.1 - df$Priority)^2)
+mse.nn.1
+```
+

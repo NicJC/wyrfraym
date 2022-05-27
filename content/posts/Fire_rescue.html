@@ -1,0 +1,845 @@
+---
+title: "REgression"
+author: "Nic Coxen"
+date: '2022-04-17'
+output: html_document
+---
+
+
+
+<pre class="r"><code>data &lt;- read_csv(&quot;https://raw.githubusercontent.com/NicJC/SFFD/main/San%20Francisco%20Fire%20Dept.csv&quot;,show_col_types = FALSE)
+head(data)</code></pre>
+<pre><code>## # A tibble: 6 x 13
+##   `Call Type` `Call Date` Response_Time Address City  Zipcode Battalion Priority
+##   &lt;chr&gt;       &lt;chr&gt;       &lt;chr&gt;         &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt; &lt;chr&gt;        &lt;dbl&gt;
+## 1 Alarms      04/01/2022  04/01/2022 1~ 500 Bl~ San ~   94133 B01              3
+## 2 Medical In~ 04/01/2022  04/01/2022 0~ CAMBON~ San ~   94132 B08              2
+## 3 Medical In~ 04/01/2022  04/01/2022 0~ 700 Bl~ San ~   94109 B02              2
+## 4 Medical In~ 04/01/2022  04/01/2022 0~ MARKET~ San ~   94103 B03              3
+## 5 Alarms      04/01/2022  04/01/2022 0~ 1000 B~ San ~   94103 B03              3
+## 6 Citizen As~ 04/01/2022  04/01/2022 1~ 200 Bl~ San ~   94114 B06              2
+## # ... with 5 more variables: `Unit Type` &lt;chr&gt;, Neighborhood &lt;chr&gt;, Year &lt;dbl&gt;,
+## #   Month &lt;chr&gt;, Day &lt;chr&gt;</code></pre>
+<pre class="r"><code>df&lt;-data %&gt;%
+  select(&#39;Call Type&#39;,&#39;Battalion&#39;,Priority,&#39;Unit Type&#39;,Neighborhood)
+df </code></pre>
+<pre><code>## # A tibble: 78,479 x 5
+##    `Call Type`                   Battalion Priority `Unit Type` Neighborhood   
+##    &lt;chr&gt;                         &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt;       &lt;chr&gt;          
+##  1 Alarms                        B01              3 CHIEF       North Beach    
+##  2 Medical Incident              B08              2 MEDIC       Lakeshore      
+##  3 Medical Incident              B02              2 PRIVATE     Tenderloin     
+##  4 Medical Incident              B03              3 ENGINE      South of Market
+##  5 Alarms                        B03              3 CHIEF       South of Market
+##  6 Citizen Assist / Service Call B06              2 TRUCK       Noe Valley     
+##  7 Alarms                        B02              3 ENGINE      Tenderloin     
+##  8 Medical Incident              B10              3 MEDIC       Bernal Heights 
+##  9 Medical Incident              B03              3 MEDIC       Tenderloin     
+## 10 Outside Fire                  B04              3 ENGINE      Tenderloin     
+## # ... with 78,469 more rows</code></pre>
+<pre class="r"><code>df%&gt;% rename(Unit_Type = &#39;Unit Type&#39;, Call_Type = &#39;Call Type&#39;)</code></pre>
+<pre><code>## # A tibble: 78,479 x 5
+##    Call_Type                     Battalion Priority Unit_Type Neighborhood   
+##    &lt;chr&gt;                         &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;          
+##  1 Alarms                        B01              3 CHIEF     North Beach    
+##  2 Medical Incident              B08              2 MEDIC     Lakeshore      
+##  3 Medical Incident              B02              2 PRIVATE   Tenderloin     
+##  4 Medical Incident              B03              3 ENGINE    South of Market
+##  5 Alarms                        B03              3 CHIEF     South of Market
+##  6 Citizen Assist / Service Call B06              2 TRUCK     Noe Valley     
+##  7 Alarms                        B02              3 ENGINE    Tenderloin     
+##  8 Medical Incident              B10              3 MEDIC     Bernal Heights 
+##  9 Medical Incident              B03              3 MEDIC     Tenderloin     
+## 10 Outside Fire                  B04              3 ENGINE    Tenderloin     
+## # ... with 78,469 more rows</code></pre>
+<pre class="r"><code>skimr::skim(df)</code></pre>
+<table style="width: auto;" class="table table-condensed">
+<caption>
+<span id="tab:unnamed-chunk-4">Table 1: </span>Data summary
+</caption>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Name
+</td>
+<td style="text-align:left;">
+df
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Number of rows
+</td>
+<td style="text-align:left;">
+78479
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Number of columns
+</td>
+<td style="text-align:left;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+_______________________
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Column type frequency:
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+character
+</td>
+<td style="text-align:left;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+________________________
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Group variables
+</td>
+<td style="text-align:left;">
+None
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: character</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+skim_variable
+</th>
+<th style="text-align:right;">
+n_missing
+</th>
+<th style="text-align:right;">
+complete_rate
+</th>
+<th style="text-align:right;">
+min
+</th>
+<th style="text-align:right;">
+max
+</th>
+<th style="text-align:right;">
+empty
+</th>
+<th style="text-align:right;">
+n_unique
+</th>
+<th style="text-align:right;">
+whitespace
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Call Type
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+44
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Battalion
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Unit Type
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Neighborhood
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: numeric</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+skim_variable
+</th>
+<th style="text-align:right;">
+n_missing
+</th>
+<th style="text-align:right;">
+complete_rate
+</th>
+<th style="text-align:right;">
+mean
+</th>
+<th style="text-align:right;">
+sd
+</th>
+<th style="text-align:right;">
+p0
+</th>
+<th style="text-align:right;">
+p25
+</th>
+<th style="text-align:right;">
+p50
+</th>
+<th style="text-align:right;">
+p75
+</th>
+<th style="text-align:right;">
+p100
+</th>
+<th style="text-align:left;">
+hist
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Priority
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2.71
+</td>
+<td style="text-align:right;">
+0.45
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;
+</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>lm1&lt;-lm(Priority ~. , data = df)
+summary(lm1)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = Priority ~ ., data = df)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1.21809 -0.32491  0.04333  0.22550  0.94296 
+## 
+## Coefficients:
+##                                                           Estimate Std. Error
+## (Intercept)                                              3.1644840  0.2289059
+## `Call Type`Alarms                                       -0.0738981  0.1577047
+## `Call Type`Assist Police                                -0.1072985  0.4166760
+## `Call Type`Citizen Assist / Service Call                -0.6951131  0.1581418
+## `Call Type`Confined Space / Structure Collapse          -0.0889978  0.2728838
+## `Call Type`Electrical Hazard                            -0.1186397  0.1593763
+## `Call Type`Elevator / Escalator Rescue                  -0.0654768  0.1595648
+## `Call Type`Explosion                                    -0.0538565  0.1708799
+## `Call Type`Extrication / Entrapped (Machinery, Vehicle) -0.0207127  0.1865698
+## `Call Type`Fuel Spill                                   -0.0736399  0.1651045
+## `Call Type`Gas Leak (Natural and LP Gases)              -0.0689235  0.1583551
+## `Call Type`HazMat                                       -0.0732279  0.1958856
+## `Call Type`High Angle Rescue                             0.0331632  0.1744168
+## `Call Type`Industrial Accidents                         -0.0260202  0.1884178
+## `Call Type`Marine Fire                                  -0.1354167  0.4166350
+## `Call Type`Medical Incident                             -0.3117588  0.1576914
+## `Call Type`Mutual Aid / Assist Outside Agency           -0.1605907  0.4166047
+## `Call Type`Odor (Strange / Unknown)                     -0.0721971  0.1638432
+## `Call Type`Other                                        -0.3537457  0.1579558
+## `Call Type`Outside Fire                                 -0.1129726  0.1579484
+## `Call Type`Smoke Investigation (Outside)                -0.1027724  0.1605515
+## `Call Type`Structure Fire                               -0.0521433  0.1577398
+## `Call Type`Suspicious Package                           -0.0889978  0.2728838
+## `Call Type`Traffic Collision                             0.0018207  0.1578348
+## `Call Type`Train / Rail Incident                        -0.0258118  0.1865720
+## `Call Type`Vehicle Fire                                 -0.0917304  0.1593335
+## `Call Type`Water Rescue                                  0.0439310  0.1586672
+## `Call Type`Watercraft in Distress                        0.1425835  0.2148164
+## BattalionB02                                             0.0540255  0.0082971
+## BattalionB03                                             0.0341029  0.0078439
+## BattalionB04                                             0.0236973  0.0085776
+## BattalionB05                                             0.0264657  0.0114386
+## BattalionB06                                             0.0331947  0.0115169
+## BattalionB07                                             0.0100626  0.0211610
+## BattalionB08                                             0.0452178  0.0175617
+## BattalionB09                                             0.0405965  0.0188508
+## BattalionB10                                             0.0406438  0.0153023
+## BattalionB99                                             0.0907431  0.0351849
+## `Unit Type`CHIEF                                        -0.1435712  0.1649427
+## `Unit Type`ENGINE                                       -0.0555782  0.1648661
+## `Unit Type`INVESTIGATION                                -0.0894884  0.1699338
+## `Unit Type`MEDIC                                        -0.3522248  0.1648750
+## `Unit Type`PRIVATE                                      -0.3884608  0.1649240
+## `Unit Type`RESCUE CAPTAIN                                0.0121251  0.1650420
+## `Unit Type`RESCUE SQUAD                                 -0.0646659  0.1652915
+## `Unit Type`SUPPORT                                      -0.5674757  0.1649102
+## `Unit Type`TRUCK                                        -0.1068419  0.1649186
+## NeighborhoodBernal Heights                              -0.0252095  0.0162449
+## NeighborhoodCastro/Upper Market                         -0.0487965  0.0174874
+## NeighborhoodChinatown                                   -0.0126906  0.0191520
+## NeighborhoodExcelsior                                    0.0006812  0.0202030
+## NeighborhoodFinancial District/South Beach              -0.0112591  0.0161181
+## NeighborhoodGlen Park                                   -0.0311110  0.0254606
+## NeighborhoodGolden Gate Park                            -0.0439185  0.0259506
+## NeighborhoodHaight Ashbury                              -0.0685910  0.0201815
+## NeighborhoodHayes Valley                                -0.0731883  0.0169241
+## NeighborhoodInner Richmond                              -0.0158981  0.0269738
+## NeighborhoodInner Sunset                                -0.0552541  0.0203681
+## NeighborhoodJapantown                                    0.0110024  0.0210158
+## NeighborhoodLakeshore                                   -0.0678617  0.0220348
+## NeighborhoodLincoln Park                                -0.0157417  0.0655831
+## NeighborhoodLone Mountain/USF                           -0.0111645  0.0210345
+## NeighborhoodMarina                                      -0.0253046  0.0186293
+## NeighborhoodMcLaren Park                                 0.0450627  0.0391550
+## NeighborhoodMission                                     -0.0594840  0.0146385
+## NeighborhoodMission Bay                                 -0.0201522  0.0182717
+## NeighborhoodNob Hill                                    -0.0248736  0.0172880
+## NeighborhoodNoe Valley                                  -0.0484817  0.0200310
+## NeighborhoodNone                                         0.1486652  0.0490474
+## NeighborhoodNorth Beach                                 -0.0143681  0.0193995
+## NeighborhoodOceanview/Merced/Ingleside                  -0.0070239  0.0218554
+## NeighborhoodOuter Mission                               -0.1007005  0.0206225
+## NeighborhoodOuter Richmond                              -0.0130059  0.0255155
+## NeighborhoodPacific Heights                             -0.0144189  0.0184542
+## NeighborhoodPortola                                      0.0338369  0.0154881
+## NeighborhoodPotrero Hill                                -0.0309867  0.0122968
+## NeighborhoodPresidio                                    -0.0541261  0.0408426
+## NeighborhoodPresidio Heights                            -0.0503482  0.0232924
+## NeighborhoodRussian Hill                                 0.0043641  0.0197457
+## NeighborhoodSeacliff                                    -0.0291101  0.0421710
+## NeighborhoodSouth of Market                              0.0055588  0.0152048
+## NeighborhoodSunset/Parkside                             -0.0187069  0.0203286
+## NeighborhoodTenderloin                                   0.0175820  0.0150260
+## NeighborhoodTreasure Island                             -0.0575843  0.0209854
+## NeighborhoodTwin Peaks                                  -0.0161715  0.0232727
+## NeighborhoodVisitacion Valley                           -0.0053144  0.0193858
+## NeighborhoodWest of Twin Peaks                          -0.0444639  0.0190473
+## NeighborhoodWestern Addition                            -0.0251203  0.0163902
+##                                                         t value Pr(&gt;|t|)    
+## (Intercept)                                              13.824  &lt; 2e-16 ***
+## `Call Type`Alarms                                        -0.469 0.639367    
+## `Call Type`Assist Police                                 -0.258 0.796785    
+## `Call Type`Citizen Assist / Service Call                 -4.396 1.11e-05 ***
+## `Call Type`Confined Space / Structure Collapse           -0.326 0.744321    
+## `Call Type`Electrical Hazard                             -0.744 0.456637    
+## `Call Type`Elevator / Escalator Rescue                   -0.410 0.681553    
+## `Call Type`Explosion                                     -0.315 0.752632    
+## `Call Type`Extrication / Entrapped (Machinery, Vehicle)  -0.111 0.911602    
+## `Call Type`Fuel Spill                                    -0.446 0.655584    
+## `Call Type`Gas Leak (Natural and LP Gases)               -0.435 0.663385    
+## `Call Type`HazMat                                        -0.374 0.708532    
+## `Call Type`High Angle Rescue                              0.190 0.849202    
+## `Call Type`Industrial Accidents                          -0.138 0.890163    
+## `Call Type`Marine Fire                                   -0.325 0.745163    
+## `Call Type`Medical Incident                              -1.977 0.048043 *  
+## `Call Type`Mutual Aid / Assist Outside Agency            -0.385 0.699887    
+## `Call Type`Odor (Strange / Unknown)                      -0.441 0.659469    
+## `Call Type`Other                                         -2.240 0.025125 *  
+## `Call Type`Outside Fire                                  -0.715 0.474457    
+## `Call Type`Smoke Investigation (Outside)                 -0.640 0.522096    
+## `Call Type`Structure Fire                                -0.331 0.740974    
+## `Call Type`Suspicious Package                            -0.326 0.744321    
+## `Call Type`Traffic Collision                              0.012 0.990796    
+## `Call Type`Train / Rail Incident                         -0.138 0.889966    
+## `Call Type`Vehicle Fire                                  -0.576 0.564811    
+## `Call Type`Water Rescue                                   0.277 0.781877    
+## `Call Type`Watercraft in Distress                         0.664 0.506855    
+## BattalionB02                                              6.511 7.49e-11 ***
+## BattalionB03                                              4.348 1.38e-05 ***
+## BattalionB04                                              2.763 0.005734 ** 
+## BattalionB05                                              2.314 0.020685 *  
+## BattalionB06                                              2.882 0.003949 ** 
+## BattalionB07                                              0.476 0.634412    
+## BattalionB08                                              2.575 0.010032 *  
+## BattalionB09                                              2.154 0.031277 *  
+## BattalionB10                                              2.656 0.007908 ** 
+## BattalionB99                                              2.579 0.009910 ** 
+## `Unit Type`CHIEF                                         -0.870 0.384068    
+## `Unit Type`ENGINE                                        -0.337 0.736034    
+## `Unit Type`INVESTIGATION                                 -0.527 0.598468    
+## `Unit Type`MEDIC                                         -2.136 0.032657 *  
+## `Unit Type`PRIVATE                                       -2.355 0.018506 *  
+## `Unit Type`RESCUE CAPTAIN                                 0.073 0.941435    
+## `Unit Type`RESCUE SQUAD                                  -0.391 0.695633    
+## `Unit Type`SUPPORT                                       -3.441 0.000580 ***
+## `Unit Type`TRUCK                                         -0.648 0.517086    
+## NeighborhoodBernal Heights                               -1.552 0.120704    
+## NeighborhoodCastro/Upper Market                          -2.790 0.005266 ** 
+## NeighborhoodChinatown                                    -0.663 0.507571    
+## NeighborhoodExcelsior                                     0.034 0.973102    
+## NeighborhoodFinancial District/South Beach               -0.699 0.484844    
+## NeighborhoodGlen Park                                    -1.222 0.221740    
+## NeighborhoodGolden Gate Park                             -1.692 0.090576 .  
+## NeighborhoodHaight Ashbury                               -3.399 0.000677 ***
+## NeighborhoodHayes Valley                                 -4.324 1.53e-05 ***
+## NeighborhoodInner Richmond                               -0.589 0.555599    
+## NeighborhoodInner Sunset                                 -2.713 0.006674 ** 
+## NeighborhoodJapantown                                     0.524 0.600606    
+## NeighborhoodLakeshore                                    -3.080 0.002072 ** 
+## NeighborhoodLincoln Park                                 -0.240 0.810310    
+## NeighborhoodLone Mountain/USF                            -0.531 0.595579    
+## NeighborhoodMarina                                       -1.358 0.174364    
+## NeighborhoodMcLaren Park                                  1.151 0.249785    
+## NeighborhoodMission                                      -4.064 4.84e-05 ***
+## NeighborhoodMission Bay                                  -1.103 0.270065    
+## NeighborhoodNob Hill                                     -1.439 0.150217    
+## NeighborhoodNoe Valley                                   -2.420 0.015508 *  
+## NeighborhoodNone                                          3.031 0.002438 ** 
+## NeighborhoodNorth Beach                                  -0.741 0.458913    
+## NeighborhoodOceanview/Merced/Ingleside                   -0.321 0.747922    
+## NeighborhoodOuter Mission                                -4.883 1.05e-06 ***
+## NeighborhoodOuter Richmond                               -0.510 0.610245    
+## NeighborhoodPacific Heights                              -0.781 0.434608    
+## NeighborhoodPortola                                       2.185 0.028914 *  
+## NeighborhoodPotrero Hill                                 -2.520 0.011741 *  
+## NeighborhoodPresidio                                     -1.325 0.185097    
+## NeighborhoodPresidio Heights                             -2.162 0.030654 *  
+## NeighborhoodRussian Hill                                  0.221 0.825081    
+## NeighborhoodSeacliff                                     -0.690 0.490016    
+## NeighborhoodSouth of Market                               0.366 0.714671    
+## NeighborhoodSunset/Parkside                              -0.920 0.357457    
+## NeighborhoodTenderloin                                    1.170 0.241962    
+## NeighborhoodTreasure Island                              -2.744 0.006071 ** 
+## NeighborhoodTwin Peaks                                   -0.695 0.487139    
+## NeighborhoodVisitacion Valley                            -0.274 0.783977    
+## NeighborhoodWest of Twin Peaks                           -2.334 0.019577 *  
+## NeighborhoodWestern Addition                             -1.533 0.125368    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.3856 on 78391 degrees of freedom
+## Multiple R-squared:  0.2725, Adjusted R-squared:  0.2717 
+## F-statistic: 337.5 on 87 and 78391 DF,  p-value: &lt; 2.2e-16</code></pre>
+<pre class="r"><code>pred &lt;- predict(lm1, df)
+
+mse1 &lt;- mean((pred - df$Priority)^2)
+mse1</code></pre>
+<pre><code>## [1] 0.1484985</code></pre>
+<pre class="r"><code>lm2&lt;-step(lm1)</code></pre>
+<pre><code>## Start:  AIC=-149497.6
+## Priority ~ `Call Type` + Battalion + `Unit Type` + Neighborhood
+## 
+##                Df Sum of Sq   RSS     AIC
+## &lt;none&gt;                      11654 -149498
+## - Battalion    10      8.67 11663 -149459
+## - Neighborhood 41     50.25 11704 -149242
+## - `Call Type`  27    956.79 12611 -143359
+## - `Unit Type`   9   1823.10 13477 -138109</code></pre>
+<pre class="r"><code>summary(lm2)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = Priority ~ `Call Type` + Battalion + `Unit Type` + 
+##     Neighborhood, data = df)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1.21809 -0.32491  0.04333  0.22550  0.94296 
+## 
+## Coefficients:
+##                                                           Estimate Std. Error
+## (Intercept)                                              3.1644840  0.2289059
+## `Call Type`Alarms                                       -0.0738981  0.1577047
+## `Call Type`Assist Police                                -0.1072985  0.4166760
+## `Call Type`Citizen Assist / Service Call                -0.6951131  0.1581418
+## `Call Type`Confined Space / Structure Collapse          -0.0889978  0.2728838
+## `Call Type`Electrical Hazard                            -0.1186397  0.1593763
+## `Call Type`Elevator / Escalator Rescue                  -0.0654768  0.1595648
+## `Call Type`Explosion                                    -0.0538565  0.1708799
+## `Call Type`Extrication / Entrapped (Machinery, Vehicle) -0.0207127  0.1865698
+## `Call Type`Fuel Spill                                   -0.0736399  0.1651045
+## `Call Type`Gas Leak (Natural and LP Gases)              -0.0689235  0.1583551
+## `Call Type`HazMat                                       -0.0732279  0.1958856
+## `Call Type`High Angle Rescue                             0.0331632  0.1744168
+## `Call Type`Industrial Accidents                         -0.0260202  0.1884178
+## `Call Type`Marine Fire                                  -0.1354167  0.4166350
+## `Call Type`Medical Incident                             -0.3117588  0.1576914
+## `Call Type`Mutual Aid / Assist Outside Agency           -0.1605907  0.4166047
+## `Call Type`Odor (Strange / Unknown)                     -0.0721971  0.1638432
+## `Call Type`Other                                        -0.3537457  0.1579558
+## `Call Type`Outside Fire                                 -0.1129726  0.1579484
+## `Call Type`Smoke Investigation (Outside)                -0.1027724  0.1605515
+## `Call Type`Structure Fire                               -0.0521433  0.1577398
+## `Call Type`Suspicious Package                           -0.0889978  0.2728838
+## `Call Type`Traffic Collision                             0.0018207  0.1578348
+## `Call Type`Train / Rail Incident                        -0.0258118  0.1865720
+## `Call Type`Vehicle Fire                                 -0.0917304  0.1593335
+## `Call Type`Water Rescue                                  0.0439310  0.1586672
+## `Call Type`Watercraft in Distress                        0.1425835  0.2148164
+## BattalionB02                                             0.0540255  0.0082971
+## BattalionB03                                             0.0341029  0.0078439
+## BattalionB04                                             0.0236973  0.0085776
+## BattalionB05                                             0.0264657  0.0114386
+## BattalionB06                                             0.0331947  0.0115169
+## BattalionB07                                             0.0100626  0.0211610
+## BattalionB08                                             0.0452178  0.0175617
+## BattalionB09                                             0.0405965  0.0188508
+## BattalionB10                                             0.0406438  0.0153023
+## BattalionB99                                             0.0907431  0.0351849
+## `Unit Type`CHIEF                                        -0.1435712  0.1649427
+## `Unit Type`ENGINE                                       -0.0555782  0.1648661
+## `Unit Type`INVESTIGATION                                -0.0894884  0.1699338
+## `Unit Type`MEDIC                                        -0.3522248  0.1648750
+## `Unit Type`PRIVATE                                      -0.3884608  0.1649240
+## `Unit Type`RESCUE CAPTAIN                                0.0121251  0.1650420
+## `Unit Type`RESCUE SQUAD                                 -0.0646659  0.1652915
+## `Unit Type`SUPPORT                                      -0.5674757  0.1649102
+## `Unit Type`TRUCK                                        -0.1068419  0.1649186
+## NeighborhoodBernal Heights                              -0.0252095  0.0162449
+## NeighborhoodCastro/Upper Market                         -0.0487965  0.0174874
+## NeighborhoodChinatown                                   -0.0126906  0.0191520
+## NeighborhoodExcelsior                                    0.0006812  0.0202030
+## NeighborhoodFinancial District/South Beach              -0.0112591  0.0161181
+## NeighborhoodGlen Park                                   -0.0311110  0.0254606
+## NeighborhoodGolden Gate Park                            -0.0439185  0.0259506
+## NeighborhoodHaight Ashbury                              -0.0685910  0.0201815
+## NeighborhoodHayes Valley                                -0.0731883  0.0169241
+## NeighborhoodInner Richmond                              -0.0158981  0.0269738
+## NeighborhoodInner Sunset                                -0.0552541  0.0203681
+## NeighborhoodJapantown                                    0.0110024  0.0210158
+## NeighborhoodLakeshore                                   -0.0678617  0.0220348
+## NeighborhoodLincoln Park                                -0.0157417  0.0655831
+## NeighborhoodLone Mountain/USF                           -0.0111645  0.0210345
+## NeighborhoodMarina                                      -0.0253046  0.0186293
+## NeighborhoodMcLaren Park                                 0.0450627  0.0391550
+## NeighborhoodMission                                     -0.0594840  0.0146385
+## NeighborhoodMission Bay                                 -0.0201522  0.0182717
+## NeighborhoodNob Hill                                    -0.0248736  0.0172880
+## NeighborhoodNoe Valley                                  -0.0484817  0.0200310
+## NeighborhoodNone                                         0.1486652  0.0490474
+## NeighborhoodNorth Beach                                 -0.0143681  0.0193995
+## NeighborhoodOceanview/Merced/Ingleside                  -0.0070239  0.0218554
+## NeighborhoodOuter Mission                               -0.1007005  0.0206225
+## NeighborhoodOuter Richmond                              -0.0130059  0.0255155
+## NeighborhoodPacific Heights                             -0.0144189  0.0184542
+## NeighborhoodPortola                                      0.0338369  0.0154881
+## NeighborhoodPotrero Hill                                -0.0309867  0.0122968
+## NeighborhoodPresidio                                    -0.0541261  0.0408426
+## NeighborhoodPresidio Heights                            -0.0503482  0.0232924
+## NeighborhoodRussian Hill                                 0.0043641  0.0197457
+## NeighborhoodSeacliff                                    -0.0291101  0.0421710
+## NeighborhoodSouth of Market                              0.0055588  0.0152048
+## NeighborhoodSunset/Parkside                             -0.0187069  0.0203286
+## NeighborhoodTenderloin                                   0.0175820  0.0150260
+## NeighborhoodTreasure Island                             -0.0575843  0.0209854
+## NeighborhoodTwin Peaks                                  -0.0161715  0.0232727
+## NeighborhoodVisitacion Valley                           -0.0053144  0.0193858
+## NeighborhoodWest of Twin Peaks                          -0.0444639  0.0190473
+## NeighborhoodWestern Addition                            -0.0251203  0.0163902
+##                                                         t value Pr(&gt;|t|)    
+## (Intercept)                                              13.824  &lt; 2e-16 ***
+## `Call Type`Alarms                                        -0.469 0.639367    
+## `Call Type`Assist Police                                 -0.258 0.796785    
+## `Call Type`Citizen Assist / Service Call                 -4.396 1.11e-05 ***
+## `Call Type`Confined Space / Structure Collapse           -0.326 0.744321    
+## `Call Type`Electrical Hazard                             -0.744 0.456637    
+## `Call Type`Elevator / Escalator Rescue                   -0.410 0.681553    
+## `Call Type`Explosion                                     -0.315 0.752632    
+## `Call Type`Extrication / Entrapped (Machinery, Vehicle)  -0.111 0.911602    
+## `Call Type`Fuel Spill                                    -0.446 0.655584    
+## `Call Type`Gas Leak (Natural and LP Gases)               -0.435 0.663385    
+## `Call Type`HazMat                                        -0.374 0.708532    
+## `Call Type`High Angle Rescue                              0.190 0.849202    
+## `Call Type`Industrial Accidents                          -0.138 0.890163    
+## `Call Type`Marine Fire                                   -0.325 0.745163    
+## `Call Type`Medical Incident                              -1.977 0.048043 *  
+## `Call Type`Mutual Aid / Assist Outside Agency            -0.385 0.699887    
+## `Call Type`Odor (Strange / Unknown)                      -0.441 0.659469    
+## `Call Type`Other                                         -2.240 0.025125 *  
+## `Call Type`Outside Fire                                  -0.715 0.474457    
+## `Call Type`Smoke Investigation (Outside)                 -0.640 0.522096    
+## `Call Type`Structure Fire                                -0.331 0.740974    
+## `Call Type`Suspicious Package                            -0.326 0.744321    
+## `Call Type`Traffic Collision                              0.012 0.990796    
+## `Call Type`Train / Rail Incident                         -0.138 0.889966    
+## `Call Type`Vehicle Fire                                  -0.576 0.564811    
+## `Call Type`Water Rescue                                   0.277 0.781877    
+## `Call Type`Watercraft in Distress                         0.664 0.506855    
+## BattalionB02                                              6.511 7.49e-11 ***
+## BattalionB03                                              4.348 1.38e-05 ***
+## BattalionB04                                              2.763 0.005734 ** 
+## BattalionB05                                              2.314 0.020685 *  
+## BattalionB06                                              2.882 0.003949 ** 
+## BattalionB07                                              0.476 0.634412    
+## BattalionB08                                              2.575 0.010032 *  
+## BattalionB09                                              2.154 0.031277 *  
+## BattalionB10                                              2.656 0.007908 ** 
+## BattalionB99                                              2.579 0.009910 ** 
+## `Unit Type`CHIEF                                         -0.870 0.384068    
+## `Unit Type`ENGINE                                        -0.337 0.736034    
+## `Unit Type`INVESTIGATION                                 -0.527 0.598468    
+## `Unit Type`MEDIC                                         -2.136 0.032657 *  
+## `Unit Type`PRIVATE                                       -2.355 0.018506 *  
+## `Unit Type`RESCUE CAPTAIN                                 0.073 0.941435    
+## `Unit Type`RESCUE SQUAD                                  -0.391 0.695633    
+## `Unit Type`SUPPORT                                       -3.441 0.000580 ***
+## `Unit Type`TRUCK                                         -0.648 0.517086    
+## NeighborhoodBernal Heights                               -1.552 0.120704    
+## NeighborhoodCastro/Upper Market                          -2.790 0.005266 ** 
+## NeighborhoodChinatown                                    -0.663 0.507571    
+## NeighborhoodExcelsior                                     0.034 0.973102    
+## NeighborhoodFinancial District/South Beach               -0.699 0.484844    
+## NeighborhoodGlen Park                                    -1.222 0.221740    
+## NeighborhoodGolden Gate Park                             -1.692 0.090576 .  
+## NeighborhoodHaight Ashbury                               -3.399 0.000677 ***
+## NeighborhoodHayes Valley                                 -4.324 1.53e-05 ***
+## NeighborhoodInner Richmond                               -0.589 0.555599    
+## NeighborhoodInner Sunset                                 -2.713 0.006674 ** 
+## NeighborhoodJapantown                                     0.524 0.600606    
+## NeighborhoodLakeshore                                    -3.080 0.002072 ** 
+## NeighborhoodLincoln Park                                 -0.240 0.810310    
+## NeighborhoodLone Mountain/USF                            -0.531 0.595579    
+## NeighborhoodMarina                                       -1.358 0.174364    
+## NeighborhoodMcLaren Park                                  1.151 0.249785    
+## NeighborhoodMission                                      -4.064 4.84e-05 ***
+## NeighborhoodMission Bay                                  -1.103 0.270065    
+## NeighborhoodNob Hill                                     -1.439 0.150217    
+## NeighborhoodNoe Valley                                   -2.420 0.015508 *  
+## NeighborhoodNone                                          3.031 0.002438 ** 
+## NeighborhoodNorth Beach                                  -0.741 0.458913    
+## NeighborhoodOceanview/Merced/Ingleside                   -0.321 0.747922    
+## NeighborhoodOuter Mission                                -4.883 1.05e-06 ***
+## NeighborhoodOuter Richmond                               -0.510 0.610245    
+## NeighborhoodPacific Heights                              -0.781 0.434608    
+## NeighborhoodPortola                                       2.185 0.028914 *  
+## NeighborhoodPotrero Hill                                 -2.520 0.011741 *  
+## NeighborhoodPresidio                                     -1.325 0.185097    
+## NeighborhoodPresidio Heights                             -2.162 0.030654 *  
+## NeighborhoodRussian Hill                                  0.221 0.825081    
+## NeighborhoodSeacliff                                     -0.690 0.490016    
+## NeighborhoodSouth of Market                               0.366 0.714671    
+## NeighborhoodSunset/Parkside                              -0.920 0.357457    
+## NeighborhoodTenderloin                                    1.170 0.241962    
+## NeighborhoodTreasure Island                              -2.744 0.006071 ** 
+## NeighborhoodTwin Peaks                                   -0.695 0.487139    
+## NeighborhoodVisitacion Valley                            -0.274 0.783977    
+## NeighborhoodWest of Twin Peaks                           -2.334 0.019577 *  
+## NeighborhoodWestern Addition                             -1.533 0.125368    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.3856 on 78391 degrees of freedom
+## Multiple R-squared:  0.2725, Adjusted R-squared:  0.2717 
+## F-statistic: 337.5 on 87 and 78391 DF,  p-value: &lt; 2.2e-16</code></pre>
+<pre class="r"><code>lm3&lt;-lm(Priority ~ Battalion + `Unit Type`, data = df)
+summary(lm3)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = Priority ~ Battalion + `Unit Type`, data = df)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.0576 -0.3278  0.1002  0.1390  0.7168 
+## 
+## Coefficients:
+##                            Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)                2.988098   0.164047  18.215  &lt; 2e-16 ***
+## BattalionB02               0.032746   0.005643   5.803 6.53e-09 ***
+## BattalionB03               0.038810   0.005805   6.686 2.31e-11 ***
+## BattalionB04               0.019893   0.006360   3.128  0.00176 ** 
+## BattalionB05              -0.005794   0.007084  -0.818  0.41338    
+## BattalionB06              -0.005868   0.007212  -0.814  0.41581    
+## BattalionB07               0.007351   0.008044   0.914  0.36078    
+## BattalionB08               0.010665   0.007011   1.521  0.12826    
+## BattalionB09               0.011902   0.007075   1.682  0.09251 .  
+## BattalionB10               0.044877   0.006762   6.636 3.24e-11 ***
+## BattalionB99               0.125668   0.016331   7.695 1.43e-14 ***
+## `Unit Type`CHIEF          -0.077793   0.164062  -0.474  0.63538    
+## `Unit Type`ENGINE         -0.121346   0.163993  -0.740  0.45933    
+## `Unit Type`INVESTIGATION  -0.022142   0.169408  -0.131  0.89601    
+## `Unit Type`MEDIC          -0.476264   0.163993  -2.904  0.00368 ** 
+## `Unit Type`PRIVATE        -0.518407   0.164040  -3.160  0.00158 ** 
+## `Unit Type`RESCUE CAPTAIN -0.095943   0.164168  -0.584  0.55894    
+## `Unit Type`RESCUE SQUAD   -0.056184   0.164423  -0.342  0.73257    
+## `Unit Type`SUPPORT        -0.699082   0.164092  -4.260 2.04e-05 ***
+## `Unit Type`TRUCK          -0.121061   0.164044  -0.738  0.46053    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.4015 on 78459 degrees of freedom
+## Multiple R-squared:  0.2106, Adjusted R-squared:  0.2104 
+## F-statistic:  1102 on 19 and 78459 DF,  p-value: &lt; 2.2e-16</code></pre>
+<pre class="r"><code>pred2 &lt;- predict(lm3, df)
+
+mse2 &lt;- mean((pred2 - df$Priority)^2)
+mse2</code></pre>
+<pre><code>## [1] 0.1611266</code></pre>
+<pre class="r"><code>lm4&lt;-rpart(Priority ~ ., data=df, cp = 0.012875)
+printcp(lm4)</code></pre>
+<pre><code>## 
+## Regression tree:
+## rpart(formula = Priority ~ ., data = df, cp = 0.012875)
+## 
+## Variables actually used in tree construction:
+## [1] Call Type Unit Type
+## 
+## Root node error: 16019/78479 = 0.20412
+## 
+## n= 78479 
+## 
+##         CP nsplit rel error  xerror      xstd
+## 1 0.195889      0   1.00000 1.00001 0.0033849
+## 2 0.031276      1   0.80411 0.80416 0.0034010
+## 3 0.023787      2   0.77283 0.77294 0.0034437
+## 4 0.012875      3   0.74905 0.74916 0.0029549</code></pre>
+<pre class="r"><code>plot(lm4,
+     compress = TRUE,
+     margin = 0.01)
+text(lm4)</code></pre>
+<p><img src="/posts/Fire_rescue_files/figure-html/unnamed-chunk-12-1.png" width="960" /></p>
+<pre class="r"><code>pred3 &lt;- predict(lm4, df)
+
+mse3 &lt;- mean((pred3 - df$Priority)^2)
+mse3</code></pre>
+<pre><code>## [1] 0.1528933</code></pre>
+<pre class="r"><code>model1.nn &lt;- nnet(Priority ~ ., data = df, linout=TRUE, size=10,decay = 0.001)</code></pre>
+<pre><code>## # weights:  891
+## initial  value 802463.611144 
+## iter  10 value 15374.131341
+## iter  20 value 13751.637980
+## iter  30 value 12618.861432
+## iter  40 value 12479.068087
+## iter  50 value 12348.588612
+## iter  60 value 12223.296598
+## iter  70 value 12128.794736
+## iter  80 value 12094.464099
+## iter  90 value 12004.923511
+## iter 100 value 11897.122679
+## final  value 11897.122679 
+## stopped after 100 iterations</code></pre>
+<pre class="r"><code>model1.nn</code></pre>
+<pre><code>## a 87-10-1 network with 891 weights
+## inputs: `Call Type`Alarms `Call Type`Assist Police `Call Type`Citizen Assist / Service Call `Call Type`Confined Space / Structure Collapse `Call Type`Electrical Hazard `Call Type`Elevator / Escalator Rescue `Call Type`Explosion `Call Type`Extrication / Entrapped (Machinery, Vehicle) `Call Type`Fuel Spill `Call Type`Gas Leak (Natural and LP Gases) `Call Type`HazMat `Call Type`High Angle Rescue `Call Type`Industrial Accidents `Call Type`Marine Fire `Call Type`Medical Incident `Call Type`Mutual Aid / Assist Outside Agency `Call Type`Odor (Strange / Unknown) `Call Type`Other `Call Type`Outside Fire `Call Type`Smoke Investigation (Outside) `Call Type`Structure Fire `Call Type`Suspicious Package `Call Type`Traffic Collision `Call Type`Train / Rail Incident `Call Type`Vehicle Fire `Call Type`Water Rescue `Call Type`Watercraft in Distress BattalionB02 BattalionB03 BattalionB04 BattalionB05 BattalionB06 BattalionB07 BattalionB08 BattalionB09 BattalionB10 BattalionB99 `Unit Type`CHIEF `Unit Type`ENGINE `Unit Type`INVESTIGATION `Unit Type`MEDIC `Unit Type`PRIVATE `Unit Type`RESCUE CAPTAIN `Unit Type`RESCUE SQUAD `Unit Type`SUPPORT `Unit Type`TRUCK NeighborhoodBernal Heights NeighborhoodCastro/Upper Market NeighborhoodChinatown NeighborhoodExcelsior NeighborhoodFinancial District/South Beach NeighborhoodGlen Park NeighborhoodGolden Gate Park NeighborhoodHaight Ashbury NeighborhoodHayes Valley NeighborhoodInner Richmond NeighborhoodInner Sunset NeighborhoodJapantown NeighborhoodLakeshore NeighborhoodLincoln Park NeighborhoodLone Mountain/USF NeighborhoodMarina NeighborhoodMcLaren Park NeighborhoodMission NeighborhoodMission Bay NeighborhoodNob Hill NeighborhoodNoe Valley NeighborhoodNone NeighborhoodNorth Beach NeighborhoodOceanview/Merced/Ingleside NeighborhoodOuter Mission NeighborhoodOuter Richmond NeighborhoodPacific Heights NeighborhoodPortola NeighborhoodPotrero Hill NeighborhoodPresidio NeighborhoodPresidio Heights NeighborhoodRussian Hill NeighborhoodSeacliff NeighborhoodSouth of Market NeighborhoodSunset/Parkside NeighborhoodTenderloin NeighborhoodTreasure Island NeighborhoodTwin Peaks NeighborhoodVisitacion Valley NeighborhoodWest of Twin Peaks NeighborhoodWestern Addition 
+## output(s): Priority 
+## options were - linear output units  decay=0.001</code></pre>
+<pre class="r"><code>nn.pred.1 &lt;- predict(model1.nn,df)
+mse.nn.1 &lt;- mean((nn.pred.1 - df$Priority)^2)
+mse.nn.1</code></pre>
+<pre><code>## [1] 0.1515239</code></pre>
