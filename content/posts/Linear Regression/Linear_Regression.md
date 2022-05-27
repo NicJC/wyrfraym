@@ -47,7 +47,7 @@ body{
 
 <p> Let's take a look at the data</p>
 
-
+<script src="https://gist.github.com/NicJC/12893317af7a1d901c9db07079cc12e3.js"></script>
 
 <img src="/posts/Linear Regression/Linear_Regression_files/df.png" alt="" width="100%" height="80%"/>
 
@@ -62,6 +62,8 @@ body{
 ### we assign a linear model(lm1) to a model of "Priority" with respect to all the other variables in the data-frame (df).
 
 <script src="https://gist.github.com/NicJC/5302e589db0affc9443f132835cfc8b1.js"></script>
+
+### We run a summary statistic on this and observe that there are some significant predictors, (***), and many that aren't really useful. The adjusted r squared, or the coefficient of determination is very low too. This tells us that the predictors don't explain the data very well.
 
 <img src="/posts/Linear Regression/Linear_Regression_files/lm1summary.png" alt="" width="100%" height="100%"/>
 
