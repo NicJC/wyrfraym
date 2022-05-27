@@ -69,6 +69,7 @@ body{
 
 <hr>
 
+### We can start checking the performance between different models, and try determine which model is the better model. To do this we first create a predition model and check the mean squared error of the model.
 
 <script src="https://gist.github.com/NicJC/2c2b8a60a7baae3f6eec7daa53a3b761.js"></script>
 
