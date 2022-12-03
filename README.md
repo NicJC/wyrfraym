@@ -14,10 +14,10 @@
 <B><H3>		
 <h2>Interests</h2>
 <ul class="a">		
-<li>Maths and Statistics</li>
-<li>Analytics</li>		
-<li>Data Modeling</li>
-<li>Analytic programming</li>
+<li> Maths and Statistics</li>
+<li> Analytics</li>		
+<li> Data Modeling</li>
+<li> Analytic programming</li>
 </ul>
 		
 <br>
