@@ -1,7 +1,6 @@
 ---
 title:   
 date: 2020-12-19T15:44:19Z
-
 ---
 
 <style type="text/css">
@@ -22,9 +21,9 @@ img {
 
 #pic{
   margin: 100px;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-name: slidein;
-  margin-top: 75px;
+  margin-top: 65px;
 }
 
 @keyframes slidein {
@@ -61,7 +60,7 @@ a, a:link, a:visited {
 
 #about{
   width:justify;
-  text-align: left;
+  text-align: center;
   font-color:black;
   line-height: 17px;
   font-size: justify;
@@ -119,7 +118,7 @@ html {
 }
 
 #wrapper * {
-  margin: 5px;
+  margin: 10px;
 }
 
 .heading {
@@ -184,10 +183,10 @@ color:black;
 <h3><u>My personal interests include:</u></h3>
 
 <div id="interests">
-        - Maths and Statistics<br>
-        - Analytics<br>
-        - Data Modeling<br>
-        - Analytic programming
+        * Maths and Statistics<br>
+        * Analytics<br>
+        * Data Modeling<br>
+        * Analytic programming
 </div>
 
 
