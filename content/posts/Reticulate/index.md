@@ -10,7 +10,7 @@ output:
     number_sections: yes
     df_print: paged 
 ---
-<<<<<<< HEAD
+
 <style type="text/css">
 
 .tocify {
@@ -34,8 +34,8 @@ ul li:hover{
 /* Just some css for toc styling */
 </style>
 <hr></hr>
-=======
->>>>>>> 037043d5dce943c6218acb95eedd3339e19cf64c
+
+
 <br>
 
 
