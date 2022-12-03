@@ -4,11 +4,11 @@ author: "Nic Coxen"
 date: 2022-12-03T23:02:42+13:00
 tags: ["python","R"]
 ---
+<br>
 
 
-Reinoculate is an R library that allows R users to use python within R Markdown
+<h3>Reticulate is an R library that allows R users to use python within R Markdown</h3>
 
-
-```
+<br>
 
 
