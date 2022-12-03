@@ -33,7 +33,7 @@ ul li:hover{
 }
 /* Just some css for toc styling */
 </style>
-<hr></hr>
+
 
 
 <br>
