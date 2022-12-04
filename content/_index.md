@@ -13,31 +13,23 @@ body {
 }
 
 
- 
-
-
 img {
   border-radius: 8px;
 }
 
-#pic{
-  margin: 100px;
-  animation-duration: 4s;
-  animation-name: slidein;
-  margin-top: 65px;
-}
+
 
 @keyframes slidein {
   from {
     margin-left: 55%;
-    width: 200%;
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 5px;
    }
    
  to {
     margin-left: 40%;
     width: 100%;
-    margin: 30px;
+    margin: 5px;
     margin-top: 75px;
   }
 }
@@ -46,13 +38,13 @@ img {
 a, a:link, a:visited {
   text-decoration: none;
   padding: 9px 15px;
-  color: darkcyan;
+  color: #438ebc;
 
 }
 
 #interests{
   width:justify;
-  text-align: left;
+  text-align: centre;
   font-color:black;
   line-height: 17px;
   font-size: justify;
@@ -89,7 +81,7 @@ a, a:link, a:visited {
 }
 
 a:hover{
-color: #8ebc43;
+color: #bc438e;
 padding:5px;
 
 }
@@ -165,7 +157,7 @@ html {
 </div>
 
 <div id="wrapper">
-  <div class="heading animatable">Hi, My name is Nic!</div>
+  <div class="heading animatable">Hi, my name is Nic!</div>
 </div>
 
 <h3><u>My personal interests include:</u></h3>
@@ -194,7 +186,7 @@ There are basic building blocks to all of these mathematical concepts.
 <br>
   
 
- <!-- datasets --     #8ebc43     #bc438e     #438ebc>
+ <!-- datasets --     #438ebc     #bc438e     #438ebc>
  
   <div class="data">
 <h3><u>  Free Data</u></h3>
