@@ -12,6 +12,7 @@ body {
   overflow-y: scroll;
 }
 
+
  
 
 
@@ -36,7 +37,7 @@ img {
  to {
     margin-left: 40%;
     width: 100%;
-    margin: 0px;
+    margin: 30px;
     margin-top: 75px;
   }
 }
@@ -45,7 +46,7 @@ img {
 a, a:link, a:visited {
   text-decoration: none;
   padding: 9px 15px;
-  color: #134b5f;
+  color: darkcyan;
 
 }
 
@@ -88,7 +89,7 @@ a, a:link, a:visited {
 }
 
 a:hover{
-color: #8142a4;
+color: #bc438e;
 padding:5px;
 
 }
@@ -107,23 +108,16 @@ html {
 }
 
 #wrapper {
-  background: #B7e3f3;
-  width: 100%;
-  height: 100%;
-  color: #134b5f;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background: #fcfcfa;
+  color: #438ebc;
   align-items: center;
 }
 
-#wrapper * {
-  margin: 10px;
-}
+
 
 .heading {
   font-size: 3em;
-  padding: 10px 5px;
+
 }
 
 .caption {
@@ -145,7 +139,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #B7e3f3;
+  background: #fcfcfa;
   padding: inherit;
   animation: .75s cubic-bezier(1,-0.01,.12,.8) 1.75s 1 hideBlack forwards;
 }
@@ -158,12 +152,6 @@ html {
 @keyframes hideBlack {
   from { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
   to { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
-}
-
-
-.tagcloud{
-font-family: Outfit;
-color:black;
 }
 
 </style>
@@ -206,7 +194,7 @@ There are basic building blocks to all of these mathematical concepts.
 <br>
   
 
- <!-- datasets -->
+ <!-- datasets --     #8ebc43     #bc438e     #438ebc>
  
   <div class="data">
 <h4><u>  Free Data</u></h4>
