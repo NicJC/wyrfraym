@@ -79,7 +79,7 @@ border-color:#fcfcfa;
 }
 
 
-.container-sm {
+.container{
   max-width: 60%;
   margin: auto;
   font-weight: 750;
@@ -204,33 +204,13 @@ a.repeat:hover {
   width: 100%;
   height: 100%;
   background: #fcfcfa;
-  padding: inherit;
-  animation: .75s cubic-bezier(1,-0.01,.12,.8) 1.75s 1 hideBlack forwards;
+
+  
 }
 
-@keyframes reveal {
-  from { clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%); }
-  to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-}
-
-@keyframes hideBlack {
-  from { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-  to { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
-}
-
-$container-max-widths: (
-  sm: 140px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
-);
 
 </style>
 
-<div id="wrapper">
-  <div class="heading animatable">Hi, my name is Nic!</div>
-</div>
 
 
 <div class="menu">

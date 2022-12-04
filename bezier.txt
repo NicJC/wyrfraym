@@ -26,6 +26,8 @@
   to { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
 }
 
+
+
 <div id="wrapper">
   <div class="heading animatable">Hi, my name is Nic!</div>
 </div>
