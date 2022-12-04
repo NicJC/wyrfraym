@@ -89,7 +89,7 @@ a, a:link, a:visited {
 }
 
 a:hover{
-color: #bc438e;
+color: #8ebc43;
 padding:5px;
 
 }
@@ -197,7 +197,7 @@ There are basic building blocks to all of these mathematical concepts.
  <!-- datasets --     #8ebc43     #bc438e     #438ebc>
  
   <div class="data">
-<h4><u>  Free Data</u></h4>
+<h3><u>  Free Data</u></h3>
     <div id="dt" ><br>
       <a href="https://github.com/NicJC/Datasets">Check out my datasets!</a>
     </div>
