@@ -118,33 +118,7 @@ html {
   font-family: Outfit;
 }
 
-.animatable {
-  position: relative;
-  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-  animation: .75s cubic-bezier(1,-0.01,.12,.8) 1s 1 reveal forwards;
-}
 
-.animatable::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #fcfcfa;
-  padding: inherit;
-  animation: .75s cubic-bezier(1,-0.01,.12,.8) 1.75s 1 hideBlack forwards;
-}
-
-@keyframes reveal {
-  from { clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%); }
-  to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-}
-
-@keyframes hideBlack {
-  from { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-  to { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
-}
 
 </style>
 
@@ -156,9 +130,7 @@ html {
 
 </div>
 
-<div id="wrapper">
-  <div class="heading animatable">Hi, my name is Nic!</div>
-</div>
+
 
 <h3><u>My personal interests include:</u></h3>
 
