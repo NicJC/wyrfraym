@@ -179,7 +179,7 @@ There are basic building blocks to all of these mathematical concepts.
 
 <div id="connect" ><br>
 <a href="https://nicstats.netlify.app/contact/" target="_blank">
-<img src="/./_index_files/connect.svg" alt="" width="5%"/>
+<img src="/./_index_files/connect.svg" alt="" width="3%"/>
 </a>
 
 
