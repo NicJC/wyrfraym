@@ -206,16 +206,12 @@ a.repeat:hover {
 
 
 
-
-
-
-
 body
 {
   margin: 0;
   padding: 0;
   
-  /* make it look decent enough */
+
   background: #fcfcfa;
   color: #fcfcfa;
   font-family: Outfit;
@@ -225,8 +221,8 @@ body
 {
   display: block;
   position: relative;
-  top: 80px;
-  left: 50px;
+  top: 70px;
+  left: -150px;
   
   
   z-index: 1;
@@ -294,7 +290,7 @@ body
 
 #menuToggle span:nth-last-child(2)
 {
-  transform-origin: 0% 20%;
+  transform-origin: 0% 40%;
 }
 
 /* 
@@ -328,11 +324,11 @@ body
 
 #menu
 {
-  position: flex;
-  width: 120px;
-  margin: -300px 0 0 -30px;
-  padding: 30px;
-  padding-top: 125px;
+  position: absolute;
+  width: 180px;
+  margin: -90px 0 -300px;
+  padding: 10px;
+  padding-top: 10px;
   
   background: #fcfcfa;
   list-style-type: none;
@@ -340,14 +336,14 @@ body
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(-450%, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
 {
-  padding: 10px 0;
+  padding: 5px 0;
   font-size: 22px;
 }
 
@@ -365,13 +361,13 @@ body
 
 <nav role="navigation">
   <div id="menuToggle">
-   
+
     <input type="checkbox" />
   
-   
     <span></span>
     <span></span>
     <span></span>
+
     
  
     <ul id="menu">
