@@ -163,9 +163,9 @@ There are basic building blocks to all of these mathematical concepts.
 <br>
   
 
- <!-- datasets --     #fcfcfa     #bc438e     #438ebc>
+
  
-  <div class="data">
+<div class="data">
 <h3><u>  Free Data</u></h3>
     <div id="dt" ><br>
       <a href="https://github.com/NicJC/Datasets">Check out my datasets!</a>
