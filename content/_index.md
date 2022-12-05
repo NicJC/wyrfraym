@@ -175,18 +175,18 @@ There are basic building blocks to all of these mathematical concepts.
 
 <br>
 
-<h3>Contact</h3>
+<h3>Connect</h3>
 
 <div id="connect" ><br>
 <a href="https://nicstats.netlify.app/contact/" target="_blank">
-<img src="/./_index_files/contact.svg" alt="" width="5%"/>
+<img src="/./_index_files/connect.svg" alt="" width="5%"/>
 </a>
 
 
     
 <center>
 </div>
-<!-- Tag cloud -->
+
 <div class="tagcloud">
 <p><H3>Tag cloud</H3></p>
 
