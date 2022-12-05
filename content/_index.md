@@ -51,7 +51,7 @@ a, a:link, a:visited {
   font-color:black;
   line-height: 17px;
   font-size: justify;
-  font-family: Outfit;
+  font-family: helvetica;
   }
 
 #about{
@@ -62,7 +62,7 @@ a, a:link, a:visited {
   font-size: justify;
   word-break: break;
   flex-flow: column wrap;
-  font-family: Outfit; 
+  font-family: helvetica; 
 }
 
 #connect{
@@ -70,7 +70,7 @@ a, a:link, a:visited {
   font-color:black;
   line-height: 17px;
   font-size: justify;
-  font-family: Outfit;
+  font-family: helvetica;
   
 }
 
@@ -79,7 +79,7 @@ a, a:link, a:visited {
   font-color:black;
   line-height: 17px;
   font-size: justify;
-  font-family: Outfit;
+  font-family: helvetica;
   
 }
 
@@ -115,7 +115,7 @@ html {
 .caption {
   font-size: 1em;
   padding: 5px;
-  font-family: Outfit;
+  font-family: helvetica;
 }
 
 h3{
@@ -168,7 +168,7 @@ There are basic building blocks to all of these mathematical concepts.
 <div class="data">
 <h3><u>  Free Data</u></h3>
     <div id="dt" ><br>
-      <a href="https://github.com/NicJC/Datasets">Check out my datasets!</a>
+      <h3><a href="https://github.com/NicJC/Datasets">Check out my datasets!</a></h3>
     </div>
     </div>
 
