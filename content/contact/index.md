@@ -68,19 +68,8 @@ img {
 
 <body>
 
-<p><b><H4>Conect with me on:</H4></B></p>
 
-<a href="https://github.com/NicJC" target="_blank">
-  <img src="images/git.svg" alt="" width="3%"/>
-  
-</a>
-
-<a href="https://www.linkedin.com/in/nicholas-coxen/" target="_blank">
- <img src="images/linkedin.svg" alt="" width="3%"/>
-  
-</a>
-
-
+<p></p>
 
 <center>
 <div class="flip-card">
@@ -96,5 +85,22 @@ img {
   </div>
 </div>
 </center>
+
+
+<p></p>
+
+<a href="https://www.linkedin.com/in/nicholas-coxen/" target="_blank">
+<img src="images/linkedin1.svg" alt="" width="5%"/>
+  
+</a>
+&nbsp&nbsp&nbsp&nbsp
+
+<a href="https://github.com/NicJC" target="_blank">
+  <img src="images/github.svg" alt="" width="5%"/>
+
+</a>
+
+<p></p>
+
 </body>
 </head>
