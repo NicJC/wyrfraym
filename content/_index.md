@@ -66,6 +66,7 @@ a, a:link, a:visited {
 }
 
 #connect{
+  text-align: left;
   width:justify;
   font-color:black;
   line-height: 17px;
@@ -131,7 +132,7 @@ text-align: left;
 
 
 
-<h3><u>My personal interests include:</u></h3>
+<h3>My personal interests include:</h3>
 <p></p>
 
 <div id="interests">
@@ -147,7 +148,7 @@ text-align: left;
 
 <center>
 
-<H3><u>About me</u></H3> 
+<H3>About me</H3> 
 <p></p>
 </center>
 
@@ -166,7 +167,7 @@ There are basic building blocks to all of these mathematical concepts.
 
  
 <div class="data">
-<h3><u>  Free Data</u></h3>
+<h3>Free Data</h3>
     <div id="dt" ><br>
       <h3><a href="https://github.com/NicJC/Datasets">Check out my datasets!</a></h3>
     </div>
@@ -174,19 +175,20 @@ There are basic building blocks to all of these mathematical concepts.
 
 <br>
 
-<div class="connect">
+<h3>Contact</h3>
 
-<u><H3>Conect with me on</H3></u>
+<div id="connect" ><br>
+<a href="https://nicstats.netlify.app/contact/" target="_blank">
+<img src="/./_index_files/contact.svg" alt="" width="5%"/>
+</a>
 
-<a href="https://github.com/NicJC/" target="_blank" rel="  noopener"><i  class="fab fa-github"></i></a>
 
-<a href="https://www.linkedin.com/in/nicholas-coxen/" target="_blank" rel="  noopener"><i  class="fab fa-linkedin-in"></i></a>
     
 <center>
 </div>
 <!-- Tag cloud -->
 <div class="tagcloud">
-<u><p><H3>Tags</H3></p></u>
+<p><H3>Tag cloud</H3></p>
 
 
 <script>
