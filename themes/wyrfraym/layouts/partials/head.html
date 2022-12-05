@@ -88,7 +88,6 @@ border-color:#fcfcfa;
   padding: 0 0 1700px;
 }
 
-
 .animate {
   font-size: 50px;
   margin: 100px 0 0;
@@ -186,7 +185,7 @@ a.repeat:hover {
 }
 
 .menu{
-  position:absolute;
+  position:flex;
   padding: 0px;
 }
 
@@ -195,27 +194,22 @@ a.repeat:hover {
   clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
   animation: .75s cubic-bezier(1,-0.01,.12,.8) 1s 1 reveal forwards;
 }
-
 .animatable::after {
   content: '';
- 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: #fcfcfa;
-
-  
 }
 
 
 </style>
 
 
-
 <div class="menu">
  
-  <p></p>                                        
+                                     
 
   <div class="dropdown">
     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="background:#438ebc">
@@ -235,8 +229,6 @@ a.repeat:hover {
   </div>
 </div>
 
-<div class="container-sm">
-  <!-- Content here -->
-</div>
+
 
 </body>

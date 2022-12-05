@@ -12,24 +12,27 @@ body {
   overflow-y: scroll;
 }
 
-
 img {
   border-radius: 8px;
 }
 
-
+#pic{
+width:100%;
+height: 100px;
+}
 
 @keyframes slidein {
   from {
     margin-left: 55%;
     width: 100%;
     margin-top: 5px;
+    animation: slidein 1s ;
    }
    
  to {
-    margin-left: 40%;
+    margin-left: 5%;
     width: 100%;
-    margin: 5px;
+    margin: 140px;
     margin-top: 75px;
   }
 }
@@ -44,7 +47,7 @@ a, a:link, a:visited {
 
 #interests{
   width:justify;
-  text-align: centre;
+  text-align: left;
   font-color:black;
   line-height: 17px;
   font-size: justify;
@@ -53,13 +56,13 @@ a, a:link, a:visited {
 
 #about{
   width:justify;
-  text-align: center;
+  text-align: left;
   font-color:black;
   line-height: 17px;
   font-size: justify;
   word-break: break;
   flex-flow: column wrap;
- font-family: Outfit; 
+  font-family: Outfit; 
 }
 
 #connect{
@@ -105,11 +108,8 @@ html {
   align-items: center;
 }
 
-
-
 .heading {
   font-size: 3em;
-
 }
 
 .caption {
@@ -118,34 +118,39 @@ html {
   font-family: Outfit;
 }
 
-
+h3{
+text-align: left;
+}
 
 </style>
 
 <body>
-
 <div id="pic">
-
-<img src="/images/avatar.jpg"  />
-
+<img src="/images/avatar.jpg"/>
 </div>
 
 
 
 <h3><u>My personal interests include:</u></h3>
+<p></p>
 
 <div id="interests">
-        * Maths and Statistics<br>
-        * Analytics<br>
-        * Data Modeling<br>
-        * Analytic programming
+        - Maths and Statistics<br>
+        - Analytics<br>
+        - Data Modeling<br>
+        - Analytic programming
+        <p></p>
 </div>
 
 
 <div id="about">
+
 <center>
-<H3><u>About me</u></H3>       
+
+<H3><u>About me</u></H3> 
+<p></p>
 </center>
+
 I love numbers, and I'm truly amazed by how numbers control so many things in our daily lives. 
 I'm particularly fascinated by number distributions, and how certain sequences of numbers are able to predict future outcomes.
 <p>
@@ -158,7 +163,7 @@ There are basic building blocks to all of these mathematical concepts.
 <br>
   
 
- <!-- datasets --     #438ebc     #bc438e     #438ebc>
+ <!-- datasets --     #fcfcfa     #bc438e     #438ebc>
  
   <div class="data">
 <h3><u>  Free Data</u></h3>
