@@ -7,10 +7,12 @@ tags: ["contact"]
 ---
 
 <style>
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans:400,700"
+
 body
     margin: 0
     padding: 0
-    font-family: helvetica;
+    font-family: 'Josefin Sans', sans-serif
     background-color: #eee
     a
         color: #ffffff
@@ -35,7 +37,7 @@ body
 .card-front
     height: 100%
     width: 100%
-    background-image: url("/images/avatar.jpg");
+    background-image: url(https://99px.ru/sstorage/56/2013/12/image_563012130153328414049.jpg)
     background-position: 50% 50%
     background-size: cover
     position: absolute
@@ -72,8 +74,6 @@ body
         &:hover
             color: #000000
             background-color: #fff
-
-
 </style>
 
 <body>
@@ -85,12 +85,13 @@ body
 <div class="card">
         <div class="card-front"></div>
         <div class="card-back">
-            <h2>Nic Coxen<br><span>Business Intelligence Analyst</span></h2>
+            <h2>Jane Doe<br><span>Senior Designer</span></h2>
             <div class="social-icons">
-
-                <a href="https://github.com/NicJC/wyrfraym" target="_blank"><i class="fas fa-code-branch"></i></a>
-                
-                
+                <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                <a href="#" class="fa fa-google-plus" aria-hidden="true"></a>
+                <a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+                <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
             </div>
         </div>
     </div>
