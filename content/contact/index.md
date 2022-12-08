@@ -7,62 +7,72 @@ tags: ["contact"]
 ---
 
 <style>
+body
+    margin: 0
+    padding: 0
+    font-family: helvetica;
+    background-color: #eee
+    a
+        color: #ffffff
+        text-decoration: none
 
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
+.card
+    position: absolute
+    top: 50%
+    left: 50%
+    height: 400px
+    width: 300px
+    transform: translate(-50%, -50%)
+    transform-style: preserve-3d
+    perspective: 600px
+    transition: .5s
+    &:hover .card-front
+        transform: rotateX(-180deg)
+    &:hover .card-back
+        transform: rotateX(0deg)
 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
+.card-front
+    height: 100%
+    width: 100%
+    background-image: url(![](images/avatar.jpg))
+    background-position: 50% 50%
+    background-size: cover
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #000000
+    backface-visibility: hidden
+    transform: rotateX(0deg)
+    transition: .5s
 
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+.card-back
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #000000
+    backface-visibility: hidden
+    transform: rotateX(180deg)
+    transition: .5s
+    color: #ffffff
+    text-align: center
+    h2
+        margin: 60% auto 35% auto
+        font-size: 26px
+        span
+            font-size: 20px
+    a
+        height: 20px
+        width: 20px
+        padding: 5px 5px
+        border-radius: 4px
+        line-height: 20px
+        &:hover
+            color: #000000
+            background-color: #fff
 
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-  display:inline-block;
-}
-
-.flip-card-back {
-  background-color: silver;
-  color: white;
-  transform: rotateY(180deg);
-    font-size: 150%;
-    display:inline-block;
-}
-
-img {
-  border-radius: 8px;
-}
-
-#connect{
-  width:justify;
-  font-color:black;
-  line-height: 17px;
-  font-size: justify;
-  font-family: Outfit;
-  
-}
 
 </style>
 
@@ -72,18 +82,18 @@ img {
 <p></p>
 
 <center>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-     <img src="/images/avatar.jpg" style="width:300px;height:300px;">
+<div class="card">
+        <div class="card-front"></div>
+        <div class="card-back">
+            <h2>Nic Coxen<br><span>Business Intelligence Analyst</span></h2>
+            <div class="social-icons">
+
+                <a href="#" class="fas fa-code-branch" aria-hidden="true"></a>
+                <a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+                
+            </div>
+        </div>
     </div>
-    <div class="flip-card-back">
-      <h1>Nic Coxen</h1> 
-      <p>Business Intelligence Analyst</p> 
-      <p></p>
-    </div>
-  </div>
-</div>
 </center>
 
 
