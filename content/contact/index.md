@@ -35,7 +35,7 @@ body
 .card-front
     height: 100%
     width: 100%
-    background-image: url(![](images/avatar.jpg))
+    background-image: url("/images/avatar.jpg");
     background-position: 50% 50%
     background-size: cover
     position: absolute
@@ -88,8 +88,8 @@ body
             <h2>Nic Coxen<br><span>Business Intelligence Analyst</span></h2>
             <div class="social-icons">
 
-                <a href="#" class="fas fa-code-branch" aria-hidden="true"></a>
-                <a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+                <a href="https://github.com/NicJC/wyrfraym" target="_blank"><i class="fas fa-code-branch"></i></a>
+                
                 
             </div>
         </div>
@@ -110,7 +110,10 @@ body
 
 </a>
 
+<div>
+  <p class="card-front"></p>
 
+</div>
 
 
 </body>
