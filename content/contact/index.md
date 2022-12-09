@@ -8,55 +8,71 @@ tags: ["contact"]
 
 <style>
 
-.vertical.flip-container {
-	position: relative;
+.flip-card {
+  background-color: transparent;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  
 }
 
-	.back {
-		transform: rotateX(180deg);
-	}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
-	.vertical.flip-container .flipper {
-		transform-origin: 100% 213.5px; /* half of height */
-	}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
-	.vertical.flip-container:hover .flipper {
-		transform: rotateX(-180deg);
-	}
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  transform: rotateY(0deg);
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateX(180deg);
+}
 
 </style>
 
 <body>
-
-<p></p>
-
-<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-	<div class="flipper">
-		<div class="front">
-		<img src="images/avatar.jpg"  style="width:300px;height:300px;">
+<div class="flip-card">
+  <div class="flip-card-inner">
+      <div class="flip-card-front">
+		    <img src="images/avatar.jpg"  style="width:300px;height:300px;">
 		
-		</div>
-		<div class="back">
+		  
+		    <div class="flip-card-back">
 			      <h1>Nic Coxen</h1>
-      <p>BI Analyst</p>
+           <p>BI Analyst</p>
+           </div>
      
-		</div>
+		    </div>
 	</div>
 </div>
 
 
 
 
-<a href="https://www.linkedin.com/in/nicholas-coxen/" target="_blank">
-<img src="images/linkedin1.svg" alt="" width="5%"/>
-  
-</a>
-&nbsp&nbsp&nbsp&nbsp
 
-<a href="https://github.com/NicJC" target="_blank">
-  <img src="images/github.svg" alt="" width="5%"/>
 
-</a>
 
 </body>
 </head>
