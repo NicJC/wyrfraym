@@ -1,8 +1,8 @@
 ---
-title: Interesting Stuff  
-date: 2022-12-10T10:04:41+13:00
----
+title: "Stuff"
 
+---
+<html>
 <head>
 <body>
 <p></p>
@@ -18,9 +18,9 @@ background-color: #fcfcfa;
 }
  .container {
   display: flex;
-  top:80px;
+  justify-content: space-between;
   background-color: #fcfcfa;
-  padding: 5px;
+  
 }
 
 .container > div {
