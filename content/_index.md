@@ -10,6 +10,7 @@ body {
   scroll-snap-type: y proximity;
   scroll-padding-top: 15vh;
   overflow-y: scroll;
+  font-family: helvetica;
 }
 
 img {
@@ -93,6 +94,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  font-family: helvetica;
 }
 
 #wrapper {
@@ -157,15 +159,12 @@ There are basic building blocks to all of these mathematical concepts.
 <br>
   
 
-
- 
 <div class="data">
 <h3>Free Data</h3>
     <div id="dt"><br>
       <h3><a href="https://github.com/NicJC/Datasets">Check out my datasets!</a></h3>
     </div>
-    </div>
-
+    
 <br>
 
 <h3>Connect</h3>
@@ -189,15 +188,16 @@ There are basic building blocks to all of these mathematical concepts.
 <p></p>
 
 <H3>Tag cloud</H3>
-
+<center>
 <script>
 $(document).ready(function(){
   $(".nav-tabs a").click(function(){
     $(this).tab('show');
   });
 });
+</div>
 </script> 
-
+</center>
 </body>
 
 
