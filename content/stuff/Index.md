@@ -2,11 +2,8 @@
 title: "Stuff"
 
 ---
-<html>
-<head>
-<body>
-<p></p>
-<br>
+
+
 <style>
 
 .body {
@@ -31,7 +28,7 @@ background-color: #fcfcfa;
   gap:12px;
 }
 </style>
-</head>
+<body>
 
 
 <p></p>
