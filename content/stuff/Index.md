@@ -1,10 +1,20 @@
 ---
-title: "Stuff"
+title: ""
 
 ---
 
 
 <style>
+
+.A{
+background-color: #fcfcfa;
+font-family: helvetica;
+width:100px;
+height:1000px;
+position: relative;
+border-style: solid;
+border-width: 5px;
+}
 
 .body {
 background-color: #fcfcfa;
