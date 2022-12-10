@@ -162,7 +162,8 @@ There are basic building blocks to all of these mathematical concepts.
 <div class="data">
 <h3>Free Data</h3>
     <div id="dt"><br>
-      <h3><a href="https://github.com/NicJC/Datasets">Check out my datasets!</a></h3>
+      <a href="https://github.com/NicJC/Datasets" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11264 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="#7698ab" d="M64 256V160H224v96H64zm0 64H224v96H64V320zm224 96V320H448v96H288zM448 256H288V160H448v96zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg></a>
     </div>
     
 <br>
