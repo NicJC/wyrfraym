@@ -1,0 +1,28 @@
+<a href="https://www.linkedin.com/in/nicholas-coxen/" target="_blank">
+<img src="images/linkedin1.svg" alt="" width="5%"/>
+  
+</a>
+&nbsp&nbsp&nbsp&nbsp
+
+<a href="https://github.com/NicJC" target="_blank">
+  <img src="images/github.svg" alt="" width="5%"/>
+
+</a>
+
+
+
+<div id="connect" ><br>
+<a href="https://nicstats.netlify.app/contact/" target="_blank">
+<img src="/./_index_files/connect.svg" alt="" width="3%"/>
+</a>
+
+
+#connect{
+  text-align: left;
+  width:justify;
+  font-color:black;
+  line-height: 17px;
+  font-size: justify;
+  font-family: helvetica;
+  
+}
